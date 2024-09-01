@@ -28,33 +28,33 @@
     - __Sense Management__
       - [2-4-1 Color Sensor Introduction](schemes/color_sensor/README.md)
       - [2-4-2 Lidar Selection](schemes/Lidar/README.md)
-      - [2-4-3 Camera Selection](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Camera/README.md)
+      - [2-4-3 Camera Selection](schemes/Camera/README.md)
   
 - ### ${{\color{red} Software Overview }} $ 
   #### 3. Obstacle Management
-    - [3-1 OpenCV Introduction](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/other/OpenCV/README.md)
-    - [3-2 ROS Introduction](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/other/ROS)
-    - [3-3 Software Platform Construction](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/src/System_Platform_Software/README.md)
+    - [3-1 OpenCV Introduction](other/OpenCV/README.md)
+    - [3-2 ROS Introduction](other/ROS/README.md)
+    - [3-3 Software Platform Construction](src/System_Platform_Software/README.md)
     - __Image Processing and Steering__
-      - [3-4-1 Image Processing](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/src/Image_Processing_and_Steering/Image_Processing/README.md#image-processing)  
-      - [3-4-2 Steering Overview](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/src/Image_Processing_and_Steering/Steering_overview/README.md#traffic-sign-avoidance) 
+      - [3-4-1 Image Processing](src/Image_Processing_and_Steering/Image_Processing/README.md)  
+      - [3-4-2 Steering Overview](src/Image_Processing_and_Steering/Steering_overview/README.md) 
     - __Programming__
-      - [3-5-1 Open Challenge Code Overview](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/src/Programming/Open_Challenge)
-      - [3-5-2 Obstacle Challenge Code Overview](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/src/Programming/Obstacle_Challenge)
-      - [3-5-3 Distinctive Pseudo Code](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/src/Distinctive_Pseudo_Code/README.md)
+      - [3-5-1 Open Challenge Code Overview](src/Programming/Open_Challenge/README.md)
+      - [3-5-2 Obstacle Challenge Code Overview](src/Programming/Obstacle_Challenge/README.md)
+      - [3-5-3 Distinctive Pseudo Code](src/Distinctive_Pseudo_Code/README.md)
 - ### ${{\color{red} Other}} $
   #### 4. Pictures – Team and Vehicle
     - [4-1 Team Members Introduction](t-photos/README.md) 
-    - [4-2 Vehicle Photos](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/v-photos)  
+    - [4-2 Vehicle Photos](v-photos/README.md)  
   #### 5. Performance Videos
-    - [5-1 Open Challenge](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/video/Open_Challenge/video.md)
-    - [5-2 Obstacle Challenge](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/video/Obstacle_Challenge/video.md)
-    - [5-3 Self-Driving Car Design Process Video](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/video/ALL_video/video.md)
+    - [5-1 Open Challenge](video/Open_Challenge/video.md)
+    - [5-2 Obstacle Challenge](video/Obstacle_Challenge/video.md)
+    - [5-3 Self-Driving Car Design Process Video](video/ALL_video/video.md)
   #### 6. GitHub Utilization
-    - [6-1 GitHub Edit(VScode Edit/GIT)](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/src/GitHub_Edit/README.md)
-    - [6-2 GitHub Web Editing Languages](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/src/GitHub_Languages/README.md)  
+    - [6-1 GitHub Edit(VScode Edit/GIT)](src/GitHub_Edit/README.md)
+    - [6-2 GitHub Web Editing Languages](src/GitHub_Languages/README.md)  
   #### 7. Engineering Factor  
-    - [7-1 Work Diary](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/other/work_diary/README.md)
+    - [7-1 Work Diary](other/work_diary/README.md)
 - ### ${{\color{red} CompetitionSchedule}} $  
 # <div align="center">![Competition Schedule Gantt](./other/img/gantt.png)</div> 
 
