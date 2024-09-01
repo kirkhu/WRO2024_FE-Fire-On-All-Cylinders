@@ -8,14 +8,14 @@
 - ###  ${{\color{red} Hardware Overview }} $ 
   #### 1. Mobility Management
     * [1-1 Vehicle 2D/3D Models in CAD](models/Vehicle_2D_3D/README.md)
-    * [1-2 Motor Selection](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Motor/README.md)
-    * [1-3 Vehicle Chassis Design](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Vehicle_Chassis_Design/README.md)
+    * [1-2 Motor Selection](schemes/Motor/README.md)
+    * [1-3 Vehicle Chassis Design](schemes/Vehicle_Chassis_Design/README.md)
 
     
   #### 2. Power and Sense Management
     - __Vehicle Design__
-      - [2-1-1 BOM Parts List](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Parts_List#readme)
-      - [2-1-2 Circuit Design](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/models/Circuit_Design/README.md)
+      - [2-1-1 BOM Parts List](schemes/Parts_List)
+      - [2-1-2 Circuit Design](models/Circuit_Design/README.md)
       - [2-1-3 Hardware Fool-Proof Design](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/fool-proof-design/README.md) 
       - [2-1-4 Assembly Instructions & Wiring Diagrams](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Assembly_Instructions/README.md)    
       
