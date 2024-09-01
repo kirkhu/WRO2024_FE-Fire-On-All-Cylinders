@@ -16,18 +16,18 @@
     - __Vehicle Design__
       - [2-1-1 BOM Parts List](schemes/Parts_List)
       - [2-1-2 Circuit Design](models/Circuit_Design/README.md)
-      - [2-1-3 Hardware Fool-Proof Design](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/fool-proof-design/README.md) 
-      - [2-1-4 Assembly Instructions & Wiring Diagrams](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Assembly_Instructions/README.md)    
+      - [2-1-3 Hardware Fool-Proof Design](schemes/fool-proof-design/README.md) 
+      - [2-1-4 Assembly Instructions & Wiring Diagrams](schemes/Assembly_Instructions/README.md)    
       
     - __Power Management__
-      - [2-2-1 Power Supply System](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Power_supply_system/README.md) 
-      - [2-2-2 Li-Polymer Battery Low Voltage Alarm and Charging Equipment](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Li-Polymer_Battery/README.md)  
+      - [2-2-1 Power Supply System](schemes/Power_supply_system/README.md) 
+      - [2-2-2 Li-Polymer Battery Low Voltage Alarm and Charging Equipment](schemes/Li-Polymer_Battery/README.md)  
    
     - __Controller Selection__
-      - [2-3-1 Controller Comparison](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/other/Controller_Choosing)
+      - [2-3-1 Controller Comparison](other/Controller_Choosing)
     - __Sense Management__
-      - [2-4-1 Color Sensor Introduction](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/color_sensor/README.md)
-      - [2-4-2 Lidar Selection](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Lidar/README.md)
+      - [2-4-1 Color Sensor Introduction](schemes/color_sensor/README.md)
+      - [2-4-2 Lidar Selection](schemes/Lidar/README.md)
       - [2-4-3 Camera Selection](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Camera/README.md)
   
 - ### ${{\color{red} Software Overview }} $ 
