@@ -7,7 +7,7 @@
 ## Rubric for Judging Engineering Documentation 
 - ###  ${{\color{red} Hardware Overview }} $ 
   #### 1. Mobility Management
-    * [1-1 Vehicle 2D/3D Models in CAD](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/models/Vehicle_2D_3D/README.md)
+    * [1-1 Vehicle 2D/3D Models in CAD](models/Vehicle_2D_3D/README.md)
     * [1-2 Motor Selection](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Motor/README.md)
     * [1-3 Vehicle Chassis Design](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Vehicle_Chassis_Design/README.md)
 
@@ -44,7 +44,7 @@
       - [3-5-3 Distinctive Pseudo Code](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/src/Distinctive_Pseudo_Code/README.md)
 - ### ${{\color{red} Other}} $
   #### 4. Pictures – Team and Vehicle
-    - [4-1 Team Members Introduction](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/t-photos/README.md) 
+    - [4-1 Team Members Introduction](t-photos/README.md) 
     - [4-2 Vehicle Photos](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/v-photos)  
   #### 5. Performance Videos
     - [5-1 Open Challenge](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/video/Open_Challenge/video.md)
