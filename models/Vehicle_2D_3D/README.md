@@ -127,7 +127,7 @@
     <div align="center">
     <table>
     <th> Stereolithography (SLA) 3D Printer</th><tr></tr>
-    <td><img src="./img/2D.jpg" width=200 alt="Stereolithography_3D_Printer" ></td>
+    <td><img src="./img/2D.jpg" width=500 alt="Stereolithography_3D_Printer" ></td>
     </tr>
     </table>
     </div>
