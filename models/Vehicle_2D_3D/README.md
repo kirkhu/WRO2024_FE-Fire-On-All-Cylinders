@@ -48,7 +48,7 @@
   - Here is an introduction to the process of creating vehicle flat panels using a laser cutting machine.
 
     - ####  Operation of Laser-Cutting Machine
-    <div align="center"><img src="./img/hu.jpg" width="400" alt="car_board"></div>
+    <div align="center"><img src="./img/2D.jpg" width="400" alt="car_board"></div>
 
     - #### Vehicle Chassis Panels Dimensions Chart
         <div align=center>
@@ -127,7 +127,7 @@
     <div align="center">
     <table>
     <th> Stereolithography (SLA) 3D Printer</th><tr></tr>
-    <td><img src="./img/2D.jpg" width=500 alt="Stereolithography_3D_Printer" ></td>
+    <td><img src="./img/光固化機.jpg" width=350 alt="Stereolithography_3D_Printer" ></td>
     </tr>
     </table>
     </div>
@@ -264,5 +264,5 @@
       </div> 
 
 
-# <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>  
+# <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div>  
   
