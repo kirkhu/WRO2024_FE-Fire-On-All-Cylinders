@@ -20,17 +20,7 @@
     </tr>
     </table>
     </div> 
-    <div align=center>
-    <table>
-    <tr>
-    <th>3D Vehicle Chassis Design</th>
-    <th>3D Vehicle Chassis Models</th>
-    </tr><tr>
-     <td><img src="./img/Vehicle_chassis_description.png" width=300 ></td> 
-    <td><img src="./img/onshape_3D model_CAD.png" width=300  ></td> 
-    </tr>
-    </table>
-    </div> 
+
 
   - #### Onshape Introduction
     - We use Onshape to design 3D models of self-driving cars. Onshape is a free and easy-to-use web-based CAD software.
