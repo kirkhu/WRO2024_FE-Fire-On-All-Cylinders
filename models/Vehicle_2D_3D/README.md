@@ -199,7 +199,7 @@
         <th> Stereolithography (SLA) 3D Printer</th>
         </tr><tr align="center">
         <td><img src="./img/all_3Dprinter.jpg" width=200  ></td>
-        <td><img src="./img/Stereolithography_3D_Printer.jpg" width=250></td>
+        <td><img src="./img/working_光固化.jpg" width=250></td>
         </tr><tr align="">
         <td>The required printing time</td>
         <td>Faster</td>
