@@ -8,3 +8,42 @@
 - When designing the self-driving circuit, we first think about the functions required by our self-driving car, and then draw the circuit diagram. This not only allows us to have a circuit diagram to see, but also makes it more convenient for us to make circuit boards. On the other hand, it can avoid wiring An error caused the object to burn.
 - The circuit board of the self-driving car is welded by using bakelite multi-purpose board according to the circuit diagram we designed, instead of purchasing the designed finished product.
 - Power supply and signal are two essential parts of the self-driving circuit. The power supply provides power to the circuit, and the signal transmits data. Designing sockets around the circuit board can facilitate the connection of devices such as sensors or batteries, thereby improving the flexibility and scalability of the circuit.
+
+ - #### Circuit Board
+<div align="center">
+<table>
+  <tr align="center">
+      <th> Circuit Board Top View</th><th>Circuit Board Button View</th>
+  </tr>
+  <tr align="center">
+     <td> <img src="../../v-photos/img/電路圖_上.png" width="300" alt="circuit_up"> </td><td><img src="../../v-photos/img/電路圖_下.png" width="300" alt="circuit_lower.jpg"></td>
+  </tr>
+</table>
+</div>
+
+- ### Circuit Schematic Drawing
+<div align="center">
+<table>
+  <tr align="center">
+      <th>Circuit Diagram</th><th>PCB Layouts</th><th>Circuit Schematic</th>
+  </tr>
+  <tr align="center">
+     <td><img src="./img/Circuit_Diagram.png" width="300" alt="Circuit Diagram"></td><td><img src="./img/PCB_Diagram.png" width="300" alt="PCB Layouts"></td><td><img src="./img/Circuit_Wiring_Diagram.png" width="300" alt="Circuit Schematic"></td>
+  </tr>
+</table>
+</div>
+
+- ### Fritzing Introduction
+  - Fritzing is a free and open-source electronic design automation (EDA) software. It provides a graphical user interface (GUI) for designing electronic circuits and circuit boards. Fritzing also includes a breadboard simulator, which allows users to test their circuits before building them.  
+  - Fritzing is a popular choice for hobbyists and beginners, as it is easy to use and does not require any prior knowledge of electronics. It is also used by professional engineers for prototyping and designing electronic circuits.
+  - Fritzing has a number of features that make it a powerful tool for electronic design, including:  
+    - A large library of electronic components, including resistors, capacitors, transistors, and integrated circuits (ICs).  
+    - A breadboard simulator that allows users to test circuits before building them.  
+    - A PCB (printed circuit board) designer that allows users to create custom circuit boards.   
+    - A schematic editor that allows users to create circuit diagrams.
+  - In general, Fritzing is a very useful tool for a variety of electronic design applications. It is a good choice for hobbyists and beginners because it is easy to use and powerful. It is also a good choice for professional engineers because it has a wide range of features.
+  - The circuit diagrams created for this competition are all designed using Fritzing.
+  - Software link：[Fritzing](https://fritzing.org/)  
+<div align="center"><img src="./img/Fritzing.png" width="500" alt=" Fritzing">   <img src="./img/frtzing1.png" width="500" alt=" Fritzing"></div>  
+
+# <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>  
