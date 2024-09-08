@@ -131,7 +131,7 @@
 
     __Maintenance Process:__
 
-        Without regular maintenance, a stereolithography 3D printer may become clogged with resin and become unusable, requiring periodic cleaning. So we recorded the cleaning methods we learned from our seniors and started cleaning ourselves.
+    Without regular maintenance, a stereolithography 3D printer may become clogged with resin and become unusable, requiring periodic cleaning. So we recorded the cleaning methods we learned from our seniors and started cleaning ourselves.
       
     1. After the printing is complete, the finished product will be stuck to the build plate.
     2. Remove the build platform.
