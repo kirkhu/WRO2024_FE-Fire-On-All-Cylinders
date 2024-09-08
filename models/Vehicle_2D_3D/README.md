@@ -151,7 +151,7 @@
     <td>Step 3</td></tr>
     <tr align="center">
     <td><img src="./img/1.jpg" width="250" ></td>
-    <td><img src="./img/2.jpg" width="150"></td> 
+    <td><img src="./img/2.jpg" width="250"></td> 
     <td><img src="./img/3.jpg" width="250"></td>
     </tr>
     <td>Step 4</td>
