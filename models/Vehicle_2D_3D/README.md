@@ -124,9 +124,15 @@
 
 
   - #### The process of using a Stereolithography (SLA) 3D Printer
-    A stereolithography 3D printer may become unusable due to resin clogs if it is not regularly maintained, so it needs periodic cleaning. To understand how to maintain the machine, we sought advice from a senior student, who graciously gave us a hands-on demonstration.
+
+    __Printing completed:__
+
+      <div align="center"><img src="./img/成品.jpg" width=350 alt="3D" ></div>
 
     __Maintenance Process:__
+
+        Without regular maintenance, a stereolithography 3D printer may become clogged with resin and become unusable, requiring periodic cleaning. So we recorded the cleaning methods we learned from our seniors and started cleaning ourselves.
+      
     1. After the printing is complete, the finished product will be stuck to the build plate.
     2. Remove the build platform.
     3. Wipe off any resin adhering to the finished product.
@@ -144,25 +150,25 @@
     <td>Step 2</td> 
     <td>Step 3</td></tr>
     <tr align="center">
-    <td><img src="./img/step1.jpg" width="250" ></td>
-    <td><img src="./img/step2.jpg" width="150"></td> 
-    <td><img src="./img/step3.jpg" width="250"></td>
+    <td><img src="./img/1.jpg" width="250" ></td>
+    <td><img src="./img/2.jpg" width="150"></td> 
+    <td><img src="./img/3.jpg" width="250"></td>
     </tr>
     <td>Step 4</td>
     <td>Step 5</td> 
     <td>Step 6</td></tr>
     <tr align="center">
-    <td><img src="./img/step4.jpg" width="250"></td>
-    <td><img src="./img/step5.jpg" width="250"></td>
-    <td><img src="./img/step6.jpg" width="250"></td>
+    <td><img src="./img/4.jpg" width="250"></td>
+    <td><img src="./img/5.jpg" width="250"></td>
+    <td><img src="./img/6.jpg" width="250"></td>
     </tr>
     <td>Step 7</td>
     <td>Step 8</td> 
     <td>Step 9</td></tr>
     <tr>
-    <td><img src="./img/step7.jpg" width="250"></td>
-    <td><img src="./img/step8.jpg" width="250"></td>
-    <td><img src="./img/step9.jpg" width="250"></td>
+    <td><img src="./img/7.jpg" width="250"></td>
+    <td><img src="./img/8.jpg" width="250"></td>
+    <td><img src="./img/9.jpg" width="250"></td>
     </tr>
     </table>
     </div>
@@ -174,7 +180,7 @@
     <tr>
     <th>Secondary Curing</th>
     </tr><tr>
-    <td><img src="./img/二次固化.jpg" width=300 alt="light_again"></td>
+    <td><img src="./img/二次光固化.jpg" width=300 alt="light_again"></td>
     </tr>
     </table>
     </div>
