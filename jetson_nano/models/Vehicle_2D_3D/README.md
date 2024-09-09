@@ -124,18 +124,34 @@
 
 
   - #### The process of using a Stereolithography (SLA) 3D Printer
-    A stereolithography 3D printer may become unusable due to resin clogs if it is not regularly maintained, so it needs periodic cleaning. To understand how to maintain the machine, we sought advice from a senior student, who graciously gave us a hands-on demonstration.
+
+    __Printing completed:__
+
+      <div align="center"><img src="./img/成品.jpg" width=350 alt="3D" ></div>
 
     __Maintenance Process:__
-    1. After the printing is complete, the finished product will be stuck to the build plate.
-    2. Remove the build platform.
-    3. Wipe off any resin adhering to the finished product.
-    4. Clean the finished product with water.
-    5. Spray alcohol to prevent an oily surface.
-    6. Wipe off excess moisture and alcohol.
-    7. Use a utility knife to remove the finished product from the platform.
-    8. Remove any burrs from the finished product.
-    9. Finally, clean the platform and restore the machine.
+
+    Without regular maintenance, a stereolithography 3D printer may become clogged with resin and become unusable, requiring periodic cleaning. So we recorded the cleaning methods we learned from our seniors and started cleaning ourselves.
+      
+    1. After printing is completed, the object will be attached to the printing platform, so we will dismantle the platform for cleaning
+    2. Place the platform on the rack and place it in the light-curing cleaning machine.
+    3. Set the time and wait for the cleaning machine to complete cleaning. The cleaning machine will clean the platform and objects for the first time by rotating the alcohol in the cleaning tank.
+    4. Rinse the alcohol off the finished product with water.
+    5. Use a scraper to remove objects from the platform.
+    6. Remove supports from edges of objects.
+    7. Use alcohol for a second cleaning to thoroughly emove the resin from the object.
+    8. Use alcohol to clean the remaining resin on the platform.
+    9. Finally, dry the platform and install it back onto the curing machine.
+
+    1. 列印完成後，物件將貼到列印平台上，因此我們將平台拆除清洗。
+    2. 將平台放置於架子上，並放進光固化清洗機中。
+    3. 設定時間等待清洗機清洗完成，清洗機會透過旋轉清洗槽內的酒精，將平台與物件做第一次清洗。
+    4. 用水將成品上的酒精沖洗乾淨。
+    5. 使用刮刀去除平台上物件。
+    6. 去除物件邊緣的支撐架。
+    7. 使用酒精進行第二次清洗，將物件上的樹脂徹底洗淨。
+    8. 使用酒精將平台上殘留的樹脂洗淨。
+    9. 最後，將平台擦乾，並把平台安裝回光固化機器上。
 
     <div align="center">
     <table>
@@ -144,25 +160,25 @@
     <td>Step 2</td> 
     <td>Step 3</td></tr>
     <tr align="center">
-    <td><img src="./img/step1.jpg" width="250" ></td>
-    <td><img src="./img/step2.jpg" width="150"></td> 
-    <td><img src="./img/step3.jpg" width="250"></td>
+    <td><img src="./img/1.jpg" width="250" ></td>
+    <td><img src="./img/2.jpg" width="250"></td> 
+    <td><img src="./img/3.jpg" width="250"></td>
     </tr>
     <td>Step 4</td>
     <td>Step 5</td> 
     <td>Step 6</td></tr>
     <tr align="center">
-    <td><img src="./img/step4.jpg" width="250"></td>
-    <td><img src="./img/step5.jpg" width="250"></td>
-    <td><img src="./img/step6.jpg" width="250"></td>
+    <td><img src="./img/4.jpg" width="250"></td>
+    <td><img src="./img/5.jpg" width="250"></td>
+    <td><img src="./img/6.jpg" width="250"></td>
     </tr>
     <td>Step 7</td>
     <td>Step 8</td> 
     <td>Step 9</td></tr>
     <tr>
-    <td><img src="./img/step7.jpg" width="250"></td>
-    <td><img src="./img/step8.jpg" width="250"></td>
-    <td><img src="./img/step9.jpg" width="250"></td>
+    <td><img src="./img/7.jpg" width="250"></td>
+    <td><img src="./img/8.jpg" width="250"></td>
+    <td><img src="./img/9.jpg" width="250"></td>
     </tr>
     </table>
     </div>
@@ -174,7 +190,7 @@
     <tr>
     <th>Secondary Curing</th>
     </tr><tr>
-    <td><img src="./img/二次固化.jpg" width=300 alt="light_again"></td>
+    <td><img src="./img/二次光固化.jpg" width=300 alt="light_again"></td>
     </tr>
     </table>
     </div>
@@ -188,7 +204,7 @@
         <th> Stacked 3D Printe</th>
         <th> Stereolithography (SLA) 3D Printer</th>
         </tr><tr align="center">
-        <td><img src="./img/all_3Dprinter.jpg" width=300  ></td>
+        <td><img src="./img/all_3Dprinter.jpg" width=300></td>
         <td><img src="./img/working_光固化.jpg" width=300></td>
         </tr><tr align="">
         <td>The required printing time</td>
@@ -246,8 +262,8 @@
       <th>Bearing Holder</th>
 
       </tr><tr>
-      <td><img src="./img/Fornt_Assembly.png" width="400" alt="Front Assembly"></td> 
-      <td><img src="./img/Steering_Kunckle.png" width="300" alt="Steering Knuckle"></td> 
+      <td><img src="./img/Assembly.png" width="400" alt="Front Assembly"></td> 
+      <td><img src="./img/Steering Knuckle.png" width="400"></td> 
       <td><img src="./img/Bearing_Holder.png" width="300" alt="Bearing Holder"></td>
       </tr>
       </table>
