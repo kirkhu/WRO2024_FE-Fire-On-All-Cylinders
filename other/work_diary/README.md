@@ -885,8 +885,6 @@ We set up a machine with a controller of Raspberry pi 5 and started to install a
 - 在我們嘗試將我們在 Raspberry pi 4 上的SD卡插入 Raspberry pi 5 上時，發現無法進行開機動作，因此我們將原本備用 Raspberry pi 4 的SD卡格式化，要拿來灌入 Raspberry pi 5 的映像檔，燒入 Raspberry pi 5 的映像檔後才成功開機。
 - 我們開始進行環境架設工作，我們選擇從 VNC 開始安裝，這樣可以讓我們從電腦操縱 Raspberry pi 5 進行後續動作，接著我們安裝 OpenCV 和 ROS 這兩個軟體， OpenCV 是要執行鏡頭用的軟體，而 ROS 是執行雷達需要用到軟體。
 
-- 
-
 <div align="center">
 <table>
 <tr align="center">
@@ -932,5 +930,18 @@ We set up a machine with a controller of Raspberry pi 5 and started to install a
 我們開始修改我們在全國賽中發生的問題，當作未來的備用品。
 - 我們在資格賽第一場有發生迴轉失敗的問題，我們我們嘗試調整迴轉的速度與角度，讓我們可以順利迴轉。
 - 我們在兩場資格賽中停車動作都無法照常進行，因此我們在資格賽中選擇不進行停車，現在我們要嘗試使用其他方法進行停車。
+
+## 2024/09/02 ~ 2024/09/08
+
+**Member:** HU,SIAN-YI、LAI,MENG-CHENG、HUANG,KE-FU  
+**Content:**
+
+#### Raspberry pi 5
+
+我們嘗試將 Raspberry pi 4 上有安裝的ROS等功能安裝到 Raspberry pi 5 上，卻發現有些功能並沒有辦法安裝，導致我們無法執行我們的主程式，因此我們決定暫緩 Raspberry pi 5 的研究，先將 Raspberry pi 4 調整到最佳狀態。
+
+#### Jetson nano
+
+
 
 # <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>
