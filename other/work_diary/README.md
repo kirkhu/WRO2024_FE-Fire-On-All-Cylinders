@@ -942,6 +942,27 @@ We set up a machine with a controller of Raspberry pi 5 and started to install a
 
 #### Jetson nano
 
+我們機器出了點問題，執行程式起來都怪怪的，而我們在查找電路板的電路板的時候，發現有焊點空焊，在重焊之後就修復完成。
 
+## 2024/09/09 ~ 2024/09/15
+
+#### Raspberry pi 4
+
+我們 Raspberry pi 4 不確定出了什麼問題導致 Raspberry pi 4 燒毀了，我們從 Lipo 電池供電線開始檢查，使用三用電表測量有沒有導通，接著我們再檢查降壓板，使用三用電表測量降壓板輸出端的電壓和電流，電壓是否為5伏特和電流是否為3安培，在測試過降壓板確定沒問題後，我們轉而測試電路板的線路，看電路板有沒有地方正負接反，因為我們在幾天前有更換電路板與樹梅派的連接線，所以我們不確定是不是連接線有問題而短路，然而經過最後的檢查也是沒有發現問題，最後我們打算重新焊接一塊新的電路板，因為我們認為電路板出問題的機率較大，才做出此項決定。
+
+<div align="center">
+<table>
+<tr align="center">
+<th>檢測降壓板</th>
+<th>檢測電路板</th>
+<th>焊接電路板</th>
+</tr>
+
+<tr align="center">
+<td><img src="./img/9/查降壓板.jpg" width="300" alt="wall"></td>
+<td><img src="./img/9/查電路.jpg" width="300" alt="left"></td>
+<td><img src="./img/9/焊接.jpg" width="300" alt="left"></td>
+</table>
+</div>
 
 # <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>
