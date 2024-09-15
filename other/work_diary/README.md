@@ -904,7 +904,7 @@ We set up a machine with a controller of Raspberry pi 5 and started to install a
 #### Jetson nano
 
 我們額外組裝了一台機器給 Jetson nano 使用，開始研究 Jetson nano 。
-- 由於我們在之前就有研究過 Jetson nano ，所以我們現在在測試使用鏡頭偵測邊牆與地上的線，方便我們做轉彎判斷。
+- 由於我們在之前就有研究過 Jetson nano ，所以我們現在在測試使用鏡頭進行二值化偵測邊牆與地上的線，方便我們做轉彎判斷。
 
 ##### 鏡頭視角
 <div align="center">
@@ -953,7 +953,7 @@ We set up a machine with a controller of Raspberry pi 5 and started to install a
 
 #### Jetson nano
 
-我們機器出了點問題，執行程式起來都怪怪的，而我們在查找電路板的電路板的時候，發現有焊點空焊，在重焊之後就修復完成。
+我們有透過鏡頭與陀螺儀進行基礎的循跡，透過鏡頭進行二值化判斷地面上線的面積，進而進行判斷，並搭配陀螺儀讀去角度方向，使我們達到進行資格賽的目的。
 
 ## 2024/09/09 ~ 2024/09/15
 
@@ -975,5 +975,9 @@ We set up a machine with a controller of Raspberry pi 5 and started to install a
 <td><img src="./img/9/焊接.jpg" width="300" alt="left"></td>
 </table>
 </div>
+
+#### Jetson nano
+
+我們機器出了點問題，執行程式起來都怪怪的，而我們在查找電路板的電路板的時候，發現有焊點空焊，在重焊之後就修復完成。
 
 # <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>
