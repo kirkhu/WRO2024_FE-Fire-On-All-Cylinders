@@ -938,7 +938,18 @@ We set up a machine with a controller of Raspberry pi 5 and started to install a
 
 #### Raspberry pi 5
 
-我們嘗試將 Raspberry pi 4 上有安裝的ROS等功能安裝到 Raspberry pi 5 上，卻發現有些功能並沒有辦法安裝，導致我們無法執行我們的主程式，因此我們決定暫緩 Raspberry pi 5 的研究，先將 Raspberry pi 4 調整到最佳狀態。
+我們繼續嘗試將 Raspberry pi 4 上有安裝的功能安裝到 Raspberry pi 5 上，卻發現有些功能並沒有辦法安裝，像是執行雷達需要的ROS、讀取腳位要用的GPIO，都無法安裝使用，只有 VNC 系統和鏡頭的 OpenCV 安裝成功，我們在網路上查詢有發現是版本不相容、不適用等問題，導致無法安裝，以致我們無法執行我們的主程式，因此我們決定暫緩 Raspberry pi 5 的研究，先將 Raspberry pi 4 調整到最佳狀態。
+
+<div align="center">
+<table>
+<tr align="center">
+<th>查詢資料</th>
+</tr>
+
+<tr align="center">
+<td><img src="./img/9/查找資料.jpg" width="300" alt="wall"></td>
+</table>
+</div>
 
 #### Jetson nano
 
