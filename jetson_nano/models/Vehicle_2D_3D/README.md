@@ -26,10 +26,10 @@
     - We use Onshape to design 3D models of self-driving cars. Onshape is a free and easy-to-use web-based CAD software.
     - After creating a model in Onshape, you can output a 2D dimension drawing, which can then be sent to a laser-cutting machine for cutting or converted and sent to a 3D printer for output.
     - All 3D/2D vehicle models created for this competition were designed in OnShape.
-    - Software Website：[On Shape](https://www.onshape.com/en/) 
+    - Software Website：[Onshape](https://www.onshape.com/en/) 
 
-        |<img src="./img/onshape.png" width="500" alt="Onshape">| <img src="./img/Vehicle_cad_onshape.png" width="450" alt="Vehicle_cad_obshape">|
-        |:---:|:---:| 
+        <!-- |<img src="./img/onshape.png" width="500" alt="Onshape">| <img src="./img/Vehicle_cad_onshape.png" width="450" alt="Vehicle_cad_obshape">|
+        |:---:|:---:|  -->
 
 - ### The Production of Vehicle Chassis Panels Introduction - Using a laser-cutting machine
   - A laser-cutting machine is a device that utilizes a laser beam to cut materials. The laser beam has high energy density and can cut a variety of materials, including wood, metal, plastic, paper, and more, quickly and precisely.
@@ -44,12 +44,10 @@
         <div align=center>
         <table>
         <tr>
-        <th>Lens Holder</th>
         <th>Vehicle Underfloor</th>
         <th>Vehicle Mid-Deck</th>
         <th>Vehicle Top Deck</th>
         </tr><tr>
-        <td><img src="./Vehicle_Chassis_Sizse/lens_holder_size.png" width="300" alt="lens_holder"></td> 
         <td><img src="./Vehicle_Chassis_Sizse/2D_bottom_size.png" width="300" alt=" 2D_bottom"></td> 
         <td><img src="./Vehicle_Chassis_Sizse/2D_mid_size.png" width="300" alt=" 2D_mid"></td> 
         <td><img src="./Vehicle_Chassis_Sizse/2D_top_size.png" width="300" alt=" 2D_top"></td>
