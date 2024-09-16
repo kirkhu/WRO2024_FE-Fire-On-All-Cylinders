@@ -44,7 +44,7 @@ At the beginning, since we were unsure of how to start building and making the v
   **競賽活動各階段工作完成時間規劃表(甘特圖)**
 
 <div align="center" >
-  <img src="../img/Gantt_Chart.png" width = "600" height = "" alt="甘特圖" align=center />
+  <img src="../img/gantt.png" width = "600" height = "" alt="甘特圖" align=center />
 </div>
 
 ### Vehicle Computing Controller(車輛運算控制器)
@@ -978,6 +978,6 @@ We set up a machine with a controller of Raspberry pi 5 and started to install a
 
 #### Jetson nano
 
-我們機器出了點問題，執行程式起來都怪怪的，而我們在查找電路板的電路板的時候，發現有焊點空焊，在重焊之後就修復完成。
+我們機器出了點問題，執行程式起來都怪怪的，而我們在查找電路板的電路板的時候，發現 pico 板有些腳位異常
 
 # <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>
