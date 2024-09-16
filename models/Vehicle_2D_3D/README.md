@@ -142,7 +142,7 @@
     7. Use alcohol for a second cleaning to thoroughly emove the resin from the object.
     8. Use alcohol to clean the remaining resin on the platform.
     9. Finally, dry the platform and install it back onto the curing machine.
-
+*
     1. 列印完成後，物件將貼到列印平台上，因此我們將平台拆除清洗。
     2. 將平台放置於架子上，並放進光固化清洗機中。
     3. 設定時間等待清洗機清洗完成，清洗機會透過旋轉清洗槽內的酒精，將平台與物件做第一次清洗。
