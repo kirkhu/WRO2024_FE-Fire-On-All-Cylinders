@@ -999,7 +999,20 @@ We are not sure what went wrong with our Raspberry Pi 4 that caused it to burn o
 
 #### Jetson nano
 
+We encountered some issues with our machine; the program was acting strangely. While troubleshooting the circuit board, we discovered that some of the pins on the Pico board were abnormal, which prevented us from running our program properly. As a result, we plan to redesign the circuit diagram. We will move some of the calculations from the Pico board to the Jetson Nano, as we found that handling too many calculations on the Pico board caused problems. Therefore, we will extend a connection from the BNO055 on the circuit board to the Jetson Nano, allowing the Jetson Nano to handle the calculations.
 
-我們機器出了點問題，執行程式起來都怪怪的，而我們在查找電路板的電路板的時候，發現 pico 板有些腳位異常，導致我們無法正常執行我們的程式，而且我們打算重新規劃電路圖，我們要將
+我們機器出了點問題，執行程式起來都怪怪的，而我們在查找電路板的電路板的時候，發現 pico 板有些腳位異常，導致我們無法正常執行我們的程式，而且我們打算重新規劃電路圖，我們要將部分數值的計算從pico板移到 jetson nano 上計算，因為我們發現pico板運算太多數值會有問題，所以我們將電路板上的 BNO055 而外延伸出一條線路通往 jetson nano ，把計算述職的部分給 jetson nano 處理。
+
+<div align="center">
+<table>
+<tr align="center">
+<th>拆除電路板</th>
+<th>規劃線路</th>
+</tr>
+<tr align="center">
+<td><img src="./img/9/拆除電路板.jpg" width="300" alt="wall"></td>
+<td><img src="./img/9/規劃線路.jpg" width="300" alt="left"></td>
+</table>
+</div>
 
 # <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>
