@@ -957,11 +957,30 @@ We set up a machine with a controller of Raspberry pi 5 and started to install a
 
 #### Jetson nano
 
-我們有透過鏡頭與陀螺儀進行基礎的循跡，透過鏡頭進行二值化判斷地面上線的面積，進而進行判斷，並搭配陀螺儀讀去角度方向，使我們達到進行資格賽的目的。
+We performed basic line tracking using a camera and a gyroscope. The camera was used for binarization to determine the area of the line on the ground for judgment, while the gyroscope was used to read the angle and direction. Since we used binarization, we needed to use black and white checkered paper to calibrate the camera. After taking about 20 photos of the paper from different angles through the program, the camera was ready for use, allowing us to perform the preliminary qualifying run using the camera and gyroscope.
+
+我們有透過鏡頭與陀螺儀進行基礎的循跡，透過鏡頭進行二值化判斷地面上線的面積，進而進行判斷，並搭配陀螺儀讀去角度方向，而我們因為使用二值化所以需要使用黑色與白色格子的紙張校正鏡頭，大約透過程式使用鏡頭對紙張進行不同角度的拍攝20張左右的照片後，鏡頭就可以進行使用，透過鏡頭和陀螺儀進行初步資格賽的運行。
+
+<div align="center">
+<table>
+<tr align="center">
+<th>檢測降壓板</th>
+<th>檢測電路板</th>
+<th>焊接電路板</th>
+</tr>
+
+<tr align="center">
+<td><img src="./img/9/查降壓板.jpg" width="300" alt="wall"></td>
+<td><img src="./img/9/查電路.jpg" width="300" alt="left"></td>
+<td><img src="./img/9/焊接.jpg" width="300" alt="left"></td>
+</table>
+</div>
 
 ## 2024/09/09 ~ 2024/09/15
 
 #### Raspberry pi 4
+
+We are not sure what went wrong with our Raspberry Pi 4 that caused it to burn out. We started by checking the power supply line from the Lipo battery, using a multimeter to measure continuity. Then, we checked the buck converter and used the multimeter to measure the output voltage and current, ensuring the voltage was 5 volts and the current was 3 amps. After testing the buck converter and confirming it had no issues, we turned to check the circuit on the circuit board to see if there was any reversed polarity. A few days ago, we had replaced the connection line between the circuit board and Raspberry Pi, so we weren't sure if the connection line was faulty and caused a short circuit. However, after the final inspection, we found no issues. In the end, we decided to solder a new circuit board, as we believed the likelihood of the problem was with the circuit board, leading us to make this decision.
 
 我們 Raspberry pi 4 不確定出了什麼問題導致 Raspberry pi 4 燒毀了，我們從 Lipo 電池供電線開始檢查，使用三用電表測量有沒有導通，接著我們再檢查降壓板，使用三用電表測量降壓板輸出端的電壓和電流，電壓是否為5伏特和電流是否為3安培，在測試過降壓板確定沒問題後，我們轉而測試電路板的線路，看電路板有沒有地方正負接反，因為我們在幾天前有更換電路板與樹梅派的連接線，所以我們不確定是不是連接線有問題而短路，然而經過最後的檢查也是沒有發現問題，最後我們打算重新焊接一塊新的電路板，因為我們認為電路板出問題的機率較大，才做出此項決定。
 
@@ -982,6 +1001,7 @@ We set up a machine with a controller of Raspberry pi 5 and started to install a
 
 #### Jetson nano
 
-我們機器出了點問題，執行程式起來都怪怪的，而我們在查找電路板的電路板的時候，發現 pico 板有些腳位異常
+
+我們機器出了點問題，執行程式起來都怪怪的，而我們在查找電路板的電路板的時候，發現 pico 板有些腳位異常，導致我們無法正常執行我們的程式，而且我們打算重新規劃電路圖，我們要將
 
 # <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>
