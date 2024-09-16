@@ -964,15 +964,13 @@ We performed basic line tracking using a camera and a gyroscope. The camera was 
 <div align="center">
 <table>
 <tr align="center">
-<th>檢測降壓板</th>
-<th>檢測電路板</th>
-<th>焊接電路板</th>
+<th>調整相機角度</th>
+<th>進行拍照</th>
 </tr>
 
 <tr align="center">
-<td><img src="./img/9/查降壓板.jpg" width="300" alt="wall"></td>
-<td><img src="./img/9/查電路.jpg" width="300" alt="left"></td>
-<td><img src="./img/9/焊接.jpg" width="300" alt="left"></td>
+<td><img src="./img/9/整理相機.jpg" width="300" alt="wall"></td>
+<td><img src="./img/9/進行拍照.jpg" width="300" alt="left"></td>
 </table>
 </div>
 
