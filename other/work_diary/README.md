@@ -98,6 +98,7 @@ At the beginning, since we were unsure of how to start building and making the v
 <td >Speed(轉速)</td>
 <td >1360rpm</td>
 <td >620rpm</td>
+<td >467rpm</td>
 <td >294rpm</td>
 <td >220rpm</td>
 </tr>
@@ -105,9 +106,10 @@ At the beginning, since we were unsure of how to start building and making the v
 <td>Torque(力距)</td>
 <td>4.27kg.cm</td>
 <td>9.15kg.cm</td>
+<td> </td>
 <td>5.2kg.cm</td><td>1.15kgcm</td>
 </tr><tr align="center">
-<td>Power(功率)</td><td>5.4W</td><td>5.4W</td><td>4.2W</td><td>0.33W</td>
+<td>Power(功率)</td><td>5.4W</td><td>5.4W</td><td> </td><td>4.2W</td><td>0.33W</td>
 </tr>
 </table>
 </div>
