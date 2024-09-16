@@ -82,12 +82,14 @@ At the beginning, since we were unsure of how to start building and making the v
 <th rowspan="2">Model(型號)</th>
 <th>JGA25 370</th>
 <th>JGA25 370</th>
+<th>JGA25 370B</th>
 <th>JGA25 371</th>
 <th>JGA16-050</th>
 </tr>
 <tr  align="center">
 
 <td><img src="./img/4/JGA25-370_1360RPM.JPG" width = "150" alt="JGA25-370_1360RPM" /></td>
+<td><img src="./img/4/JGA25-370_620RPM.JPG" width = "150" alt="JGA25-370_620RPM" /></td>
 <td><img src="./img/4/JGA25-370_620RPM.JPG" width = "150" alt="JGA25-370_620RPM" /></td>
 <td><img src="./img/4/JGA25-371_1_34.JPG" width = "100" alt="JGA25-371M" /></td>
 <td ><img src="./img/5/JGA16-050.png" width = "150" alt="JGA16-050" /></td>
