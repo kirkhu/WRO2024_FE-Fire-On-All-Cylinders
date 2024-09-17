@@ -16,7 +16,7 @@
     - __Vehicle Design__
       - [2-1-1 BOM Parts List](schemes/Parts_List)
       - [2-1-2 Circuit Design](models/Circuit_Design/README.md)
-      - [2-1-3 Hardware Fool-Proof Design](schemes/fool-proof-design/README.md) 
+      - [2-1-3 Hardware Fool-Proof Design](schemes/schemes/Fool-Proof-Design/README.md) 
       - [2-1-4 Assembly Instructions & Wiring Diagrams](schemes/Assembly_Instructions/README.md)    
       
     - __Power Management__
