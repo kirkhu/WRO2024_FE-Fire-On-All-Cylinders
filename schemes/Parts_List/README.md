@@ -51,4 +51,4 @@
 <li>HC-SR04 Ultrasonic sensor <br></li>
 <li>MH sensor Series <br></li>
 
-# <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div>  
+# <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>  
