@@ -85,13 +85,13 @@
       __在競賽中的用途:__  
       - 負責接收顏色感測器、LiDAR及影像並運算辨識並控制車輛方向移動。
 
-  - #### JGA25-370 DC Reduction Motor (JGA25-370 直流減速馬達) 
+  - #### JGA25-370B DC Reduction Motor (JGA25-370B 直流減速馬達) 
     <table border=0 width=100% >
       <tr>
         <td > 
 
     __Specifications:__  
-    - No-load Speed: 640 rpm  
+    - No-load Speed: 463 rpm  
     - Reduction Ratio: 1:34  
     - Operating Voltage: 6 - 12V  
 
@@ -357,6 +357,40 @@
 
     __競賽用途：__
     - 用於偵測前方及左右兩側牆壁以及使車輛維持在車道中央 
+
+
+    - ### HC-SR04 (超音坡感測器)
+    <table border=0 width=100% >
+      <tr>
+       <td> 
+
+    __Specifications:__  
+    - Operating Voltage: DC 5V
+    - Sensing Angle: No greater than 15 degrees
+    - Detection Distance: 2cm – 450cm
+    - High Precision: Up to 3mm
+
+    __Uses in Competition：__  
+    - Used to detect obstacles in front and on the left and right sides, as well as to keep the vehicle centered in its lane. 
+      </td>
+      </td>
+        <td>
+    <img src="./img/Lidar-D100.png" width = "400" height = "" alt="D100 LiDAR(D100 光達)" align=center />      
+        </td>
+      </tr>
+    </table>
+
+
+    __規格：__  
+    - 使用電壓：DC5V.
+    - 感應角度：不大於15 度
+    - 探測距離：2cm – 450cm.
+    - 高精度：可達3mm.  
+
+    __競賽用途：__
+    - 用於偵測前方及左右兩側牆壁以及使車輛維持在車道中央 
+
+        
 
 
 # <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div> 
