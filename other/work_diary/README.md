@@ -976,6 +976,9 @@ We performed basic line tracking using a camera and a gyroscope. The camera was 
 
 ## 2024/09/09 ~ 2024/09/15
 
+**Member:** HU,SIAN-YI、LAI,MENG-CHENG、HUANG,KE-FU  
+**Content:**
+
 #### Raspberry pi 4
 
 We are not sure what went wrong with our Raspberry Pi 4 that caused it to burn out. We started by checking the power supply line from the Lipo battery, using a multimeter to measure breakover. Then, we checked the buck converter and used the multimeter to measure the output voltage and current, ensuring the voltage was 5 volts and the current was 3 amps. After testing the buck converter and confirming it had no issues, we turned to check the circuit on the circuit board to see if there was any reversed polarity. A few days ago, we had replaced the connection line between the circuit board and Raspberry Pi, so we weren't sure if the connection line was faulty and caused a short circuit. However, after the final inspection, we found no issues. In the end, we decided to solder a new circuit board, as we believed the likelihood of the problem was with the circuit board, leading us to make this decision.
@@ -1014,5 +1017,30 @@ We encountered some issues with our machine; the program was acting strangely. W
 <td><img src="./img/9/規劃線路.jpg" width="300" alt="left"></td>
 </table>
 </div>
+
+## 2024/09/16 ~ 2024/09/22
+
+**Member:** HU,SIAN-YI、LAI,MENG-CHENG、HUANG,KE-FU  
+**Content:**
+
+#### Raspberry pi 4
+
+新的電路板我們在這幾天將它焊接完成了，我們順便將電路板的線路重新規劃讓線路不會太雜亂，讓電路板看起來更整潔。
+
+<div align="center">
+<table>
+<tr align="center">
+<th>檢測降壓板</th>
+<th>檢測電路板</th>
+<th>焊接電路板</th>
+</tr>
+
+<tr align="center">
+<td><img src="./img/9/查降壓板.jpg" width="300" alt="wall"></td>
+<td><img src="./img/9/查電路.jpg" width="300" alt="left"></td>
+<td><img src="./img/9/焊接.jpg" width="300" alt="left"></td>
+</table>
+</div>
+
 
 # <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>
