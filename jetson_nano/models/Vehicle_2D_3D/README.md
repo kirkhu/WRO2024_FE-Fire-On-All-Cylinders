@@ -71,42 +71,7 @@
         </table>
         </div>
 
-- ### The Production of Vehicle Support Frames Introduction - Using a 3D Printer
-    - 3D printing is a manufacturing technology that builds objects layer by layer using a digital model.
-    - We chose to use a 3D printer to manufacture the vehicle body because, compared to commercially available LEGO, 3D printing offers the advantage of not being bound by original specifications, providing increased freedom and flexibility in design. In contrast to products cut with a laser cutting machine, 3D printed components eliminate assembly issues and offer advantages in terms of lightweight construction.
-    - Here is an introduction to the process of producing vehicle support frames using a 3D printer.
-
-  - #### Stacked 3D Printer
-   
-    <div align=center>
-    <table>
-    <tr>
-    <th>The Operational Status of the 3D Printer</th>
-    <tr></tr>
-    <td><img src="./img/3D-printer.jpg" width="300" alt="3D-printer"> <img src="./img/3D_working.jpg" width="300" alt="3D_working"> </td>
-    </tr>
-    </table>
-    
-    <table>
-    <tr align="center"><th colspan="4">The 3D Model and Physical Prototype of the Vehicle Chassis Designed for this Competition<th></tr>
-    <tr align="center">
-    <td>3D Photo File</td>
-    <td>Top View</td>
-    <td>Side View</td>
-    <td>Vehicle Chassis Damage</td>
-    <tr align="center">
-    <td><img src="./img/3Dconcept.png" width=250 alt="file"></td>
-    <td><img src="./img/3D-top_view.png" width="250" alt=" real"></td>
-    <td><img src="./img/3D-side_view.png" width="250" alt="real"></td>
-    <td><img src="./img/3dprinter_damage.jpg" width="250" alt="real"></td>
-    </tr>
-    </table>
-    </div>
-        
-     - The vehicle chassis produced using the 3D printer mentioned above was found to be prone to damage during collisions due to motor torque. As a result, we switched to using a Stereolithography (SLA) 3D printer to manufacture the required support frames for the vehicle, ensuring that the same issue does not occur during the competition."
-
-
-  - #### Stereolithography (SLA) 3D Printer 
+   #### Stereolithography (SLA) 3D Printer 
 
     - The working principle of a stereolithography (SLA) 3D printer is to project a UV light source onto a vat of liquid resin. The light cures the resin layer by layer until the entire object solidifies, known for its high precision and surface smoothness. They are typically used to manufacture highly precise and intricately structured objects.
 
