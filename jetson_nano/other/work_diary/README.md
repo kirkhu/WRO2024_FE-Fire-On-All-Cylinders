@@ -1053,6 +1053,10 @@ We encountered some issues with our machine; the program was acting strangely. W
 **Member:** HU,SIAN-YI、LAI,MENG-CHENG、HUANG,KE-FU  
 **Content:**
 
+#### Raspberry pi 4
+
+
+
 #### Jetson nano
 
 我們每天會將 jetson nano 的 SD 卡進行了備份，因為我們發生了 SD 卡損毀導致 jetson nano 無法開機的問題，但是不確定是什麼原因導致 SD 卡損毀，好在之前我們曾經有將 SD 卡進行過備份，所以才不需要全部重來，只要將缺失的資料補齊即可。

@@ -1,13 +1,13 @@
 <div align="center"><img src="../../other/img/logo.png" width="300" alt=" logo"></div>  
 
 # <div align="center">BOM Part List </div>
-<li><a href="https://www.icshop.com.tw/product-page.php?27903" target="_blank"> Raspberry Pi 4B(8G)</a></li> 
+<li>Jetson nano</a></li> 
 <li><a href="https://atceiling.blogspot.com/2019/08/arduino54l293d.html" target="_blank">L293d motor controller</a></li>
 <li><a href="https://abra-electronics.com/electromechanical/motors/gear-motors/metal-gearmotors/jga25-370-series/jga25-370-24v-620rpm-jga25-370-geared-dc-motor-for-diy-projects-and-car-kits-24vdc.html">JGA25-370 620RPM DC reduction motor</a></li>  
-<li>Black motor mounting bracket<br></li>  
-<li>24-tooth Plastic gear<br></li>
+<li>20-tooth Plastic gear<br></li>
+<li>12-tooth Plastic gear<br></li>
 <li><a href="https://www.amazon.com/-/zh_TW/dp/B0BFQLNDPM">MG90s servo motor</a></li>    
-<li><a href="https://www.amazon.ae/XLX-B3f-4055-Momentary-Tactile-Button/dp/B07NWDHH41">Button B3F-4055</a></li>  
+<li><a href="https://www.amazon.ae/XLX-B3f-4055-Momentary-Tactile-Button/dp/B07NWDHH41">microswitch 6*6*10</a></li>  
 <li><a href="https://www.amazon.in/Invento-Battery-Voltage-Indicator-Checker/dp/B072V44Q5Z">Lipo battery low voltage alarm </a></li>  
 <li><a href="https://shopee.tw/%E6%90%96%E9%A0%AD%E9%96%8B%E9%97%9C-3A-250VAC-6A-125VAC-MTS-1%E9%80%A3%E5%8B%95%E9%96%8B%E9%97%9C-B5031-%E5%A4%A7%E6%B4%8B%E5%9C%8B%E9%9A%9B%E9%9B%BB%E5%AD%90-i.26482219.490434892" target="_blank">switch AC 725W</a></li>     
 <li><a href="https://shopee.tw/TW1678-IMX219-D160-800%E8%90%AC%E5%83%8F%E7%B4%A0%E6%94%9D%E5%83%8F%E9%A0%AD-%E8%A6%96%E8%A7%92160%E5%BA%A6-Jetson-Nano%E3%80%81Pi-Camera-i.6760059.5415151583?sp_atk=4817fa1a-e0f8-44e6-96cf-178fd8fe5e27&xptdk=4817fa1a-e0f8-44e6-96cf-178fd8fe5e27" target="_blank">SONY IMX219</a></li>

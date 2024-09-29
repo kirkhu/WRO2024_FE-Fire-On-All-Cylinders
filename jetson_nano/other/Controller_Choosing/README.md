@@ -54,6 +54,7 @@ Here is a specification comparison between the two:
 - Therefore, after the national competition in Taiwan, we attempted to switch to the Jetson Nano as the controller for our self-driving car, as it offered significantly faster image recognition processing.  
 - However, after actual experiments, although the image recognition speed is very fast, the speed of reading the color sensor is very slow, which leads to the inability to make timely judgments and make correct operations, which delays the turning of the vehicle and makes the vehicle unable to drive correctly. This may be a problem of our insufficient technical capabilities.
 - To ensure it wouldn't affect upcoming competitions, we reverted to using the Raspberry Pi as the controller. Although its image recognition speed is slower, it allows the vehicle to operate reliably. Additionally, we are implementing other solutions to address the Raspberry Pi's limitations in image recognition performance.  
+- 但在全國賽我們發生了樹梅派鏡頭辨識失誤的情形，導致我們輸掉那一場比賽，因此我們重新研究 jetson nano ，打算使用 jetson nano 參加國際賽
 
 - __In conclusion, we have chosen to use the Raspberry Pi as the controller for our self-driving car in this competition.__
 # <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div> 
