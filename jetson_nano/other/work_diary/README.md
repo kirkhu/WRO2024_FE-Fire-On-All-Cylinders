@@ -369,7 +369,7 @@ After the vehicle becomes operational, additional sensors are added to allow the
   <th >Event Photo(活動照片)</th>
 </tr>
 <tr>
-  <td align="center"><img src="./img/4/site.jpg" width=300 alt="site" /</td>
+  <td align="center"><img src="./img/4/site.jpg" width=300 alt="site" /></td>
   <td align="center"><img src="./img/4/work_photo_2_1_0417.jpg" width=300 alt="work_photo_2_1_0417" /></td>
 </tr>
 </table>
@@ -1042,5 +1042,19 @@ We encountered some issues with our machine; the program was acting strangely. W
 </table>
 </div>
 
+資格賽已經調整完成，跑得都很順利，任務賽則是迴轉判斷方塊是綠色的也可以成功完成，只差停車場還沒有成功停入，而迴轉判斷方塊為紅色的部分是還在調整迴轉，我們迴轉的幅度還在做調整，因為我們迴轉後很容易撞擊到中間的牆壁。
+
+#### Jetson nano
+
+因為機器人在進行鏡頭辨識時，會因為線的顏色導致誤測，所以我們先使用 onshape 設計模型，並使用光固化印製出一個可以鑲嵌在機器前方 F 型的蓋子，把機器前方的線遮擋起來，避免造成鏡頭辨識時誤測。
+
+## 2024/09/23 ~ 2024/09/29
+
+**Member:** HU,SIAN-YI、LAI,MENG-CHENG、HUANG,KE-FU  
+**Content:**
+
+#### Jetson nano
+
+我們每天會將 jetson nano 的 SD 卡進行了備份，因為我們發生了 SD 卡損毀導致 jetson nano 無法開機的問題，但是不確定是什麼原因導致 SD 卡損毀，好在之前我們曾經有將 SD 卡進行過備份，所以才不需要全部重來，只要將缺失的資料補齊即可。
 
 # <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>
