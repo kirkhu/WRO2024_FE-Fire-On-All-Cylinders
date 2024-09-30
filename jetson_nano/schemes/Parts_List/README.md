@@ -43,6 +43,7 @@
 <li><a href="https://phrozen3d.com.tw/products/rock-black-resin?srsltid=AfmBOoo94jucOOHW7Ka7-inJUQ2FOdDzytZoz4bDYIRJxEL3ndSDEhIu">Light curing resin Rock-Black Stiff<br></li>
 <li><a href="https://phrozen3d.com.tw/products/speed-resin">Light curing resin Speed<br></li>
 <li>wood broad Thickness of 3mm<br></li>
+<li>wood broad Thickness of 3mm<br></li>
 
 
-# <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div>  
+# <div align="center">![HOME](../../../other/img/Home.png)[Return Home](../../)</div>  
