@@ -41,7 +41,7 @@ When the vehicle is in motion, the Raspberry Pi sends speed information to __the
 - When selecting a DC motor among commonly available options in the market, considering factors such as weight, rotational speed, and torque, we have identified the following four suitable DC motors.
 - Among them, the three types of motors, JGA25, have different model numbers but share a similar physical appearance, and their differences are as follows.
 <div align="center"><table>
-<tr ><th colspan="5">DC Motor Comparison</th></tr>
+<tr ><th colspan="6">DC Motor Comparison</th></tr>
 <tr align="center">
 <th rowspan="2" >Model</th>
 <th >JGA25 370</th>
