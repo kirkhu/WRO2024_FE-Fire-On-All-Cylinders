@@ -48,13 +48,14 @@ When the vehicle is in motion, the Raspberry Pi sends speed information to __the
 <th >JGA25 370</th>
 <th >JGA25 371</th>
 <th >JGA16-050</th>
+<th >MG513P20_12V</th>
 </tr>
 <tr align="center">
 <td ><img src="./img/JGA25-370_1360RPM.JPG" width = "150" alt="JGA25-370_1360RPM" /></td>
 <td ><img src="./img/JGA25-370_620RPM.JPG" width = "150" alt="JGA25-370_620RPM" /></td>
 <td ><img src="./img/JGA25-371_1_34.JPG" width = "100" alt="JGA25-371M" /></td>
 <td ><img src="./img/JGA16-050.png" width = "150" alt="JGA16-050" /></td>
-<td ><img src="./img/WHEELTEC.png" width = "150" alt="JGA16-050" /></td>
+<td ><img src="./img/MG513.png" width = "150" alt="MG513" /></td>
 </tr>
 <tr align="center">
 <td >Speed</td>
@@ -62,9 +63,10 @@ When the vehicle is in motion, the Raspberry Pi sends speed information to __the
 <td >620rpm</td>
 <td >294rpm</td>
 <td >220rpm</td>
+<td >549rpm</td>
 </tr>
-<tr align="center"><td>Torque</td><td>4.27kg.cm</td><td>9.15kg.cm</td><td>5.2kg.cm</td><td>1.15kgcm</td></tr><tr align="center">
-<td>Power</td><td>5.4W</td><td>5.4W</td><td>4.2W</td><td>0.33W</td>
+<tr align="center"><td>Torque</td><td>4.27kg.cm</td><td>9.15kg.cm</td><td>5.2kg.cm</td><td>1.15kg.cm</td><td>3.8kg.cm</td></tr><tr align="center">
+<td>Power</td><td>5.4W</td><td>5.4W</td><td>4.2W</td><td>0.33W</td><td>4W</td>
 </tr>
 </table>
 </div>  
