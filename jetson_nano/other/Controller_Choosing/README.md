@@ -76,6 +76,7 @@ Here is a specification comparison between the two:
 - Raspberry Pi 4 雖然也支持 OpenCV，但缺乏專門的硬體加速，對複雜深度學習任務的支持不如 Jetson Nano。
 
 __總結__
-- 經過我們比較結果也發現 Jetson nano 在鏡頭判斷的效能比 Raspberry Pi 4 好上許多，因此我們決定在世界賽使用 jetson nano 當作主控制器。
+
+ 經過我們比較結果也發現 Jetson nano 在鏡頭判斷的效能比 Raspberry Pi 4 好上許多，因此我們決定在世界賽使用 jetson nano 當作主控制器。
 
 # <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div> 
