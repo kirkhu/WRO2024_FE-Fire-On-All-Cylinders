@@ -58,13 +58,13 @@ Here is a specification comparison between the two:
 
 #### 1. 硬體架構
 - Jetson Nano：配備了四核 ARM Cortex-A57 CPU 和 128 核的 NVIDIA Maxwell GPU，內存為 4GB LPDDR4。
-- Raspberry Pi 4 (Pi 4)：配備了四核 ARM Cortex-A72 CPU，內存最高可選 8GB，但沒有內建專門的 GPU。
+- Raspberry Pi 4 ：配備了四核 ARM Cortex-A72 CPU，內存最高可選 8GB，但沒有內建專門的 GPU。
 #### 2. 深度學習加速
-- Jetson Nano：擁有 NVIDIA CUDA 和 cuDNN 支持，可以加速深度學習相關的工作負載（如使用 OpenCV 的 DNN 模組）。對於圖像分類、目標檢測等任務，Jetson Nano 的 GPU 能夠顯著提升處理速度。
+- Jetson Nano：擁有 NVIDIA CUDA 和 cuDNN 支持，可以加速深度學習相關的工作負載。對於圖像分類、目標檢測等任務，Jetson Nano 的 GPU 能夠顯著提升處理速度。
 - Raspberry Pi 4：沒有專用的 GPU 和深度學習加速功能，圖像識別任務完全依賴 CPU 處理，性能遠不及 Jetson Nano 的 GPU 加速。
 #### 3. OpenCV 的性能
-- Jetson Nano：由於擁有 CUDA 支持，在處理基於深度學習的圖像識別任務（如神經網絡推理）時表現更為優異。OpenCV 可以利用 NVIDIA 的 GPU 來加速圖像處理操作，例如卷積、矩陣運算等。
-- Raspberry Pi 4：處理能力依賴 CPU，因此在面對同樣的任務時速度較慢。對於簡單的圖像處理任務（如濾波、邊緣檢測），Pi 4 的 CPU 也能勝任，但在處理更複雜的神經網絡推理時效率會明顯落後。
+- Jetson Nano：由於擁有 CUDA 支持，在處理基於深度學習的圖像識別任務時表現更為優異。OpenCV 可以利用 NVIDIA 的 GPU 來加速圖像處理操作，例如卷積、矩陣運算等。
+- Raspberry Pi 4：處理能力依賴 CPU，因此在面對同樣的任務時速度較慢。對於簡單的圖像處理任務，Pi 4 的 CPU 也能勝任，但在處理更複雜的神經網絡推理時效率會明顯落後。
 #### 4. 功耗
 - Jetson Nano：功耗較大，典型使用場景下約 5W - 10W，尤其在使用 GPU 進行加速時，功耗會更高。
 - Raspberry Pi 4：功耗較低，通常約 3.5W - 7W，適合對功耗要求較為敏感的應用場景。
