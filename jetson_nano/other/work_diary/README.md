@@ -1042,11 +1042,15 @@ We encountered some issues with our machine; the program was acting strangely. W
 </table>
 </div>
 
+***
+
 資格賽已經調整完成，跑得都很順利，任務賽則是迴轉判斷方塊是綠色的也可以成功完成，只差停車場還沒有成功停入，而迴轉判斷方塊為紅色的部分是還在調整迴轉，我們迴轉的幅度還在做調整，因為我們迴轉後很容易撞擊到中間的牆壁。
 
 #### Jetson nano
 
 因為機器人在進行鏡頭辨識時，會因為線的顏色導致誤測，所以我們先使用 onshape 設計模型，並使用光固化印製出一個可以鑲嵌在機器前方 F 型的蓋子，把機器前方的線遮擋起來，避免造成鏡頭辨識時誤測。
+
+而我們資格賽已經調整完成，都可以成功完成任務，經過測試也都已經很穩定了。
 
 ## 2024/09/23 ~ 2024/09/29
 
@@ -1054,6 +1058,8 @@ We encountered some issues with our machine; the program was acting strangely. W
 **Content:**
 
 #### Raspberry pi 4
+
+
 
 
 
