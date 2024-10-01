@@ -50,11 +50,32 @@ Here is a specification comparison between the two:
 </table>
 </div>
 
-- At the beginning of the competition, we chose the Raspberry Pi, which is more affordable and has AI image recognition capabilities, as the controller for our self-driving car. However, we found that the Raspberry Pi controller had insufficient image recognition performance.   
-- Therefore, after the national competition in Taiwan, we attempted to switch to the Jetson Nano as the controller for our self-driving car, as it offered significantly faster image recognition processing.  
-- However, after actual experiments, although the image recognition speed is very fast, the speed of reading the color sensor is very slow, which leads to the inability to make timely judgments and make correct operations, which delays the turning of the vehicle and makes the vehicle unable to drive correctly. This may be a problem of our insufficient technical capabilities.
-- To ensure it wouldn't affect upcoming competitions, we reverted to using the Raspberry Pi as the controller. Although its image recognition speed is slower, it allows the vehicle to operate reliably. Additionally, we are implementing other solutions to address the Raspberry Pi's limitations in image recognition performance.  
-- 但在全國賽我們發生了樹梅派鏡頭辨識失誤的情形，導致我們輸掉那一場比賽，因此我們重新研究 jetson nano ，打算使用 jetson nano 參加國際賽
+- 一開始我們是使用價格更實惠、具有AI影像辨識能力的 Raspberry Pi 作為我們自動駕駛汽車的控制器。
+
+- 但在全國賽我們發生了樹梅派鏡頭辨識失誤的情形，導致我們輸掉那一局比賽，因此我們重新研究 jetson nano ，打算使用 jetson nano 參加國際賽。
+
+## 以下是我們對 jetson nano 和 Raspberry Pi 的比較
+
+#### 1. 硬體架構
+- Jetson Nano：配備了四核 ARM Cortex-A57 CPU 和 128 核的 NVIDIA Maxwell GPU，內存為 4GB LPDDR4。
+- Raspberry Pi 4 (Pi 4)：配備了四核 ARM Cortex-A72 CPU，內存最高可選 8GB，但沒有內建專門的 GPU。
+#### 2. 深度學習加速
+- Jetson Nano：擁有 NVIDIA CUDA 和 cuDNN 支持，可以加速深度學習相關的工作負載（如使用 OpenCV 的 DNN 模組）。對於圖像分類、目標檢測等任務，Jetson Nano 的 GPU 能夠顯著提升處理速度。
+- Raspberry Pi 4：沒有專用的 GPU 和深度學習加速功能，圖像識別任務完全依賴 CPU 處理，性能遠不及 Jetson Nano 的 GPU 加速。
+#### 3. OpenCV 的性能
+- Jetson Nano：由於擁有 CUDA 支持，在處理基於深度學習的圖像識別任務（如神經網絡推理）時表現更為優異。OpenCV 可以利用 NVIDIA 的 GPU 來加速圖像處理操作，例如卷積、矩陣運算等。
+- Raspberry Pi 4：處理能力依賴 CPU，因此在面對同樣的任務時速度較慢。對於簡單的圖像處理任務（如濾波、邊緣檢測），Pi 4 的 CPU 也能勝任，但在處理更複雜的神經網絡推理時效率會明顯落後。
+#### 4. 功耗
+- Jetson Nano：功耗較大，典型使用場景下約 5W - 10W，尤其在使用 GPU 進行加速時，功耗會更高。
+- Raspberry Pi 4：功耗較低，通常約 3.5W - 7W，適合對功耗要求較為敏感的應用場景。
+#### 5. 實際應用場景性能對比
+- Jetson Nano 在使用 OpenCV 和 DNN 模組進行即時物體檢測、圖像分類等任務時，速度顯著優於 Raspberry Pi 4。通過 CUDA 加速，Jetson Nano 能夠更快速地處理視頻流並進行即時推理。
+- Raspberry Pi 4 則適合處理對性能要求不太高的任務，例如簡單的圖像處理操作或者非即時的圖像識別任務。
+#### 6. 開發生態
+- Jetson Nano 的開發生態專為 AI 和計算機視覺任務設計，有 NVIDIA 提供的 JetPack SDK，其中包括優化的 OpenCV、TensorFlow 和 PyTorch 等工具，便於開發者快速部署深度學習模型。
+- Raspberry Pi 4 雖然也支持 OpenCV，但缺乏專門的硬體加速，對複雜深度學習任務的支持不如 Jetson Nano。
+#### 總結
+如果主要目標是實現高效的深度學習圖像識別任務，Jetson Nano 無疑是更好的選擇，尤其是由於其 GPU 加速能力。Raspberry Pi 4 更適合輕量級的圖像處理任務或不需要 GPU 加速的項目。
 
 - __In conclusion, we have chosen to use the Raspberry Pi as the controller for our self-driving car in this competition.__
 # <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div> 
