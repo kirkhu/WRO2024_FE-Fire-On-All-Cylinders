@@ -74,8 +74,10 @@ Here is a specification comparison between the two:
 #### 6. 開發生態
 - Jetson Nano 的開發生態專為 AI 和計算機視覺任務設計，有 NVIDIA 提供的 JetPack SDK，其中包括優化的 OpenCV、TensorFlow 和 PyTorch 等工具，便於開發者快速部署深度學習模型。
 - Raspberry Pi 4 雖然也支持 OpenCV，但缺乏專門的硬體加速，對複雜深度學習任務的支持不如 Jetson Nano。
-#### 總結
-如果主要目標是實現高效的深度學習圖像識別任務，Jetson Nano 無疑是更好的選擇，尤其是由於其 GPU 加速能力。Raspberry Pi 4 更適合輕量級的圖像處理任務或不需要 GPU 加速的項目。
+### 總結
+
+
+經過我們比較結果也發現 Jetson nano 在鏡頭判斷的效能比 Raspberry Pi 4 好上許多，因此我們決定在世界賽使用 jetson nano 當作主控制器。
 
 - __In conclusion, we have chosen to use the Raspberry Pi as the controller for our self-driving car in this competition.__
 # <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div> 
