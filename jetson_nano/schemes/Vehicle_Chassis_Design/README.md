@@ -157,4 +157,4 @@
 
       Due to the smoothness of the competition venue, the shock absorbers cannot provide significant damping effect. __Therefore, we have decided to omit the use of shock absorbers to reduce the complexity in vehicle fabrication.__
 
-# <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>  
+# <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div>  
