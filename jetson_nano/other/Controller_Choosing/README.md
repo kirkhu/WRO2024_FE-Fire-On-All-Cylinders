@@ -54,6 +54,11 @@ Here is a specification comparison between the two:
 
 - 但在全國賽我們發生了樹梅派鏡頭辨識失誤的情形，導致我們輸掉那一局比賽，因此我們重新研究 jetson nano ，打算使用 jetson nano 參加國際賽。
 
+
+- At the beginning, we used the more affordable Raspberry Pi with AI image recognition capabilities as the controller of our self-driving car.
+
+- However, during the national competition, we had a misidentification error with the Shumeipai lens, which caused us to lose that round. Therefore, we re-researched jetson nano and planned to use jetson nano to participate in the international competition.
+
 ***
 
 ### 以下是我們對 jetson nano 和 Raspberry Pi 的比較
