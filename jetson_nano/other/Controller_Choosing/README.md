@@ -16,8 +16,8 @@ Here is a specification comparison between the two:
 <th>Nvidia Jetson Nano</th>
 <th>Raspberry Pi 4B</th>
 </tr><tr>
-<td><img src="./img/jeston_nano.png" width=200></td>
-<td><img src="./img/raspberry_pi_4.png" width=200></td>
+<td><div align=center><img src="./img/jeston_nano.png" width=200></td>
+<td><div align=center><img src="./img/raspberry_pi_4.png" width=200></td>
 </tr><tr>
 <th>Number of Pins</th>
 <td>40P</td>
