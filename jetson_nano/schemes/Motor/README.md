@@ -89,6 +89,7 @@ When the vehicle is in motion, the Raspberry Pi sends speed information to __the
 <th rowspan="2">Model</th>
 <th>L293D</th>
 <th>L298N</th>
+<th>TB6612FNG</th>
 </tr>
 <tr align="center">
 <td> <img src="./img/l293d.png" width = "300"  alt="l293d" align=center /></td>
@@ -112,4 +113,4 @@ When the vehicle is in motion, the Raspberry Pi sends speed information to __the
 </table>
 </div>
 
-# <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div>  
+# <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>  
