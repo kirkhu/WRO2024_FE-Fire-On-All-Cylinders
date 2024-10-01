@@ -80,7 +80,8 @@ Here is a specification comparison between the two:
 __總結__
 
  經過我們比較結果也發現 Jetson nano 在鏡頭判斷的效能比 Raspberry Pi 4 好上許多，因此我們決定在世界賽使用 jetson nano 當作主控制器。
-
+ 
+ ***
 
 ### Here's our comparison of the jetson nano and the Raspberry Pi
 
