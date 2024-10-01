@@ -53,8 +53,8 @@ Here is a specification comparison between the two:
 - 一開始我們是使用價格更實惠、具有AI影像辨識能力的 Raspberry Pi 作為我們自動駕駛汽車的控制器。
 
 - 但在全國賽我們發生了樹梅派鏡頭辨識失誤的情形，導致我們輸掉那一局比賽，因此我們重新研究 jetson nano ，打算使用 jetson nano 參加國際賽。
-
-## 以下是我們對 jetson nano 和 Raspberry Pi 的比較
+***
+### 以下是我們對 jetson nano 和 Raspberry Pi 的比較
 
 #### 1. 硬體架構
 - Jetson Nano：配備了四核 ARM Cortex-A57 CPU 和 128 核的 NVIDIA Maxwell GPU，內存為 4GB LPDDR4。
