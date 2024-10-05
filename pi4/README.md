@@ -26,9 +26,8 @@
     - __Controller Selection__
       - [2-3-1 Controller Comparison](other/Controller_Choosing)
     - __Sense Management__
-      - [2-4-1 Color Sensor Introduction](schemes/color_sensor/README.md)
-      - [2-4-2 Lidar Selection](schemes/Lidar/README.md)
-      - [2-4-3 Camera Selection](schemes/Camera/README.md)
+      - [2-4-1 Lidar Selection](schemes/Lidar/README.md)
+      - [2-4-2 Camera Selection](schemes/Camera/README.md)
   
 - ### ${{\color{red} Software Overview }} $ 
   #### 3. Obstacle Management
