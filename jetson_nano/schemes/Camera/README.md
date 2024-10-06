@@ -26,30 +26,35 @@ __Here is the product information:__
 <th >Raspberry Pi Camera Rev 1.3</th>
 <th >Raspberry Pi Camera Module V2</th>
 <th >Raspberry Pi Camera Module V3</thd>
+<th >SONY IMX477</thd>
 </tr>
 <tr align="center">
 
 <td><img src="./img/V1.jpeg" width=200 alt="V1"  /></td>
 <td><img src="./img/V2.jpeg" width=200 alt="V2" ></td>
 <td><img src="./img/V3.jpeg" width=200 alt="V3" /></td>
+<td><img src="./img/SONY IMX477.png" width=200 alt="SONY IMX477" /></td>
 </tr>
 <tr align="center">
 <td>Sensor</td>
 <td>Omnivision OV547</td>
 <td>Sony IMX 219</td>
 <td>Sony IMX 708</td>
+<td>SONY IMX 477</td>
 </tr>
 <tr align="center">
 <td>Sensor Resolution</td>
 <td>2592 * 1944 pix</td>
 <td>3280 * 2464 pix</td>
 <td>4608 * 2592 pix</td>
+<td>4056 * 3040 pix</td>
 </tr>
 <tr align="center">
 <td>FPS幀率</td>
 <td>30p MAX</td>
 <td>90p MAX</td>
 <td>120p MAX</td>
+<td>240p MAX</td>
 </tr>
 </table>
 </div>
