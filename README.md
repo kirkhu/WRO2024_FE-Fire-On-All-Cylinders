@@ -25,7 +25,7 @@
    
     - __Controller Selection__
       - [2-3-1 Main Controller Comparison 運算控制器](other/Main_Controller_Choosing)
-      - [2-3-2 The motor and sensor controller Comparison 驅動控制器](other/Motor_Sensor_Controller_Choosing)]
+      - [2-3-2 The motor and sensor controller Comparison 驅動控制器](other/Motor_Sensor_Controller_Choosing)
     - __Sense Management__
       - [2-4-1 HC-SR04](schemes/HC-SR04/README.md)
       - [2-4-2 BNO055](schemes/Lidar/README.md)
