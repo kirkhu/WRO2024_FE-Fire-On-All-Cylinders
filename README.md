@@ -24,16 +24,17 @@
       - [2-2-2 Li-Polymer Battery Low Voltage Alarm and Charging Equipment](schemes/Li-Polymer_Battery/README.md)  
    
     - __Controller Selection__
-      - [2-3-1 Controller Comparison](other/Controller_Choosing)
+      - [2-3-1 Main Controller Comparison 運算控制器](other/Main_Controller_Choosing)
+      - [2-3-2 The motor and sensor controller Comparison 驅動控制器](other/Motor_Sensor_Controller_Choosing)]
     - __Sense Management__
-      - [2-4-1 Lidar Selection](schemes/Lidar/README.md)
-      - [2-4-2 Camera Selection](schemes/Camera/README.md)
+      - [2-4-1 HC-SR04](schemes/HC-SR04/README.md)
+      - [2-4-2 BNO055](schemes/Lidar/README.md)
+      - [2-4-3 Camera Selection](schemes/Camera/README.md)
   
 - ### ${{\color{red} Software Overview }} $ 
   #### 3. Obstacle Management
     - [3-1 OpenCV Introduction](other/OpenCV/README.md)
-    - [3-2 ROS Introduction](other/ROS/README.md)
-    - [3-3 Software Platform Construction](src/System_Platform_Software/README.md)
+    - [3-2 Software Platform Construction](src/System_Platform_Software/README.md)
     - __Image Processing and Steering__
       - [3-4-1 Image Processing](src/Image_Processing_and_Steering/Image_Processing/README.md)  
       - [3-4-2 Steering Overview](src/Image_Processing_and_Steering/Steering_overview/README.md) 
@@ -41,6 +42,9 @@
       - [3-5-1 Open Challenge Code Overview](src/Programming/Open_Challenge/README.md)
       - [3-5-2 Obstacle Challenge Code Overview](src/Programming/Obstacle_Challenge/README.md)
       - [3-5-3 Distinctive Pseudo Code](src/Distinctive_Pseudo_Code/README.md)
+      - [3-5-4 Parking Instructions](src/park/park.md)
+    - __remote connection__
+      - [3-6-1 NoMachine](other/NoMachine/README.md)
 - ### ${{\color{red} Other}} $
   #### 4. Pictures – Team and Vehicle
     - [4-1 Team Members Introduction](t-photos/README.md) 
