@@ -14,7 +14,7 @@
     
   #### 2. Power and Sense Management
     - __Vehicle Design__
-      - [2-1-1 BOM Parts List](schemes/Parts_List)
+      - [2-1-1 BOM Parts List](schemes/Parts_List/README.md)
       - [2-1-2 Circuit Design](models/Circuit_Design/README.md)
       - [2-1-3 Hardware Fool-Proof Design](schemes/Fool-Proof-Design/README.md) 
       - [2-1-4 Assembly Instructions & Wiring Diagrams](schemes/Assembly_Instructions/README.md)    
@@ -24,10 +24,10 @@
       - [2-2-2 Li-Polymer Battery Low Voltage Alarm and Charging Equipment](schemes/Li-Polymer_Battery/README.md)  
    
     - __Controller Selection__
-      - [2-3-1 Main Controller Comparison 運算控制器](other/Main_Controller_Choosing)
-      - [2-3-2 The motor and sensor controller Comparison 驅動控制器](other/Motor_Sensor_Controller_Choosing)
+      - [2-3-1 Main Controller Comparison 運算控制器](other/Main_Controller_Choosing/README.md)
+      - [2-3-2 The motor and sensor controller Comparison 驅動控制器](other/Motor_Sensor_Controller_Choosing/README.md)
     - __Sense Management__
-      - [2-4-1 HC-SR04 要介紹3.3V和5V的差異，pico不支援救3.3V](schemes/HC-SR04/README.md)
+      - [2-4-1 HC-SR04 Selection 要介紹3.3V和5V的差異，pico不支援救3.3V](schemes/HC-SR04/README.md)
       - [2-4-2 BNO055](schemes/Lidar/README.md)
       - [2-4-3 Camera Selection](schemes/Camera/README.md)
   
