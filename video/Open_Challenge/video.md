@@ -10,7 +10,7 @@
 
 |Power 50 |Power 70|
 |:----:|:----:|
-|[![Open Challenge power 50 Full width @Fire-On-All-Cylinders](./img/Open-Challenge-power-50-Full-width.jpg)](https://youtu.be/m-hIjlLuAAk "Open Challenge power 50 Full width @Fire-On-All-Cylinders")|[![Open Challenge power 70 Full width @Fire-On-All-Cylinders](./img/Open-Challenge-power-70-Full-width.jpg)](https://youtu.be/tObPuwR8IB0 "Open Challenge power 70 Full width @Fire-On-All-Cylinders")|
+|[![Open Challenge power 50 Full width @ Fire-On-All-Cylinders](./img/Open-Challenge-power-50-Full-width.jpg)](https://youtu.be/m-hIjlLuAAk "Open Challenge power 50 Full width @ Fire-On-All-Cylinders")|[![Open Challenge power 70 Full width @ Fire-On-All-Cylinders](./img/Open-Challenge-power-70-Full-width.jpg)](https://youtu.be/tObPuwR8IB0 "Open Challenge power 70 Full width @ Fire-On-All-Cylinders")|
 
 - ### Half-width half-narrow
  
@@ -18,14 +18,14 @@
   
 |Power 50 |Power 70|
 |:----:|:----:|
-|[![Open Challenge power 50 half-width half-height width On-All-Cylinders](./img/Open_Challenge_power_50_half-width%20half-height.jpg)](https://youtu.be/7HdWxfWPfWc "Open Challenge power 50 half-width half-height width On-All-Cylinders")|[![Open Challenge power 70 half-width half-height width On-All-Cylinders](./img/Open_Challenge_power_70_half-width%20half-height.jpg)](https://youtu.be/pcTpH8QgJFU "Open Challenge power 70 half-width half-height width On-All-Cylinders")|
+|[![Open Challenge power 50 half width half height width @ Fire On All Cylinders](./img/Open-Challenge-power-50-half-width-half-height-width.jpg)](https://youtu.be/UB3IciF5oYk "Open Challenge power 50 half width half height width @ Fire On All Cylinders")|[![Open Challenge power 70 half width half height width @ Fire On All Cylinders](./img/Open-Challenge-power-70-half-width-half-height-width.jpg)](https://youtu.be/SKT1LZI2bo0 "Open Challenge power 70 half width half height width @ Fire On All Cylinders")|
 
 - ### Full narrow
   This is a testing video of the vehicle on a course set as 'narrow-narrow-narrow-narrow.' As all road widths have been reduced, this results in a limited correction space for the machine, making it easy for it to overshoot during turns and potentially collide with the walls.
 
 |Power 50 |Power 70|
 |:----:|:----:|
-|[![Open Challenge power 50 full narrow @ Fire On All Cylinders](./img/Open-Challenge-power-50-full-narrow.jpg)](https://youtu.be/cyHyQRcBAyE "Open Challenge power 50 full narrow @ Fire On All Cylinders")|[![Open Challenge power 70 full narrow @ Fire On All Cylinders](./img/Open-Challenge-power-70-full-narrow.jpg)](https://youtu.be/Imme0V5sVIo "Open Challenge power 70 full narrow @ Fire On All Cylinders")|
+|[![Open Challenge power 50 full narrow @ Fire On All Cylinders](./img/Open-Challenge-power-50-full-narrow.jpg)](https://youtu.be/cyHyQRcBAyE "Open Challenge power 50 full narrow @ Fire On All Cylinders")|[![Open Challenge power 70 full narrow @ Fire On All Cylinders](./img/Open-Challenge-power-70-full-narrow.jpg)](https://youtu.be/OmFEYUQlTvc "Open Challenge power 70 full narrow @ Fire On All Cylinders")|
 
 - ### wide narrow wide narrow
 
@@ -33,7 +33,7 @@
 
 |Clockwise|Counter Clockwise|
 |:---:|:---:|
-|[![Open Challange Countclockwise](./img/Open_Challenge_Clockwise.jpg)](https://youtu.be/rzolv8BAnoE "Open Challange Countclockwise") |[![Open Challange Countclockwise](./img/Open_Challenge_CounterClockwise.jpg)](https://youtu.be/HQ7YA0zPUbA "Open Challange Countclockwise")|
-# <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>  
+|[![Open Challange clockwise @ Fire On All Cylinders](./img/Open-Challange-clockwise.jpg)](https://youtu.be/WJuGyNkQvu4 "Open Challange clockwise @ Fire On All Cylinders") |[![Open Challange Countclockwise @ Fire On All Cylinders](./img/Open-Challange-Counterclockwise.jpg)](https://youtu.be/na2J1C6Xs2s "Open Challange Countclockwise @ Fire On All Cylinders")|
+# <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div>  
 
 
