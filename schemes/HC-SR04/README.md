@@ -95,4 +95,4 @@ data = bus.read_i2c_block_data(HC-SR04_DEFAULT_ADDRESS, HC-SR04_REG_CDATAL | HC-
 
 <div align=center><img src="./img/color_sensor.png"></div>
 
-# <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>  
+# <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div>  
