@@ -10,8 +10,8 @@ In the actual hardware design process, we frequently encountered issues where th
 <div align=center>
 <table>
 <tr>
-<th>Onshape Website </th>
-<th>3D CAD drawing of vehicle chassis components</th>
+<th>2.5mm Connector 2/3 Pin Male/female Adapter Right Angle Pin Header White Socket</th>
+<th>Circuit real-life photo</th>
 </tr><tr>
 <td><img src="./img/pin.jpg" width="450" alt="pin"></td> 
 <td><img src="./img/ciruit.jpg" width="450" alt="ciruit"></td> 
