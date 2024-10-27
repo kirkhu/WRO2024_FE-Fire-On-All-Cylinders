@@ -22,7 +22,7 @@
       
     - __Power Management__
       - [2-2-1 Power Supply System](schemes/Power_Supply_System/README.md) 
-      - [2-2-2 Li-Polymer Battery Low Voltage Alarm and Charging Equipment](schemes/Li-Polymer_Battery/README.md)  
+      - [2-2-2 Battery choice for self-driving cars](schemes/Battery/README.md)  
    
     - __Controller Selection__
       - [2-3-1 Main Controller Comparison](other/Main_Controller_Choosing/README.md)
