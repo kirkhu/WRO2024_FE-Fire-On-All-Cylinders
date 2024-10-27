@@ -8,16 +8,16 @@
 ## Rubric for Judging Engineering Documentation 
 - ###  ${{\color{red} Hardware Overview }} $ 
   #### 1. Mobility Management
-    * [1-1 Vehicle 2D/3D Models in CAD OK](models/Vehicle_2D_3D/README.md)
-    * [1-2 Vehicle Chassis Design OK](schemes/Vehicle_Chassis_Design/README.md)
-    * [1-3 Motor Selection OK](schemes/Motor/README.md)
+    * [1-1 Vehicle 2D/3D Models in CAD](models/Vehicle_2D_3D/README.md)
+    * [1-2 Vehicle Chassis Design](schemes/Vehicle_Chassis_Design/README.md)
+    * [1-3 Motor Selection](schemes/Motor/README.md)
 
     
   #### 2. Power and Sense Management
     - __Vehicle Design__
-      - [2-1-1 BOM Parts List OK](schemes/Parts_List/README.md)
-      - [2-1-2 Circuit Design OK](models/Circuit_Design/README.md)
-      - [2-1-3 Hardware Fool-Proof Design OK](schemes/Fool-Proof-Design/README.md) 
+      - [2-1-1 BOM Parts List](schemes/Parts_List/README.md)
+      - [2-1-2 Circuit Design](models/Circuit_Design/README.md)
+      - [2-1-3 Hardware Fool-Proof Design](schemes/Fool-Proof-Design/README.md) 
       - [2-1-4 Assembly Instructions & Wiring Diagrams](schemes/Assembly_Instructions/README.md)    
       
     - __Power Management__
@@ -25,8 +25,8 @@
       - [2-2-2 Li-Polymer Battery Low Voltage Alarm and Charging Equipment](schemes/Li-Polymer_Battery/README.md)  
    
     - __Controller Selection__
-      - [2-3-1 Main Controller Comparison OK](other/Main_Controller_Choosing/README.md)
-      - [2-3-2 Motor & Sensor Intermediate I/O Controller Comparison OK](other/Motor_Sensor_Controller_Choosing/README.md)
+      - [2-3-1 Main Controller Comparison](other/Main_Controller_Choosing/README.md)
+      - [2-3-2 Motor & Sensor Intermediate I/O Controller Comparison](other/Motor_Sensor_Controller_Choosing/README.md)
     - __Sense Management__
       - [2-4-1 HC-SR04 要介紹3.3V和5V的差異，pico不支援救3.3V](schemes/HC-SR04/README.md)
       - [2-4-2 BNO055](schemes/BNO055/README.md)
