@@ -1,35 +1,35 @@
 <div align="center"><img src="./other/img/logo.png" width="300" alt=" logo"></div> 
 
 - This is the official GitHub repository for the WRO TAIWAN team "__Fire On All Cylinders.__" All code, documentation, and files are located here.
-- The inspiration for the hardware and software design of this autonomous vehicle came from the model designed by our seniors last year, and we also drew on the strengths of the model that won first place in last year’s competition. Based on this, we made improvements and replaced the main controller from "Raspberry Pi 4B" to "Nvidia Jetson Nano," aiming to enhance performance and innovative design, making it more competitive.
+- The design inspiration for both the hardware and software of this self-driving car came from last year’s model created by our sister team (Shinan-Fire-On-All-Cylinders) and drew upon the strengths of the world championship-winning model from last year. Based on this, we made improvements by upgrading the main controller from the "Raspberry Pi 4B" to the "Nvidia Jetson Nano" to enhance performance and introduce innovative design elements, making the vehicle more competitive.
 - Here you can find the links to the technical report content and setup instructions, organized separately for learners and judges, for easy access during either learning or assessment. 
 - In this technical document, the directory will be established based on the scoring criteria, and the directory headings will be hyperlinked for easy access for judges or learners to navigate to the key content of the technical document, facilitating quick assessment.  
     #### [For Learners](learners_contents.md)
 ## Rubric for Judging Engineering Documentation 
 - ###  ${{\color{red} Hardware Overview }} $ 
   #### 1. Mobility Management
-    * [1-1 Vehicle 2D/3D Models in CAD](models/Vehicle_2D_3D/README.md)
-    * [1-2 Vehicle Chassis Design](schemes/Vehicle_Chassis_Design/README.md)
-    * [1-3 Motor Selection](schemes/Motor/README.md)
+    * [1-1 Vehicle 2D/3D Models in CAD OK](models/Vehicle_2D_3D/README.md)
+    * [1-2 Vehicle Chassis Design OK](schemes/Vehicle_Chassis_Design/README.md)
+    * [1-3 Motor Selection OK](schemes/Motor/README.md)
 
     
   #### 2. Power and Sense Management
     - __Vehicle Design__
-      - [2-1-1 BOM Parts List](schemes/Parts_List/README.md)
-      - [2-1-2 Circuit Design](models/Circuit_Design/README.md)
-      - [2-1-3 Hardware Fool-Proof Design](schemes/Fool-Proof-Design/README.md) 
+      - [2-1-1 BOM Parts List OK](schemes/Parts_List/README.md)
+      - [2-1-2 Circuit Design OK](models/Circuit_Design/README.md)
+      - [2-1-3 Hardware Fool-Proof Design OK](schemes/Fool-Proof-Design/README.md) 
       - [2-1-4 Assembly Instructions & Wiring Diagrams](schemes/Assembly_Instructions/README.md)    
       
     - __Power Management__
-      - [2-2-1 Power Supply System](schemes/Power_supply_system/README.md) 
+      - [2-2-1 Power Supply System](schemes/Power_Supply_System/README.md) 
       - [2-2-2 Li-Polymer Battery Low Voltage Alarm and Charging Equipment](schemes/Li-Polymer_Battery/README.md)  
    
     - __Controller Selection__
-      - [2-3-1 Main Controller Comparison 運算控制器](other/Main_Controller_Choosing/README.md)
-      - [2-3-2 The motor and sensor controller Comparison 驅動控制器](other/Motor_Sensor_Controller_Choosing/README.md)
+      - [2-3-1 Main Controller Comparison OK](other/Main_Controller_Choosing/README.md)
+      - [2-3-2 Motor & Sensor Intermediate I/O Controller Comparison OK](other/Motor_Sensor_Controller_Choosing/README.md)
     - __Sense Management__
-      - [2-4-1 HC-SR04 Selection 要介紹3.3V和5V的差異，pico不支援救3.3V](schemes/HC-SR04/README.md)
-      - [2-4-2 BNO055](schemes/Lidar/README.md)
+      - [2-4-1 HC-SR04 要介紹3.3V和5V的差異，pico不支援救3.3V](schemes/HC-SR04/README.md)
+      - [2-4-2 BNO055](schemes/BNO055/README.md)
       - [2-4-3 Camera Selection](schemes/Camera/README.md)
   
 - ### ${{\color{red} Software Overview }} $ 
