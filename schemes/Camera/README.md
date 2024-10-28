@@ -1,103 +1,114 @@
 <div align="center"><img src="../../other/img/logo.png" width="300" alt=" logo"></div>
 
-# <div align="center">Camera Selection</div> 
-- In order for the vehicle to accurately avoid obstacles, a camera module needs to be installed on the vehicle to recognize the position and color of obstacles. This allows the controller to compute and control the vehicle's motors for obstacle avoidance.  
-- Since we are using a Raspberry Pi as the controller, we need to find a camera module that is compatible with it. To do this, we referenced the camera module used by the American team last year and compared it with other camera modules from the same series.
-  
-  __Here is the product information:__
-    1. Raspberry Pi Camera Rev 1.3(sensor:OmniVision OV5647)
-    2. Raspberry Pi Camera Module V2(sensor:Sony IMX219)
-    3. Raspberry Pi Camera Module V3(sensor:Sony IMX708)
-     
-- Although the frame rate of Camera Module V3 is higher, we decided not to use it because it is not compatible with the existing Raspberry Pi operating system.  
-- The frame rate of Camera 1.3 is only 30p, while the frame rate of Camera Module V2 can reach up to 90p.  
-- Through experimentation, we found that the Camera Module V2 version also delivers excellent recognition performance. Therefore, we have ultimately chosen the Camera Module V2 as the AI recognition camera module for our self-driving car. 
+## <div align="center">Camera Selection</div> 
+  <ol><li>To enable a vehicle to accurately detect obstacles on the track, the selection of a camera module has become a key factor influencing competition outcomes. Choosing a high-resolution, low-latency, high-sensitivity camera module can improve image clarity and enhance the vehicle’s ability to recognize obstacles, allowing for more precise obstacle avoidance and navigation maneuvers. This directly impacts the performance of autonomous vehicles in competitions.</li>
+  <li>Previously, we used the Nvidia Jetson Nano as the main controller, so it is necessary to select a camera module compatible with the Nvidia Jetson Nano to ensure proper functionality. Below is a comparison of commonly used camera modules in Taiwan.</li>
+  </ol>
 
-#### Camera Module
-<div align="center">
-<table>
-<tr align="center" >
-<th rowspan="2">Model</th> 
-<th >Raspberry Pi Camera Rev 1.3</th>
-<th >Raspberry Pi Camera Module V2</th>
-<th >Raspberry Pi Camera Module V3</th>
-<th >SONY IMX477</th>
-<th >SONY IMX477</th>
-</tr>
-<tr align="center">
+- ### Comparison of Camera Modules
+    <div align="center">
+    <table>
+    <tr align="center" >
+    <th rowspan="2">Model</th> 
+    <th >SONY IMX219</th>
+    <th >SONY IMX477</th>
+    </tr>
+    <tr align="center">
+    <td><img src="./img/SONY_IMX219.png" width=200 alt="SONY IMX219" /></td>
+    <td><img src="./img/SONY_IMX477.png" width=200 alt="SONY IMX477" /></td>
+    </tr>
+    <tr align="center">
+    <td>Sensor</td>
+    <td>SONY IMX 219</td>
+    <td>SONY IMX 477</td>
+    </tr>
+    <tr align="center">
+    <td>FOV</td>
+    <td>160 MAX</td>
+    <td>160 MAX</td>
+    </tr>
+    <tr align="center">
+    <td>Resolution</td>
+    <td>3280 × 2464 pix</td>
+    <td>4056 × 3040 pix</td>
+    </tr>
+    </tr>
+    </table>
+    </div>
 
-<td><img src="./img/V1.jpeg" width=200 alt="V1"  /></td>
-<td><img src="./img/V2.jpeg" width=200 alt="V2" ></td>
-<td><img src="./img/V3.jpeg" width=200 alt="V3" /></td>
-<td><img src="./img/SONY IMX477.png" width=200 alt="SONY IMX477" /></td>
-<td><img src="./img/SONY IMX477 2.png" width=200 alt="SONY IMX477" /></td>
-</tr>
-<tr align="center">
-<td>Sensor</td>
-<td>Omnivision OV547</td>
-<td>Sony IMX 219</td>
-<td>Sony IMX 708</td>
-<td>SONY IMX 477</td>
-<td>SONY IMX 477</td>
-</tr>
-<tr align="center">
-<td>Sensor Resolution</td>
-<td>2592 * 1944 pix</td>
-<td>3280 * 2464 pix</td>
-<td>4608 * 2592 pix</td>
-<td>4056 * 3040 pix</td>
-<td>4056 * 3040 pix</td>
-</tr>
-<tr align="center">
-<td>FPS</td>
-<td>30p MAX</td>
-<td>90p MAX</td>
-<td>120p MAX</td>
-<td>60p MAX</td>
-<td>60p MAX</td>
-</tr>
-</table>
-</div>
+    __From this, it is clear that in terms of resolution, the SONY IMX 477 is our best choice for the competition environment.__
 
-- In the experimental tests, it was found that when the vehicle was avoiding obstacles, the camera's field of view was too small to predict the position of the next obstacle. This caused problems for the vehicle's obstacle avoidance strategy.  
-- Therefore, we modified the original camera lens  to a wide-angle lens. Compared to the original 72-degree field of view, the wide-angle lens provides a 160-degree field of view, which allows us to predict the position of the next obstacle in advance, thus improving the effectiveness of the vehicle's obstacle avoidance strategy.
+- ### Wide-angle lens distortion correction
+  The purpose of wide-angle lens distortion correction is to reduce or eliminate the deformation effects produced when capturing images with a wide-angle lens. These deformations often include "barrel distortion" or "pincushion distortion," which cause straight objects in the image to appear curved or distorted. Through correction, images can be restored to proportions and shapes closer to reality, enhancing the accuracy and realism of the image. This is particularly suitable for applications requiring precise measurement or detailed capture, such as machine vision, architectural surveying, and autonomous driving technology.
+  - ### Correction Methods
+    To perform wide-angle lens distortion correction on the Nvidia Jetson Nano, the correction functions in the OpenCV library are commonly used. Here are the basic steps:
+    <ol>
+    <li>
+    <strong>Capture Calibration Images:</strong> Place a checkerboard or dot array within the field of view of the wide-angle lens and capture multiple images from different angles. These images are used to calculate calibration parameters.</li>
+        <div align="center">
+    <table>
+    <tr align="center" >
+    <th >Checkerboard Image</th> 
+    </tr>
+    <tr align="center">
+    <td><img src="./img/chessboard.png" width=200 alt="Chessboard" /></td>
+    </tr>  
+    </table>
+    </div>
+    <li>
+    <strong>Detect Checkerboard Corners:</strong> Use OpenCV's findChessboardCorners() function to automatically detect the corner positions of the checkerboard. For each calibration image, this step finds the corner coordinates needed for calculating the correction parameters.</li>
+    Calculate Calibration Parameters: Use the calibrateCamera() function to calculate the camera's intrinsic parameters and distortion coefficients. These parameters include focal length, optical center, and radial and tangential distortion coefficients of the lens.</li>
+    <li>
+    <strong>Apply Correction Parameters:</strong> In actual images, use the undistort() function to apply the correction parameters to each frame. This corrected image will reduce the distortion caused by the wide-angle lens, making the image closer to true proportions.</li>
+    <li>
+    <strong>Real-Time Processing (If Needed):</strong> If real-time correction is required on the Jetson Nano, ensure efficiency in image processing. Given the limited performance of the Jetson Nano, consider adjusting image resolution or optimizing processing steps to enhance correction speed.</li>
+    </ol>
 
-#### Wide-Angle Lens
-<div align="center">
-<table>
-<tr align="center">
-<th> Without the Wide-Angle Lens</th> 
-<th>With the Wide-Angle Lens</th>
-</tr>
-<tr align="center">
-<td><img src="./img/V2.jpeg" width=200  ></td>
-<td><img src="./img/V2_wide_angle.jpeg" width=200>
-</td>
-</tr>
-<tr align="center">
-<td><img src="./img/72angle.png" width=200  ></td>
-<td> <img src="./img/160angle.png" width=200  ></td>
-</tr>
-</table>
-</div>
+    __A simple code example is as follows:__
+    - ### python Code
 
-- In the Raspberry Pi program, it is possible to set the resolution of the camera module. We will experiment with the following common resolutions to determine the camera module resolution that offers the best recognition performance.
+          import cv2
+          import numpy as np
 
-  1. 1080x640 FPS30
-  2. 640x320 FPS60
-  3. 320x240 FPS90
-     
-- In the experiments, it was found that when the camera module resolution was set to 1080x640, the high-resolution image processing requirements resulted in the program taking a significant amount of time to recognize obstacles. This led to a decrease in the program's computational efficiency.
-- When the resolution was set to 320x240, although computational efficiency was extremely high, the low resolution resulted in the inability to recognize obstacles accurately.
-- However, when the resolution was set to 640x320, we observed that obstacle recognition could be performed accurately, and the computational efficiency was not excessively slow, thus avoiding the issue of the vehicle colliding with obstacles.
-  
-__Therefore, we have set the camera module resolution to 640x320 to achieve the optimal recognition efficiency for the camera module resolution.__
+          # Load calibration images
+          images = ["image1.jpg", "image2.jpg", ...]  # Replace with your image paths
+          chessboard_size = (9, 6)  # Chessboard dimensions
+          obj_points = []  # Real world coordinates points
+          img_points = []  # Image coordinates points
 
-## Camera Module AI Obstacle Recognition Operation Process
+          # Define corner points for the chessboard
+          objp = np.zeros((chessboard_size[0] * chessboard_size[1], 3), np.float32)
+          objp[:, :2] = np.mgrid[0:chessboard_size[0], 0:chessboard_size[1]].T.reshape(-1, 2)
 
-- When the program starts, it will start the camera, continuously take pictures and transmit them to the main controller. Then, the program will use OpenCV's image recognition function to detect whether there are blocks in the photo. If blocks are detected, it will compare the size of the red and green traffic signs. If the red sign is larger, the vehicle will flash right. If the green sign is larger, it will flash left. If no traffic signs are detected, the vehicle will continue straight.
-  
-<div align=center><img src="./img/camera.png"></div>
+          for image in images:
+              img = cv2.imread(image)
+              gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+              ret, corners = cv2.findChessboardCorners(gray, chessboard_size, None)
+              
+              if ret:
+                  img_points.append(corners)
+                  obj_points.append(objp)
+
+          # Calibrate camera parameters
+          ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(obj_points, img_points, gray.shape[::-1], None, None)
+
+          # Read the image to be undistorted
+          img = cv2.imread('test_image.jpg')
+          h, w = img.shape[:2]
+          newcameramtx, roi = cv2.getOptimalNewCameraMatrix(mtx, dist, (w,h), 1, (w,h))
+
+          # Apply distortion correction
+          dst = cv2.undistort(img, mtx, dist, None, newcameramtx)
+
+          # Crop the image
+          x, y, w, h = roi
+          dst = dst[y:y+h, x:x+w]
+
+          cv2.imshow('Undistorted Image', dst)
+          cv2.waitKey(0)
+          cv2.destroyAllWindows()
+
+      Experimental results indicate that setting the resolution to __640x480__ optimizes system performance. This configuration effectively reduces the computational load on the Jetson Nano while significantly enhancing the efficiency of image capture and recognition.  
 
 # <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div>  
 
