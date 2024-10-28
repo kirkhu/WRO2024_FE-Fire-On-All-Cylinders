@@ -28,8 +28,8 @@
       - [2-3-1 Main Controller Comparison](other/Main_Controller_Choosing/README.md)
       - [2-3-2 Motor & Sensor Intermediate I/O Controller Comparison](other/Motor_Sensor_Controller_Choosing/README.md)
     - __Sense Management__
-      - [2-4-1 Ultrasonic rangefinder OK](schemes/HC-SR04/README.md)
-      - [2-4-2 Gyroscope orientation sensor OK](schemes/BNO055/README.md)
+      - [2-4-1 Ultrasonic rangefinder](schemes/HC-SR04/README.md)
+      - [2-4-2 Gyroscope orientation sensor](schemes/BNO055/README.md)
       - [2-4-3 Camera Selection](schemes/Camera/README.md)
   
 - ### ${{\color{red} Software Overview }} $ 
