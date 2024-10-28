@@ -1,6 +1,6 @@
 <div align="center"><img src="../../other/img/logo.png" width="300" alt=" logo"></div>  
 
-# <div align="center">BOM Part List </div>
+## <div align="center">BOM Part List </div>
 <li><a href="https://robotkingdom.com.tw/product/rk-nvidia-jetson-nano-developer-b01/" target="_blank">NVIDIA® Jetson Nano™ developer-b01</a></li> 
 <li><a href="https://piepie.com.tw/product/raspberry-pi-pico-w" target="_blank">Raspberry Pi Pico W RP2040</a></li> 
 <li><a href="https://atceiling.blogspot.com/2019/08/arduino54l293d.html" target="_blank">L293d motor controller</a></li>
