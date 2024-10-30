@@ -2,14 +2,14 @@
 
 ## <div align="center">GitHub Web Editing Languages</div> 
 
- GitHub web editing languages primarily refer to the programming languages used when editing on the GitHub website.GitHub offers various editing methods, allowing users to edit and manage code, documents, and other project files.  
+ To write engineering documentation on GitHub, we need to learn the following two types of web markup languages:
 
-   On GitHub, commonly used and user-friendly web editing languages include:
+  - **HTML (HyperText Markup Language)**: HTML is a markup language used to create and structure webpage content. It defines the structure for elements like text, images, links, and tables, allowing browsers to properly display content. When writing engineering documentation, HTML helps us organize the page structure, making information more readable.
+    - #### [HTML Document link](https://www.w3schools.com/html/)
 
-   1. __Markdown:__ Markdown is a lightweight markup language used for formatting text and easily creating structured documents. It is widely used on GitHub for writing README files, documentation, blogs, and forums.
-   2. __HTML:__ HTML is a hypertext markup language used for building web pages. With HTML, you can create the structure, content, and layout of web pages.  
-  
-__In the competition, in addition to other web editing languages such as CSS, JavaScript, JSON, YAML, these are not the primary focus of the current competition. Therefore, on GitHub, we primarily utilize Markdown and HTML languages as the main tools for web editing, fully leveraging their respective strengths to more effectively apply them in the editing process of technical documentation.__
+  - **Markdown**: Markdown is a lightweight markup language, especially suited for writing documentation on GitHub. It uses simple syntax to format text, such as headers, lists, links, images, and code blocks. Markdown works seamlessly with GitHub's built-in renderer, making engineering documentation easy to read and maintain.
+    - #### [Markdown Document link](https://markdown.tw/#link)
+
 
 <div align="center">
 <table>
@@ -24,7 +24,7 @@ __In the competition, in addition to other web editing languages such as CSS, Ja
 </table>
 </div>
 
-- #### [Markdown Document link](https://markdown.tw/#link)
-- #### [HTML Document link](https://www.w3schools.com/html/)
-# <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div>  
+
+
+# <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div>  
 
