@@ -8,8 +8,8 @@
 ## Rubric for Judging Engineering Documentation 
 - ###  ${{\color{red} Hardware Overview }} $ 
   #### 1. Mobility Management
-    * [1-1 Vehicle 2D/3D Models in CAD](models/Vehicle_2D_3D/README.md)
-    * [1-2 Vehicle Chassis Design](schemes/Vehicle_Chassis_Design/README.md)
+    * [1-1 Vehicle 2D/3D Models in CAD ](models/Vehicle_2D_3D/README.md)
+    * [1-2 Vehicle Chassis Design ](schemes/Vehicle_Chassis_Design/README.md)
     * [1-3 Motor Selection ](schemes/Motor/README.md)
 
     
@@ -25,8 +25,8 @@
       - [2-2-2 Battery choice for self-driving cars ](schemes/Battery/README.md)  
    
     - __Controller Selection__
-      - [2-3-1 Main Controller Comparison ](other/Main_Controller_Choosing/README.md)
-      - [2-3-2 Motor & Sensor Intermediate I/O Controller Comparison ](other/Motor_Sensor_Controller_Choosing/README.md)
+      - [2-3-1 Main Controller Comparison ](schemes/Main_Controller_Choosing/README.md)
+      - [2-3-2 Motor & Sensor Intermediate I/O Controller Comparison ](schemes/Motor_Sensor_Controller_Choosing/README.md)
     - __Sense Management__
       - [2-4-1 Ultrasonic rangefinder ](schemes/HC-SR04/README.md)
       - [2-4-2 Gyroscope orientation sensor ](schemes/BNO055/README.md)
@@ -35,7 +35,7 @@
 - ### ${{\color{red} Software Overview }} $ 
   #### 3. Obstacle Management
     - [3-1 Software Platform Construction ](src/System_Platform_Software/README.md)
-    - [3-2 OpenCV Introduction ](other/OpenCV/README.md)
+    - [3-2 OpenCV Introduction ](src/OpenCV/README.md)
     - __Image Recognition Processing and Steering__
       - [3-3-1 Image Recognition Processing ](src/Image_Recognition_Processing/README.md)  
       - [3-3-2 Steering Control](src/Steering_Control/README.md) 
