@@ -1,4 +1,4 @@
-<div align=center><img src="../img/logo.png" width=300></div>
+<div align=center><img src="../../other/img/logo.png" width=300></div>
 
 # <div align="center">Controller Selection </div> 
 
@@ -72,4 +72,4 @@ The comparison is shown in the table below.
    - Jetson Nano's development ecosystem is specially designed for AI and computer vision tasks. There is JetPack SDK provided by NVIDIA, which includes optimized OpenCV to facilitate developers to quickly deploy deep learning models.
    - Although Raspberry Pi 4 also supports OpenCV, it lacks dedicated hardware acceleration and its support for complex deep learning tasks is not as good as Jetson Nano.
 
-# <div align="center">![HOME](../img/home.png)[Return Home](../../)</div> 
+# <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div> 
