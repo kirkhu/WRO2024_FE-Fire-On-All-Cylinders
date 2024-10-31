@@ -82,6 +82,27 @@ Here is a specification comparison between the two:
 </table>
 </div>
 
-The Raspberry Pi Pico W offers simplicity, low power consumption, and affordability, making it ideal for applications with low wireless demands. It also aligns well with the requirements of this competition. Therefore, we have chosen the Raspberry Pi Pico W as a relay management controller for the Nvidia Jetson Nano, responsible for managing motors and sensors.
+The Raspberry Pi Pico  offers simplicity, low power consumption, and affordability, making it ideal for applications with low wireless demands. It also aligns well with the requirements of this competition. Therefore, we have chosen the Raspberry Pi Pico W as a relay management controller for the Nvidia Jetson Nano, responsible for managing motors and sensors.
+
+ ***
+- ### Supplementary Information
+
+  __Introduction to  Thonny software__
+  - In this competition, we chose to use Thonny software to write programs for the Raspberry Pi Pico control board.
+  - Due to MicroPython's dedicated features for various microcontrollers (such as the Raspberry Pi Pico, ESP8266, ESP32, etc.), development on these boards becomes more convenient. Therefore, we chose Thonny as our development tool. Thonny not only supports MicroPython development but also allows direct connection to microcontroller boards, making it easier to write, test, and debug code. This combination simplifies the development process and enables quick deployment and verification of programs on the hardware.
+
+
+  
+    <div align=center>
+    <table>
+    <tr>
+    <th>Thonnry Website</th>
+    </tr><tr>
+    <td><div align=center><img src="./img/Thonny.png" width=250 ></td>
+    </tr>
+    </table>
+       
+    <a href="https://thonny.org/">Thonnry Website</a>    
+    </div>
 
 # <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div> 
