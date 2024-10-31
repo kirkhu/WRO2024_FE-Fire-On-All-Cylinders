@@ -147,4 +147,4 @@ https://docs.arducam.com/Nvidia-Jetson-Camera/Native-Camera/Quick-Start-Guide/?f
 
 - <small>References:[steam educational website](https://steam.oxxostudio.tw/category/python/ai/opencv.html#google_vignette)</small>
 
-# <div align="center">![HOME](../../other/img/Home.png)[Return Home](../../)</div> 
+# <div align="center">![HOME](../../img/home.png)[Return Home](../../)</div> 
