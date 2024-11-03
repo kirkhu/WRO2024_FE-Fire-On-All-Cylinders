@@ -23,8 +23,11 @@
     </tr>
     </table>
     </div>
+ 
+ We installed the BNO055 gyroscope orientation sensor on the vehicle and connected it to the Nvidia Jetson Nano controller, using I2C mode for data transmission. This setup is used to read the vehicle's current orientation, and the obtained orientation data is transmitted to the main program for calculation and analysis, serving as a basis for the vehicle's steering decisions.
 
-    - #### Hardware Connection:
+
+ - #### Hardware Connection:
     **Power Supply:**
 
     - Connect VDD (BNO055) to the 3.3V pin on the Raspberry Pi Pico (pin 36). The BNO055 operates within a voltage range of 2.4V to 3.6V, and the Raspberry Pi Pico’s 3.3V pin provides a stable 3.3V voltage, making it suitable for powering the BNO055.
@@ -37,7 +40,7 @@
     - Connect both PS0 and PS1 pins (BNO055) to ground (GND) to set the device to I²C mode.
     - Connect the ADD pin (BNO055) to ground (GND) to set the I²C address to 0x28.
 
-    We installed the BNO055 gyroscope orientation sensor on the vehicle and connected it to the Nvidia Jetson Nano controller, using I2C mode for data transmission. This setup is used to read the vehicle's current orientation, and the obtained orientation data is transmitted to the main program for calculation and analysis, serving as a basis for the vehicle's steering decisions.
+
  
    
 - The following is __Python__ code that implements orientation detection functionality from the __BNO055 gyroscope sensor__ on an __Nvidia Jetson Nano__ using a class-based approach.
