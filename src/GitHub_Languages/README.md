@@ -7,7 +7,7 @@
   - **HTML (HyperText Markup Language)**: HTML is a markup language used to create and structure webpage content. It defines the structure for elements like text, images, links, and tables, allowing browsers to properly display content. When writing engineering documentation, HTML helps us organize the page structure, making information more readable.
     - #### [HTML Document link](https://www.w3schools.com/html/)
 
-  - **Markdown**: Markdown is a lightweight markup language, especially suited for writing documentation on GitHub. It uses simple syntax to format text, such as headers, lists, links, images, and code blocks. Markdown works seamlessly with GitHub's built-in renderer, making engineering documentation easy to read and maintain.
+  - **Markdown**: Markdown is a lightweight markup language, especially suited for writing documentation on GitHub. It uses simple syntax to format text, such as headers, lists, links, images, and code blocks. Markdown works seamlessly with GitHub's built-in renderer, making engineering documentation easy to read and maintain. 
     - #### [Markdown Document link](https://markdown.tw/#link)
 
 

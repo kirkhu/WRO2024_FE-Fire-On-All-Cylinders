@@ -2,7 +2,7 @@
 
 ## <div align="center">Gyroscope orientation sensor Introduction</div> 
 
-- ### __BNO055 Gyroscope orientation sensor Introduction__
+- ### __Instruction to BNO055 Gyroscope orientation sensor__
     <div align="center">
     <table>
     <tr>  

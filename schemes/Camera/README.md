@@ -14,8 +14,8 @@
     <th >SONY IMX477</th>
     </tr>
     <tr align="center">
-    <td><img src="./img/SONY_IMX219.png" width=200 alt="SONY IMX219" /></td>
-    <td><img src="./img/SONY_IMX477.png" width=200 alt="SONY IMX477" /></td>
+    <td><img src="./img/SONY_IMX219.png" width="300" alt="SONY IMX219" /></td>
+    <td><img src="./img/SONY_IMX477.png" width="300" alt="SONY IMX477" /></td>
     </tr>
     <tr align="center">
     <td>Sensor</td>
@@ -51,7 +51,7 @@
     <th >Checkerboard Image</th> 
     </tr>
     <tr align="center">
-    <td><img src="./img/chessboard.png" width=200 alt="Chessboard" /></td>
+    <td><img src="./img/chessboard.png" width="300" alt="Chessboard" /></td>
     </tr>  
     </table>
     </div>
@@ -109,6 +109,20 @@
           cv2.destroyAllWindows()
 
       Experimental results indicate that setting the resolution to __640x480__ optimizes system performance. This configuration effectively reduces the computational load on the Jetson Nano while significantly enhancing the efficiency of image capture and recognition.  
-
+     ### Comparison image of before and after correction.
+    
+    <div align="center">
+    <table>
+    <tr align="center" >
+    <th>Item</th>
+    <th >Before</th>
+    <th >After</th>
+    </tr>
+    <tr align="center">
+    <th>Photo</th>
+    <td><img src="./img/Camera_before.png" width="400" alt="Camera_Before" /></td>
+    <td><img src="./img/Camera_after.png" width="400" alt="Camera_After" /></td>
+    </tr>
+    </table>
+    </div>
 # <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div>  
-

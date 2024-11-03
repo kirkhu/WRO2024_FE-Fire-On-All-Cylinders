@@ -2,7 +2,7 @@
 
 ## <div align="center">Ultrasonic rangefinder Introduction</div> 
 
-- ### __HC-SR04 ultrasonic distance sensor__
+- ### __Instruction to HC-SR04 ultrasonic distance sensor__
     <div align="center">
     <table>
     <tr>  
@@ -72,7 +72,7 @@
                     print("Distance: {:.2f} cm".format(distance))
                 time.sleep(1)
    - #### Explanation  
-<p>This code includes a class named <strong>HCSR04</strong> that measures distance by defining trigger and echo pins. The distance_cm() method returns the distance in centimeters, and if a measurement error occurs or the distance is out of range, it returns -1.</p>
+        This code includes a class named <strong>HCSR04</strong> that measures distance by defining trigger and echo pins. The distance_cm() method returns the distance in centimeters, and if a measurement error occurs or the distance is out of range, it returns -1.
 
 
 # <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div>  

@@ -5,7 +5,7 @@
 
   We will use the popular image recognition software OpenCV to identify objects on the competition field.
   
-- #### Color Detection Using HSV in OpenCV(jetson_nano_HSV.py)
+- #### Color Detection Using HSV in OpenCV([jetson_nano_HSV.py](../Programming/common/jetson_nano_HSV.py))
   To perform color detection, we convert the RGB color space to HSV and split the HSV values into upper and lower bounds to establish a range, ensuring accurate target detection. The detailed steps are as follows:
     1. **Color Conversion**:  
     Use `cv2.cvtColor(image, cv2.COLOR_BGR2HSV)` to convert the RGB image to HSV color space. The HSV space allows for more intuitive control over color range, making it easier to filter specific colors.
@@ -42,7 +42,7 @@
     </table>
     </div>
 
-- #### Adjust floor-to-boundary (black-and-white) threshold(jetson_nano_Binarized.py)
+- #### Adjust floor-to-boundary (black-and-white) threshold([jetson_nano_Binarized.py](../Programming/common/jetson_nano_binarization.py))
   When processing binary images, it is often necessary to convert the original image to grayscale first, followed by binarization, to handle specific tasks more accurately.
     1. **Color Conversion**:  
      We start by using `cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)` to convert the RGB image to grayscale, then apply `cv2.threshold(src, thresh, maxval, type)` to transform the grayscale image into a binary image.
