@@ -3,52 +3,55 @@
 ## For Learners ## 
 
 - ### Hardware Selection
-    - [Controller Selection](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/other/Controller_Choosing)
-    - [Moter Selection](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Motor/README.md)
-    - [Color Sensor](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/color_sensor/README.md)
-    - [Lidar Selection](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Lidar/README.md)
-    - [Camera Selection](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Camera/README.md)
+    - [Main Controller Comparison](./schemes/Main_Controller_Choosing/README.md)
+    - [Motor & Sensor Intermediate I/O Controller Comparison](./schemes/Motor_Sensor_Controller_Choosing/README.md)
+    - [Moter Selection](./schemes/Motor/README.md)
+    - [Ultrasonic rangefinder](./schemes/HC-SR04/README.md)
+    - [Gyroscope orientation sensor](./schemes/BNO055/README.md)
+    - [Camera Selection](./schemes/Camera/README.md)
     
 - ### Vehicle Design
-    - [Vehicle 2D/3D Models in CAD](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/models/Vehicle_2D_3D)
-    - [BOM Parts List](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/schemes/Parts_List#readme)
-    - [Vehicle Chassis Design Process](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/schemes/Vehicle_Chassis_Design)
-    - [Circuit Design](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/models/Circuit_Design/README.md)
-    - [Hardware Fool-Proof Design](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/fool-proof-design/README.md) 
-    - [Assembly Instructions & Wiring Diagrams](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Assembly_Instructions/README.md)
+    - [Vehicle 2D/3D Models in CAD](./models/Vehicle_2D_3D/README.md)
+    - [BOM Parts List](./schemes/Parts_List/README.md)
+    - [Vehicle Chassis Design](./schemes/Vehicle_Chassis_Design/README.md)
+    - [Circuit Design](./models/Circuit_Design/README.md)
+    - [Hardware Fool-Proof Design](./schemes/Fool-Proof-Design/README.md) 
+    - [Assembly Instructions & Wiring Diagrams](./schemes/Assembly_Instructions/README.md)
     - __power Management__
-      - [Power Supply System](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Power_supply_system/README.md) 
-      - [Li-Polymer Battery Low Voltage Alarm and Charging Equipment](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/schemes/Li-Polymer_Battery/README.md)
+      - [Power Supply System](./schemes/Power_Supply_System/README.md) 
+      - [Battery choice for self-driving cars](./schemes/Battery/README.md)
 - ### System Initialization
-    - [OpenCV Introduction](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/other/OpenCV/README.md)
-    - [ROS Introduction](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/other/ROS/README.md) 
-    - [Software Platform Construction](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/src/System_Platform_Software)
+    - [OpenCV Introduction](./src/OpenCV/README.md)
+    - [Software Platform Construction](./src/System_Platform_Software/README.md)
 - ### Obstacle Management
-    - __Image Processing and Predictions__
-      - [Image Processing](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/src/Image_Processing_and_Steering/Image_Processing)  
-      - [Steering Overview ](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/src/Image_Processing_and_Steering/Steering_overview)  
+    - __Image Recognition Processing and Steering__
+      - [Image Recognition Processing](./src/Image_Recognition_Processing/README.md)  
+      - [Steering Control](./src/Steering_Control/README.md)  
+      - [Record Field Environment Values](./src/Record_Field_Environment_Values/README.md)
     - __Programming__
-      - [Open Challenge Code Overview](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/src/Programming/Open_Challenge)
-      - [Obstacle Challenge Code Overview](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/src/Programming/Obstacle_Challenge)
-      - [Distinctive Pseudo Code](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/src/Distinctive_Pseudo_Code)
+      - [Open Challenge Code Overview](./src/Programming/Open_Challenge/README.md)
+      - [Obstacle Challenge Code Overview](./src/Programming/Obstacle_Challenge/README.md)
+      - [Distinctive Pseudo Code](./src/Distinctive_Pseudo_Code/README.md)
+      - [Parking Instruction](./src/parking/README.md)
+      - [NoMachine Introduction](./other/NoMachine/README.md)
 - ### Pictures – Team and vehicle
-    - [Team Members Introduction](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/t-photos/README.md) 
-    - [Vehicle Photos](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/v-photos/README.md) 
+    - [Team Members Introduction](./t-photos/README.md) 
+    - [Vehicle Photos](./v-photos/README.md) 
 - ### Performance videos
-    - [Open Challenge](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/video/Open_Challenge/video.md)
-    - [Obstacle Challenge](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/video/Obstacle_Challenge/video.md)
-    - [Self-Driving Car Design Process Video](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/video/ALL_video/video.md)
+    - [Open Challenge](./video/Open_Challenge/video.md)
+    - [Obstacle Challenge](./video/Obstacle_Challenge/video.md)
+    - [Self-Driving Car Design Process Video](./video/)
 - ### GitHub Utilization
-    - [GitHub Edit(VScode Edit/GIT)](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/src/GitHub_Edit/README.md)
-    - [GitHub Web Editing Languages](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/blob/main/src/GitHub_Languages/README.md)
+    - [GitHub Edit(VScode Edit/GIT)](./src/GitHub_Edit/README.md)
+    - [GitHub Web Editing Languages](./src/GitHub_Languages/README.md)
 - ### Work Dairy
-    - [March](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/other/work_diary#20230319--20230326)
-    - [April](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/other/work_diary#20230327--20230402)
-    - [May](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/other/work_diary#20230501-20230507)
-    - [June](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/other/work_diary#20230529--20230604)
-    - [July](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/other/work_diary#20230626--20230702)
-    - [August](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/other/work_diary#20230731--20230806)
-    - [September](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/other/work_diary#20230828--20230903)
-    - [October](https://github.com/kirkhu/WRO2023_FE-Shinan-Fire-On-All-Cylinders/tree/main/other/work_diary#20231002--20231008)
+    - [March](./other/work_diary#20230319--20230326)
+    - [April](./other/work_diary#20230327--20230402)
+    - [May](./other/work_diary#20230501-20230507)
+    - [June](./other/work_diary#20230529--20230604)
+    - [July](./other/work_diary#20230626--20230702)
+    - [August](./other/work_diary#20230731--20230806)
+    - [September](./other/work_diary#20230828--20230903)
+    - [October](./other/work_diary#20231002--20231008)
 - ### ${{\color{red} Competition Schedule}} $  
 # <div align="center">![Gantt chart](./other/img/gantt.png)</div> 

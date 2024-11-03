@@ -38,13 +38,13 @@
     - [3-2 OpenCV Introduction ](src/OpenCV/README.md)
     - __Image Recognition Processing and Steering__
       - [3-3-1 Image Recognition Processing ](src/Image_Recognition_Processing/README.md)  
-      - [3-3-2 Steering Control](src/Steering_Control/README.md) 
+      - [3-3-2 Steering Control ](src/Steering_Control/README.md) 
       - [3-3-3 Record Field Environment Values](src/Record_Field_Environment_Values/README.md)
     - __Programming__
-      - [3-4-1 Open Challenge Code Overview](src/Programming/Open_Challenge/README.md)
-      - [3-4-2 Obstacle Challenge Code Overview](src/Programming/Obstacle_Challenge/README.md)
-      - [3-4-3 Distinctive Pseudo Code](src/Distinctive_Pseudo_Code/README.md)
-      - [3-4-4 Parking Instruction](src/parking/README.md)
+      - [3-4-1 Open Challenge Code Overview ](src/Programming/Open_Challenge/README.md)
+      - [3-4-2 Obstacle Challenge Code Overview ](src/Programming/Obstacle_Challenge/README.md)
+      - [3-4-3 Distinctive Pseudo Code ](src/Distinctive_Pseudo_Code/README.md)
+      - [3-4-4 Parking Instruction ](src/parking/README.md)
     - __Remote Connection__
       - [3-6-1 NoMachine Introduction ](other/NoMachine/README.md)
 - ### ${{\color{red} Other}} $
