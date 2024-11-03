@@ -32,9 +32,13 @@
   <td width="30%"><img src="./img/3D_light_curing-removebg-preview.png" alt="2023car_wood_up-removebg-preview" ></td>
   <td width="30%"><img src="./img/2023Vehicle chassis description.png" alt="2023Vehicle chassis description" ></td>
   <td>Last year's vehicle chassis had several issues:<br><br>
-      1.The position of the front steering servo motor was too low, causing it to easily rub against the ground.<br><br>
-      2.The 3D-printed steering knuckle part was prone to breaking upon collision with walls.<br><br>
-      3.The gear differential was not compatible with the configuration of the front and rear DC motors, limiting the overall vehicle design.</td>
+    <ol>
+      <li>The position of the front steering servo motor was too low, causing it to easily rub against the ground.</li>
+      <li>The 3D-printed steering knuckle part was prone to breaking upon collision with walls.</li>
+      <li>The gear differential was not compatible with the configuration of the front and rear DC motors, limiting the overall vehicle design.</li>
+    </ol>  
+      </td>
+    
   </tr>
   </table>
   </div>
