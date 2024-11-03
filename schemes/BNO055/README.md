@@ -24,6 +24,19 @@
     </table>
     </div>
 
+    - #### Hardware Connection:
+    **Power Supply:**
+
+    - Connect VDD (BNO055) to the 3.3V pin on the Raspberry Pi Pico (pin 36). The BNO055 operates within a voltage range of 2.4V to 3.6V, and the Raspberry Pi Pico’s 3.3V pin provides a stable 3.3V voltage, making it suitable for powering the BNO055.
+    - Connect GND (BNO055) to one of the GND pins on the Raspberry Pi Pico(pin 8) to ensure a common ground between the two devices.
+     
+    **I²C Communication:**
+
+    - Connect SDA (BNO055) to the SDA pin on the Jetson Nano (pin 3 on header J41).
+    - Connect SCL (BNO055) to the SCL pin on the Jetson Nano (pin 5 on header J41).
+    - Connect both PS0 and PS1 pins (BNO055) to ground (GND) to set the device to I²C mode.
+    - Connect the ADD pin (BNO055) to ground (GND) to set the I²C address to 0x28.
+
     We installed the BNO055 gyroscope orientation sensor on the vehicle and connected it to the Nvidia Jetson Nano controller, using I2C mode for data transmission. This setup is used to read the vehicle's current orientation, and the obtained orientation data is transmitted to the main program for calculation and analysis, serving as a basis for the vehicle's steering decisions.
  
    
