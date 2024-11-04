@@ -3,73 +3,73 @@
 ## <div align="center">Battery choice for self-driving cars</div> 
  At last year's international competition, our coach observed that most teams were using 18650 batteries to power their vehicles. He tasked us with comparing the differences between 3S Lithium Polymer (LiPo) and 18650 batteries to determine the optimal battery type for our competition vehicle this year.
 ### Comparison between 3S Li-Polymer and 18650 Li-ion batteries
-  - The following is a comparison of the advantages and disadvantages of 3S Li-Po batteries and 18650 Li-ion batteries with the same voltage configuration.
+  - The following is a comparison of the advantages and disadvantages of 3S Li-Polymer batteries and 18650 Li-ion batteries with the same voltage configuration.
   <table border="1">
     <thead>
       <tr>
         <th>Item</th>
-        <th>3S LiPo Battery</th>
+        <th>3S Li-Polymer Battery</th>
         <th>18650 Battery</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>photo</td>
+        <th>photo</th>
         <td><img src="./img/lipo_battery.png" width="400" alt="lipo_battery "></td>
         <td><img src="./img/18650.png" width="400" alt="18650 "></td>
       </tr>
       <tr>
-        <td>Voltage Range</td>
+        <th>Voltage Range</th>
         <td>11.1V (nominal), up to 12.6V (fully charged)</td>
         <td>11.1V (nominal), up to 12.6V (fully charged)</td>
       </tr>
       <tr>
-        <td>Energy Density</td>
+        <th>Energy Density</th>
         <td>Higher energy density compared to the same weight</td>
         <td>Higher capacity per unit volume compared to LiPo</td>
       </tr>
       <tr>
-        <td>Weight</td>
+        <th>Weight</th>
         <td>Lighter, good for reducing load</td>
         <td>Relatively heavier</td>
       </tr>
       <tr>
-        <td>Output Current</td>
+        <th>Output Current</th>
         <td>Supports high discharge rates (C-Rate), can provide high current instantaneously</td>
         <td>Lower discharge rates, suitable for stable power output</td>
       </tr>
       <tr>
-        <td>Charging Time</td>
+        <th>Charging Time</th>
         <td>Supports fast charging but requires a dedicated charger</td>
         <td>Relatively slower charging time</td>
       </tr>
       <tr>
-        <td>Safety</td>
+        <th>Safety</th>
         <td>More susceptible to physical damage or overcharging, risk of fire</td>
         <td>Relatively safer, resistant to overcharge and overdischarge</td>
       </tr>
       <tr>
-        <td>Shape and Flexibility</td>
+        <th>Shape and Flexibility</th>
         <td>Can be made in various shapes and sizes, high flexibility in fitting space</td>
         <td>Fixed cylindrical shape, less adaptable to different spaces</td>
       </tr>
       <tr>
-        <td>Internal Resistance and Efficiency</td>
+        <th>Internal Resistance and Efficiency</th>
         <td>Lower internal resistance, suitable for high current discharge, high efficiency</td>
         <td>Relatively higher internal resistance, slightly lower efficiency</td>
       </tr>
       <tr>
-        <td>Lifecycle</td>
+        <th>Lifecycle</th>
         <td>Shorter lifespan, fewer charge cycles (typically 300-500 cycles)</td>
         <td>Longer lifespan, more charge cycles (typically 500-1000 cycles)</td>
       </tr>
       <tr>
-        <td>Application Scenarios</td>
+        <th>Application Scenarios</th>
         <td>Used in drones, RC vehicles, and applications requiring high output</td>
         <td>Used in laptops, power banks, and applications needing stable power supply</td>
       </tr>
       <tr>
-        <td>Cost</td>
+        <th>Cost</th>
         <td>Relatively more expensive, requires dedicated charging equipment</td>
         <td>Relatively cheaper</td>
       </tr>

@@ -39,7 +39,7 @@
     - __Image Recognition Processing and Steering__
       - [3-3-1 Image Recognition Processing ](src/Image_Recognition_Processing/README.md)  
       - [3-3-2 Steering Control ](src/Steering_Control/README.md) 
-      - [3-3-3 Record Field Environment Values](src/Record_Field_Environment_Values/README.md)
+      - [3-3-3 Automatically record the HSV values of the field](src/Automatically_record_HSV/README.md)
     - __Programming__
       - [3-4-1 Open Challenge Code Overview ](src/Programming/Open_Challenge/README.md)
       - [3-4-2 Obstacle Challenge Code Overview ](src/Programming/Obstacle_Challenge/README.md)
@@ -54,7 +54,7 @@
   #### 5. Performance Videos
     - [5-1 Open Challenge ](video/Open_Challenge/video.md)
     - [5-2 Obstacle Challenge](video/Obstacle_Challenge/video.md)
-    - [5-3 Self-Driving Car Design Process Video](video/ALL_video/video.md)
+    - [5-3 Self-Driving Car Design Process Video](video/Design_Process_Video/video.md)
   #### 6. GitHub Utilization
     - [6-1 GitHub Edit(VScode Edit/GIT) ](src/GitHub_Edit/README.md)
     - [6-2 GitHub Web Editing Languages ](src/GitHub_Languages/README.md)  
