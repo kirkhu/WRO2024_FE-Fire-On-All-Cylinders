@@ -28,7 +28,10 @@
 
 <div align="center">
   
-[![ALL Fire On All Cylinders](./img//ALL_Fire_On_All_Cylinderss.jpg)](https://youtu.be/pB6wAqTKomQ "ALL Fire On All Cylinders")
+
+|[![ALL Fire On All Cylinders](./img//ALL_Fire_On_All_Cylinderss.jpg)](https://youtu.be/pB6wAqTKomQ "ALL Fire On All Cylinders")|
+|:----:|  
+
 </div>
 
 # <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div>  
