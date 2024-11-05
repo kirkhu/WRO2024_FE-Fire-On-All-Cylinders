@@ -2,15 +2,13 @@
 
 ## <div align="center"> Automatically record the HSV values of the field</div> 
 To record the colors of traffic sign blocks, parking area sidewalls, and field lines, we wrote a program that automatically saves the finalized HSV values in the Jetson Nano controller. This feature eliminates the need for manual recording, saving time and ensuring data accuracy.
+
 - #### Image processing
-    - 在處理影像時，將它們轉換為不同的顏色空間是更有效處理特定任務的必要步驟。
-    - 我們使用 cv2.cvtColor 函數將原始 RGB 圖像轉換為 HSV（色相、飽和度、亮度）色彩空間。
-    - 當影像轉換完成後，我們使用 cv2.inRange 函數，並設置六個 HSV 值：H_low、H_high、S_low、S_high、V_low 和 V_high，以定義顏色範圍。cv2.inRange 函數會將 HSV 圖像中的每個像素值與指定的 HSV 範圍進行比較。如果像素值落在這個範圍內，它將被保留；否則將被過濾掉。這個過程使我們能夠獲得一個過濾後的影像。
-    - 在獲得過濾的影像後，將當下六個 HSV 值，透過 pickle 模組，進行HSV數值資料的保存，並產生 .pkl 檔
-    - 在 function.py 將保存 HSV 值的 .pkl 檔匯入 hsv_values 字典中，再從hsv_values字典將橘線、藍線、紅色交通號誌、綠色交通號誌和粉紅色圍牆 HSV 值，填入到各個顏色的變數中。  
-
-- ### Key code snippets
-
+    - When processing images, using the [`HSV_write.py`](./code/HSV_write.py) file to convert lines on traffic sign blocks and field base maps into different color spaces is a necessary step to effectively handle specific tasks.
+    - We use the `cv2.cvtColor` function to convert the original RGB image into the HSV (hue, saturation, value) color space.
+    - Once the image has been converted, we use the `cv2.inRange` function and set six HSV values: `H_low`, `H_high`, `S_low`, `S_high`, `V_low`, and `V_high` to define a color range. The `cv2.inRange` function compares each pixel value in the HSV image with the specified HSV range. If the pixel value falls within this range, it is retained; otherwise, it is filtered out. This process allows us to obtain a filtered image.
+    - After obtaining the filtered image, we use the pickle module to save the current six HSV values as data, generating an `hsv_values.pkl` file.
+    - In [`function.py`](./code/function.py), the saved HSV values in the `hsv_values.pkl` file are imported into the `hsv_values dictionary`, where the HSV values for the orange and blue lines on the field, red and green traffic sign blocks, and pink boundary walls are assigned to variables corresponding to each color.
 
 <div align="center">
 
@@ -23,7 +21,7 @@ To record the colors of traffic sign blocks, parking area sidewalls, and field l
 
 
 
-**Green traffic sign blockr**
+**Green traffic sign block**
 
 
 |Adjusting the HSV Range Values for GreenColor|Save the HSV range values for Green|Live image of the Green traffic sign block|
