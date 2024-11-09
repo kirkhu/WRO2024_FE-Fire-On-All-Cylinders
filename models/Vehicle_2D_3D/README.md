@@ -144,7 +144,7 @@ We use Onshape to design the 3D model structure of the vehicle, and based on the
         </tr>
         </table>
         </div>
-     - #### Description of the resin used in "Stereolithography (SLA) 3D Printer.
+     - #### Description of the resin used in Stereolithography (SLA) 3D Printer.
        The types of resin used in Stereolithography (SLA) 3D printers vary, and different resins offer distinct performance comparisons. Common types of SLA resins include:
         - __Standard resin:__ Suitable for general use, offering good surface finish, but relatively lower strength and durability.
         - __High-strength resin:__ Provides higher tensile strength and rigidity, ideal for parts that need to withstand force.
