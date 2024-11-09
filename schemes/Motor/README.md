@@ -99,7 +99,7 @@ Reference Link：
 [JGB37-520](https://img.alicdn.com/imgextra/i2/1991552278/O1CN01dCTXFL1ShMoMXovK4_!!1991552278.png)
 
 - As shown in the table above, we initially planned to use the previously selected DC motor, JGA25, but due to space constraints in the newly designed chassis, it could not be accommodated. Therefore, we chose to compare the shorter MG513 and JGB37 motors and conducted relevant experiments.
-- After considering the motor’s speed, torque, compatibility with the vehicle structure, and actual experimental results, we selected the __MG513-P20__ as the rear-wheel drive DC motor for the vehicle.__  
+- After considering the motor’s speed, torque, compatibility with the vehicle structure, and actual experimental results, we selected the __MG513-P20__ as the rear-wheel drive DC motor for the vehicle. 
 
 ### Motor Drive Controller
 - Since the DC motor requires a motor driver controller to achieve forward and reverse control of the vehicle, we selected the commonly available L293D IC, L298N module, and TB6612FNG module on the Taiwan market for experimental testing to find the most suitable driving solution.   
