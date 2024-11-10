@@ -24,7 +24,6 @@
        ```
          sudo apt-get update
          sudo apt-get upgrade
-
        ```
        - __Enable automatic fan settings__
 

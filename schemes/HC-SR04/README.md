@@ -28,6 +28,19 @@
     <li>We installed HC-SR04 ultrasonic distance sensors on the left, right, and rear of the vehicle and connected them to the Raspberry Pi Pico controller to detect the distance between the vehicle and the side walls. The measured distance data is transmitted to the main program for processing, serving as a basis for parking maneuvers.</li>
     <li>It is worth noting that the maximum signal voltage read by the Raspberry Pi Pico controller is 3.3V, while commercially available HC-SR04 ultrasonic distance sensors typically output a maximum signal voltage of 5V. Therefore, when selecting or using the sensor, special attention should be paid to its operating voltage to avoid operational issues or potential damage to the controller due to voltage mismatch.</li>
     </ol>
+
+   - #### Wiring steps for connecting the HC-SR04 to the Raspberry Pi Pico:
+
+        - VCC (HC-SR04) connects to the 3.3V (pin 36) on the Raspberry Pi Pico: Provides power to the ultrasonic sensor.
+        - GND (HC-SR04) connects to the GND pin on the Raspberry Pi Pico: Ensures a common ground between both devices.
+        - Trig (HC-SR04) connects to the GPIO pins on the Raspberry Pi Pico:
+            - pin 18 (left),
+            - pin 16 (right),
+            - pin 6 (rear), used for sending ultrasonic pulse signals.
+        - Echo (HC-SR04) connects to the GPIO pins on the Raspberry Pi Pico:
+            - pin 12 (left),
+            - pin 17 (right),
+            - pin 7 (rear), used for receiving the echo signal.
     
  - Below is the code written in MicroPython, implemented as a class to read the detection distance from the HC-SR04 ultrasonic sensor using the Raspberry Pi Pico.
    - #### MicroPython code 

@@ -27,7 +27,6 @@
  - ### Explanation to Obstacle Challenge
 
 <div align="center">
-  
 
 |[![ALL Fire On All Cylinders](./img//ALL_Fire_On_All_Cylinderss.jpg)](https://youtu.be/pB6wAqTKomQ "ALL Fire On All Cylinders")|
 |:----:|  

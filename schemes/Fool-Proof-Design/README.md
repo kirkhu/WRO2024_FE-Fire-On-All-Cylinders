@@ -1,6 +1,6 @@
 <div align="center"><img src="../../other/img/logo.png" width="300" alt=" logo"></div>
 
-## <div align="center">Hardware Fool-Proof Design(硬體防呆設計)</div>
+## <div align="center">Hardware Fool-Proof Design</div>
 <div align="center">
 
 

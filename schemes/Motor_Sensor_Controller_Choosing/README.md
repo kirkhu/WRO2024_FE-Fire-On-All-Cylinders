@@ -82,7 +82,7 @@ Here is a specification comparison between the two:
 </table>
 </div>
 
-The Raspberry Pi Pico  offers simplicity, low power consumption, and affordability, making it ideal for applications with low wireless demands. It also aligns well with the requirements of this competition. Therefore, we have chosen the Raspberry Pi Pico W as a relay management controller for the Nvidia Jetson Nano, responsible for managing motors and sensors.
+The Raspberry Pi Pico  offers simplicity, low power consumption, and affordability, making it ideal for applications with low wireless demands. It also aligns well with the requirements of this competition. Therefore, we have chosen the Raspberry Pi Pico as a relay management controller for the Nvidia Jetson Nano, responsible for managing motors and sensors.
 
  ***
 - ### Supplementary Information

@@ -45,13 +45,14 @@
     - [GitHub Edit(VScode Edit/GIT)](./src/GitHub_Edit/README.md)
     - [GitHub Web Editing Languages](./src/GitHub_Languages/README.md)
 - ### Work Dairy
-    - [March](./other/work_diary#20230319--20230326)
-    - [April](./other/work_diary#20230327--20230402)
-    - [May](./other/work_diary#20230501-20230507)
-    - [June](./other/work_diary#20230529--20230604)
-    - [July](./other/work_diary#20230626--20230702)
-    - [August](./other/work_diary#20230731--20230806)
-    - [September](./other/work_diary#20230828--20230903)
-    - [October](./other/work_diary#20231002--20231008)
+    - [March](./other/work_diary/README.md#20240304--20240310)
+    - [April](./other/work_diary/README.md#20240401--20240407)
+    - [May](./other/work_diary/README.md#20240429--20240505)
+    - [June](./other/work_diary/README.md#20240527--20240602)
+    - [July](./other/work_diary/README.md#20240701--20240707)
+    - [August](./other/work_diary/README.md#20240729--20240804)
+    - [September](./other/work_diary/README.md#20240826--20240901)
+    - [October](./other/work_diary/README.md#20240930--20241006)
+    - [November](./other/work_diary/README.md#20241028--20241103)
 - ### ${{\color{red} Competition Schedule}} $  
 # <div align="center">![Gantt chart](./other/img/gantt.png)</div> 
