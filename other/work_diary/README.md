@@ -1617,6 +1617,5 @@ We have completed filming demonstration videos for GitHub over the past few days
 **Content:**
 
 #### Jetson nano
-
-
+補前蓋板的差異比較及設計圖
 # <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div>

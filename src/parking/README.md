@@ -1,6 +1,6 @@
 <div align="center"><img src="../../other/img/logo.png" width="300" alt=" logo"></div>
 
-## <div align="center">Explanation of the parking method></div>
+## <div align="center">Explanation of the parking method</div>
   **Below is the code for performing the parking task after completing three laps.**
 - ### Parking program
     - When the vehicle is in motion, the system (Jetson Nano) first uses the camera to detect the pink square to identify the location of the parking lot. When the vehicle reaches the last turn of the third lap, it first proceeds to the end zone and pauses momentarily. The vehicle then completes another lap and, upon approaching the turn near the parking lot, reduces its speed to park precisely in the designated spot. At this point, the system uses the highlighted values from the camera to assess the distance between the vehicle and the front boundary wall, adjusting its direction toward the parking lot.
@@ -9,7 +9,7 @@
 
     - After confirming the parking direction, the system applies a real-world parallel parking approach. First, it sets the steering angle for the servo motor and the angle needed for the motor to reach the target position. During the parking process, the system (Raspberry Pi Pico) controls the motor to achieve the target angle while simultaneously adjusting the servo motor, thereby completing the reverse parking maneuver.
     
-  - Code running on the Jetson Nano controller.
+  - **Code running on the Jetson Nano controller.**
     ```
         #parking area turn
         if turn_side == 4:

@@ -98,7 +98,7 @@ Based on the characteristics of each control board, we distributed the complex o
             x1, y1 = start_point
             x2, y2 = end_point
 
-            # 计Calculate the position of the intermediate control points to control the curvature.
+            # Calculate the position of the intermediate control points to control the curvature.
             mid_x = (x1 + x2) // 2
             mid_y = (y1 + y2) // 2
            control_x = mid_x

@@ -9,8 +9,8 @@
     <th>Bottom View </th>
   </tr>
     <tr align="center">
-    <td><img src="./img/top.png"   alt="Top view" > </td>
-    <td><img src="../schemes/Assembly_Instructions/img/down.png"   alt="Bottom view " ></td>
+    <td><img src="./img/top.png"  width = "50%" alt="Top view" > </td>
+    <td><img src="../schemes/Assembly_Instructions/img/down.png"  width = "55%"  alt="Bottom view " ></td>
 
   </tr>
     <tr align="center">
@@ -19,8 +19,8 @@
   </tr>
     </tr>
     <tr align="center">
-    <td><img src="./img/front.png" alt="Front_view" ></td>
-    <td><img src="./img/back.png"  alt="Rear_view" ></td>
+    <td><img src="./img/front.png" width = "45%"  alt="Front_view" ></td>
+    <td><img src="./img/back.png" width = "55%"  alt="Rear_view" ></td>
   </tr>
   </tr>
     <tr align="center">
@@ -29,8 +29,8 @@
   </tr>
     </tr>
     <tr align="center">
-    <td><img src="./img/left.png" alt="Left view" ></td>
-    <td><img src="./img/right.png" alt="Right view" ></td>
+    <td><img src="./img/left.png" width = "60%" alt="Left view" ></td>
+    <td><img src="./img/right.png" width = "60%" alt="Right view" ></td>
   </tr>
 </table>
 </div> 

@@ -1,9 +1,9 @@
 <div align="center"><img src="../../other/img/logo.png" width="300" alt=" logo"></div>
 
 ## <div align="center">Self-Driving Car Design Process Video </div> 
-
+<div align="center">
 The following video showcases the vehicle design and mission testing process.
-<<div align="center">
+
 
    |Self-Driving Car Design Process Video|
    |:----:|
