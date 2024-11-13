@@ -1,9 +1,9 @@
 <div align="center"><img src="../../other/img/logo.png" width="300" alt=" logo"></div>
 
-# <div align="center">Work Diary (工作日誌)</div>
+# <div align="center">Work Diary</div>
 
   The following is a record of the development process for the design and task-solving of the self-driving vehicle model, including mechanical design and manufacturing, circuit design and implementation, and the selection of various electronic devices.
-以下是自駕車機型設計與任務解決的歷程紀錄，包括機構設計與製造、電路設計與實作、以及各類電子設備的選用等。
+以下是自駕車機型設計與任務解決的歷程紀錄，涵蓋了機構設計與製造、電路設計與實作、電子設備選型、程式設計與測試，以及問題解決的整體過程。
 ## 2024/03/04 ~ 2024/03/10  
 
 **Member:** HU,SIAN-YI、LAI,MENG-CHENG、HUANG,KE-FU
@@ -358,9 +358,11 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 #### Jetson nano
 
 - We purchased DC motors with model numbers JGB37-520, MG513-P20, and MG513-P30 online to be used as the vehicle's rear-drive motors, and conducted actual tests on their rotational speed and torque.
+- Through experiments, we learned that the speed and torque of the MG513-P30 (366 rpm/1 kg.cm) are more suitable for use as the rear-drive DC motor for this competition vehicle.
 - When testing the motor operation, simply providing positive and negative terminals cannot effectively control the DC motor's movement or adjust its speed. Therefore, a motor controller is required to implement speed regulation. We have two options: the L293D chip, the L298N module, and the TB6612FNG. To reduce weight, we chose the smaller L293D chip. Its compact size allows us to install more sensors, save space, reduce weight, and enhance the robot's maneuverability.
 
 - 我們在網路上購買了編號為 JGB37-520、MG513-P20 和 MG513-P30 的直流馬達，作為車輛的後驅馬達，並進行了實際的轉速和扭力測試。
+- 經過實驗得知，MG513-P30的轉速和扭力(366rpm/1kg.cm)較適合當作本次競賽車輛的後驅直流馬達。
 - 在測試馬達的作動方式時，單純提供正負極無法有效控制直流馬達的運行，且無法調節速度，因此需要使用馬達控制器來實現速度調節。我們有兩種選擇：L293D 晶片、L298N 模組和 TB6612FNG。為了減輕重量，我們選擇了體積較小的 L293D 晶片。其小巧的尺寸使我們能夠安裝更多的感應器，節省空間、減輕重量，並提升機器人的機動性。
 
 
@@ -436,6 +438,7 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 </tr>
 </table>
 </div>
+
 
 ## 2024/04/29 ~ 2024/05/05
 
@@ -524,6 +527,19 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
   </tr>
 </table>
 </div>
+
+- We chose a lithium polymer battery (3S) as the power source for the vehicle, but an accidental charging error led to a fire and damage to the tabletop. Therefore, we must be extremely careful and cautious when using the lithium polymer battery (3S).
+- 我們選用了鋰聚合物電池（3S）作為車輛的電源，但不小心發生了充電失誤，導致燃燒並損毀了桌面。因此，在使用鋰聚合物電池（3S）時，我們必須格外小心和謹慎。
+
+  <div align=center>
+  <table>
+  <tr>
+  <th>Photo of 3S Li-Polymer (LiPo) battery burnout during charging.</th>
+  </tr><tr>
+  <td><img src="../../schemes/Battery/img/Burnout.jpg" width="450" alt="battery burnout during charging" align="center" /></td>
+  </tr>
+  </table>
+  </div>
 
 ## 2024/05/06 ~ 2024/05/12
 
@@ -655,74 +671,34 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 
 #### Jetson nano
 
-- This week, we used Onshape to design component models and planned to produce them using stereolithography (SLA) printing. Given SLA’s high precision and smooth finish, we chose this method for critical parts, especially the Ackermann steering components and bearing mounting brackets in the front steering mechanism, which require precise measurements and quality.
-- After printing, we used an SLA cleaning machine to thoroughly remove any residual material, ensuring the components were clean and ready for assembly.
-- During assembly, we noticed that the photopolymer parts were somewhat fragile and prone to deformation. To address this, we applied secondary UV curing, which effectively reduced deformation and improved the durability of these critical components.
+- This week, due to the change to using the MG513-P30 DC motor for the rear drive and modifications to the Ackermann steering components and bearing mounting brackets in the front steering mechanism, we used Onshape to redraw the revised part models. We then used an SLA (stereolithography) 3D printer to print these components to ensure precise dimensions and high quality.
+- After printing, we needed to use a UV curing and cleaning machine to thoroughly remove any residual material, ensuring the parts were clean and ready for assembly.
+- During the assembly process, we found that the photopolymer components were relatively brittle and prone to deformation. To address this issue, we performed a secondary UV curing, which effectively reduced deformation and improved the durability of these critical parts.
 
-- 本週，我們使用 Onshape 繪製零件模型，並計劃以立體光固化（SLA）方式進行打印。考慮到 SLA 提供的高精度與光滑表面，我們選擇了這種方法來製作一些關鍵部件，尤其是前置轉向機構中的阿克曼轉向組件和軸承安裝支架，這些元件需要精確的尺寸和高品質。
-- 打印完成後，我們使用光固化清洗機將殘餘材料徹底清除，確保零件乾淨並準備好進行組裝。
-- 在組裝過程中，我們發現光敏聚合物部件較為脆弱，容易變形。為了解決這個問題，我們進行了紫外線二次固化，有效減少變形，並提升了這些關鍵部件的耐用性。
+- 本週，由於後驅直流馬達改為使用 MG513-P30 直流馬達，並對前置轉向機構中的阿克曼轉向組件及軸承安裝支架進行修正，我們重新使用 Onshape 繪製了修正後的零件模型。隨後，我們利用立體光固化（SLA）3D列印機進行打印，以確保這些元件具備精確的尺寸和高品質。
+- 打印完成後，我們需要使用光固化清洗機將殘餘材料徹底清除，確保零件乾淨並準備好進行組裝。
+- 在組裝過程中，我們發現光敏聚合物部件較為脆弱，容易變形。為了解決這個問題，我們進行了紫外線二次固化，這有效減少了變形並提升了這些關鍵部件的耐用性。
 
-- ##### Drawing parts(繪製零件)
+- ##### Onshape Model Draft
 
 <div align="center" width=100%>
 <table >
 <tr align="center">
 <td>Draw parts</td>
-<td>Onshape</td>
+<td>Onshape Model Draft</td>
+<td>onshape 3D model CAD</td>
 </tr>
 <tr>
   <td><img src="./img/5/draw_parts.jpg" alt="Draw parts" width="250" /></td>
   <td><img src="./img/5/onshape.jpg" alt="onshape" width="250" /></td>
+  <td><img src="../../models/Vehicle_2D_3D/Vehicle_Chassis_CAD_File/img/onshape_3D_model_CAD.png" alt="onshape" width="250" /></td>
   </tr>
 </table>
 </div>
 
-- ##### Supplementary Information
-    - __Maintenance Process:__
-
-       Without regular maintenance, a stereolithography 3D printer may become clogged with resin and become unusable, requiring periodic cleaning. So we recorded the cleaning methods we learned from our seniors and started cleaning ourselves.
-     
-    1. After printing is completed, the object will adhere to the printing platform, so we remove the platform for cleaning.
-    2. Place the platform on a rack and put it into the UV curing washing machine.    
-    3. Set the time and wait for the washing machine to complete the cleaning. The machine will rotate the alcohol in the washing tank to perform the first cleaning of the platform and the object.
-    4. Rinse the alcohol off the finished product with water.
-    5. Use a scraper to remove the object from the platform.
-    6. Remove the support structures from the edges of the object.
-    7. Perform a second cleaning with alcohol to thoroughly clean the resin off the object.
-    8. Clean any remaining resin off the platform with alcohol.
-    9. Finally, dry the platform and reinstall it back onto the stereolithography 3D printer of machine.
-
-    <div align="center">
-    <table>
-    <tr>
-    <td>Step 1</td>
-    <td>Step 2</td> 
-    <td>Step 3</td></tr>
-    <tr align="center">
-    <td><img src="../../models/Vehicle_2D_3D/img/1.jpg" width="250" ></td>
-    <td><img src="../../models/Vehicle_2D_3D/img/2.jpg" width="250"></td> 
-    <td><img src="../../models/Vehicle_2D_3D/img/3.jpg" width="250"></td>
-    </tr>
-    <td>Step 4</td>
-    <td>Step 5</td> 
-    <td>Step 6</td></tr>
-    <tr align="center">
-    <td><img src="../../models/Vehicle_2D_3D/img/4.jpg" width="250"></td>
-    <td><img src="../../models/Vehicle_2D_3D/img/5.jpg" width="250"></td>
-    <td><img src="../../models/Vehicle_2D_3D/img/6.jpg" width="250"></td>
-    </tr>
-    <td>Step 7</td>
-    <td>Step 8</td>
-    <td>Step 9</td></tr>
-    <tr>
-    <td><img src="../../models/Vehicle_2D_3D/img/7.jpg" width="250"></td>
-    <td><img src="../../models/Vehicle_2D_3D/img/8.jpg" width="250"></td>
-    <td><img src="../../models/Vehicle_2D_3D/img/9.jpg" width="250"></td>
-    </tr>
-    </table>
-    </div>
-
+- Stereolithography (SLA) 3D 列印機使用後需要定期清潔。於是，我們記錄了從前輩學到的清潔方法，並開始進行自己的清潔工作。清潔與維護的詳細說明已經記錄在 1-1 Vehicle 2D/3D Models in CAD。
+- The stereolithography (SLA) 3D printer requires regular cleaning after use. Therefore, we documented the cleaning methods learned from our predecessors and began performing our own cleaning tasks. Detailed instructions for cleaning and maintenance have been recorded in <a href="../../models/Vehicle_2D_3D/README.md#supplementary-information" target="_blank">1-1 Vehicle 2D/3D Models in CAD</a>.
+  
 
   - #####  Vehicle body support components produced with Stereolithography (SLA) 3D Printer
       <div align=center>
@@ -763,9 +739,9 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 
 #### Raspberry pi 4
 
-- Since the infrared sensor approach proved infeasible, we decided to switch to LiDAR for side wall detection. When the LiDAR detects that the distance to the side wall is less than 35 cm and this detection occurs twice, the vehicle will exit the loop; otherwise, it will continue moving forward. To prevent false positives from multiple wall detections in a short time, we added a delay after each detection to ensure stability. This adjustment enhances the vehicle’s accuracy in recognizing side walls and prevents unnecessary stops or erroneous actions.
+- Since the infrared sensor solution was not feasible, we decided to switch to using LiDAR for wall-edge detection. The vehicle will only exit the loop when the distance between the LiDAR and the wall is less than 35 cm and the wall is detected twice; otherwise, it will continue moving forward. To prevent multiple detections of the wall within a short period from causing misjudgment, we added a delay after the detection to ensure the stability of the results. This adjustment helps improve the vehicle's accuracy in recognizing walls, avoiding unnecessary stops or erroneous operations.
 
-- 由於紅外線感測器方案不可行，我們決定改用光達來進行邊牆偵測。當雷達與邊牆的距離小於35公分，並且偵測到牆壁的次數達到2次時，車輛才會跳出迴圈，否則繼續向前行駛。為了避免車輛在短時間內多次偵測到牆壁而產生誤判，我們在判斷後加上了延遲時間，以確保偵測結果的穩定性。這樣的調整可以提升車輛對邊牆的準確識別，避免不必要的停頓或錯誤操作。
+- 由於紅外線感測器方案不可行，我們決定改用光達來進行邊牆偵測。當雷達與邊牆的距離小於35公分，並且偵測到牆壁的次數達到兩次時，車輛才會跳出迴圈，否則將繼續向前行駛。為了避免車輛在短時間內多次偵測到牆壁而產生誤判，我們在判斷後加入了延遲時間，以確保偵測結果的穩定性。這樣的調整有助於提升車輛對邊牆的準確識別，避免不必要的停頓或錯誤操作。
 
 <div align="center" width=100%>
 <table >
@@ -773,7 +749,7 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
   <th>LiDAR wall detection code</th>
   </tr>
 <tr align="center">
-  <td><img src="./img/6/LiDAR_wall_detection_code.png" width = "300"  alt="wood" align=center />  </td>
+  <td><img src="./img/6/LiDAR_wall_detection_code.png" width = "400"  alt="wood" align=center />  </td>
   </td>
   </tr>
 </table>
@@ -781,18 +757,18 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 
 #### Jetson nano
 
-- In order to ensure that the vehicle can accurately avoid obstacles in complex environments, we decided to install a high-performance camera module. Considering that the Jetson Nano is used as the controller, we selected a camera module that is highly compatible with it to ensure stable system performance. We ultimately chose the IMX477-160 12.3MP high-resolution camera module, which provides excellent resolution and image quality, offering clear and detailed visual data. This choice not only enhances the vehicle’s environmental recognition capabilities but also significantly improves its obstacle avoidance performance, helping the vehicle more accurately perceive obstacle positions.
+- To enable the vehicle to correctly avoid various obstacles in complex environments, we decided to install a high-performance camera module. Considering that we are using the Jetson Nano as the controller, we selected a camera module that is highly compatible with it to ensure system stability. We ultimately chose the IMX477-160 12.3MP high-resolution camera module, which offers excellent resolution and image quality, providing clear image data. This choice not only enhances the vehicle's environmental recognition capability but also effectively improves obstacle avoidance, helping the vehicle more accurately perceive the position of obstacles during the competition.
 
-- 為了讓車輛能夠在複雜環境中正確閃避各種障礙物，我們決定在車輛上安裝一個高效能的相機模組。考量到我們使用的控制器是 Jetson Nano，因此我們選擇了一款與之高度兼容的相機模組，確保系統運行穩定。我們最終選擇了 IMX477-160 12.3MP 高解析度相機模組，這款相機擁有出色的解析度和影像質量，能夠提供清晰的影像資料。這樣的選擇不僅能提升車輛的環境辨識能力，還能有效提高避障效果，幫助車輛在比賽中更準確地感知障礙位置。
+- 為了讓車輛能夠在複雜環境中正確閃避各種障礙物，我們決定在車輛上安裝一個高效能的相機模組。考量到我們使用的控制器是 Jetson Nano，因此我們選擇了一款與之高度兼容的相機模組，以確保系統運行穩定。我們最終選擇了 IMX477-160 12.3MP 高解析度相機模組，該相機擁有卓越的解析度和影像質量，能夠提供清晰的影像資料。這樣的選擇不僅能提升車輛的環境辨識能力，還能有效提高避障效果，幫助車輛在比賽中更準確地感知障礙物的位置。
 
 [IMX477-160 12.3MP Camera](https://shopee.tw/%E7%8F%BE%E8%B2%A8-SONY-IMX477-%E6%94%9D%E5%BD%B1%E9%8F%A1%E9%A0%AD%E6%A8%A1%E7%B5%84-1230%E8%90%AC%E5%83%8F%E7%B4%A0-160%C2%B0%E5%BB%A3%E8%A7%92-%E6%94%AF%E6%8F%B4%E6%A8%B9%E8%8E%93%E6%B4%BECM3-4%E3%80%81Jetson-Nano-i.10207300.8215149686?sp_atk=21737f61-91b3-4fa6-9e87-0f9a4884b88b&xptdk=21737f61-91b3-4fa6-9e87-0f9a4884b88b)
 
-### Camera Module(攝影模組)
+### Camera Module
 
 <div align="center">
 <table>
 <tr  align="center">
-<th rowspan="2">Model(型號)</td>
+<th rowspan="2">Model</td>
 <th>IMX477-160 12.3MP Camera</th>
 </tr>
 <tr  align="center">
@@ -821,19 +797,21 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 
 ### Raspberry pi 4
 
-- This week, we encountered issues with abnormal LiDAR readings. Initially, we suspected a malfunction with the LiDAR sensor itself and replaced it with a new one, but the problem persisted. We then considered the adapter might be the cause, but replacing it also did not resolve the issue. We are currently continuing to investigate the root cause to identify the best solution.
+- This week, during practice, the vehicle's LiDAR sensor exhibited abnormal readings. Initially, we thought the LiDAR itself was damaged, so we replaced it with a new one, but the issue persisted. We then suspected that the adapter might be the problem and replaced it, but the issue still could not be resolved. Currently, we are continuing to investigate the cause of the problem and are striving to find the best solution.
 
-- 這周，我們遇到光達數值異常的問題。起初以為是光達本身損壞，因此更換了一顆新的光達，但問題依然存在。接著我們懷疑可能是轉接頭的問題，更換後問題依然無法解決。目前我們還在持續排查問題的原因，以找出最佳的解決方法。
+- 這周，在練習時，車輛的光達感測器出現了數值異常的問題。起初，我們以為是光達本身損壞，因此更換了一顆新的光達，但問題依然存在。隨後，我們懷疑可能是轉接頭出了問題，於是進行了更換，但問題依然無法解決。目前，我們仍在持續排查問題的原因，並努力尋找最佳的解決方法。
 
 ### Jetson Nano
 
-- We plan to install NoMachine on the Jetson Nano for more convenient remote operation and program adjustments. With NoMachine, we can directly access and control the Jetson Nano from any device on the same network without the need to connect an HDMI screen, keyboard, or mouse. This setup not only improves our work efficiency but also enables the Jetson Nano to adapt more flexibly to different testing environments.
-- Since NoMachine requires devices to be on the same network, we purchased a Wi-Fi adapter and installed it in the Jetson Nano's USB slot to enable wireless connectivity.
-- During testing, we found that the Wi-Fi adapter (as shown in the lower left image) could easily collide with nearby obstacles. To reduce the adapter’s outward extension, we switched to a USB 3.0 90-degree adapter, which helps prevent collisions when avoiding obstacles.
+- We installed NoMachine on the Jetson Nano to facilitate remote operations and program adjustments. Through NoMachine, we can directly access and control the Jetson Nano from any device connected to the same network, without needing to connect an HDMI monitor, keyboard, or mouse. This setup not only improved work efficiency but also made the Jetson Nano more versatile, capable of adapting to testing requirements in different locations.
 
-- 我們計劃在 Jetson Nano 上安裝 NoMachine，以便更方便地進行遠端操作和程式調整。透過 NoMachine 連接，我們可以從任何連接到同一網路的裝置直接存取並控制 Jetson Nano，而無需額外連接 HDMI 螢幕、鍵盤或滑鼠。這樣的設置不僅提高了工作效率，也讓 Jetson Nano 能夠更加靈活地適應不同場地的測試需求。
-- 由於使用 NoMachine 需要在同一個網路上連接，我們購買了一個 Wi-Fi 接收器，並將其安裝在 Jetson Nano 的 USB 插槽中，方便進行無線連接。
-- 在實際測試中，我們發現 Wi-Fi 接收器（如左下圖）容易碰到附近的積木，因此改用 USB 3.0 90 度轉接頭來縮短接收器的延伸角度，這樣在避開障礙物時更不容易碰到。
+- Since using NoMachine requires being on the same network, we purchased a Wi-Fi receiver and installed it in the USB port of the Jetson Nano to enable wireless connections.
+
+- During practical testing, we found that the Wi-Fi receiver (as shown in the bottom left image) tended to hit nearby traffic signal blocks. To solve this problem, we switched to a USB 3.0 90-degree adapter to shorten the receiver’s extension angle, making it easier to avoid obstacles and prevent collisions.
+
+-  我們在 Jetson Nano 上安裝了 NoMachine，以便更方便地進行遠端操作和程式調整。透過 NoMachine 連接，我們可以從任何連接到同一網路的裝置直接存取並控制 Jetson Nano，而無需額外連接 HDMI 螢幕、鍵盤或滑鼠。這樣的設置不僅提高了工作效率，還使 Jetson Nano 更加靈活，能夠適應不同場地的測試需求。
+- 由於使用 NoMachine 需要在同一網路上進行連接，我們購買了 Wi-Fi 接收器，並將其安裝在 Jetson Nano 的 USB 插槽中，以方便進行無線連接。
+- 在實際測試中，我們發現 Wi-Fi 接收器（如左下圖所示）容易碰到附近的交通號誌積木。為了解決這個問題，我們改用了 USB 3.0 90 度轉接頭，縮短了接收器的延伸角度，這樣可以更輕鬆地避開障礙物，避免碰撞。
 
 
 <div align="center" width=100%>
@@ -866,8 +844,8 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 <div align="center" width=100%>
 <table >
 <tr align="center">
-  <th >Event Photo(活動照片)</th>
-  <th >Event Photo(活動照片)</th>
+  <th >Activity photo</th>
+  <th >Activity photo</th>
 </tr>
 <tr>
   <td align="center"><img src="./img/4/site.jpg" width=300 alt="site" /></td>
@@ -890,11 +868,15 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 
 ### Jetson Nano
 
-- For writing technical documentation, we chose to use VS Code with Git, which provides both a flexible editing environment and robust version control. VS Code supports multiple languages and extensions, enabling us to code and document simultaneously, while Git allows us to track every change and easily revert if needed. With Git's branching feature, each team member can work in their branch without impacting the main document's stability. When multiple editors modify the same file, Git promptly flags conflicts, allowing the later editor to review and merge changes efficiently. Additionally, VS Code's Git extension simplifies the entire workflow, letting us manage versions directly within the editor, enhancing both the team's collaborative efficiency and document consistency.
+- When writing engineering documents, we chose to use VS Code along with Git. This approach not only provides a flexible editing environment but also offers powerful version control capabilities. VS Code supports multiple programming languages and plugins, allowing us to code and write documents simultaneously, while Git enables us to track changes and easily revert to previous versions. Through Git’s branching feature, each member can work on their own branch, avoiding direct impacts on the stability of the main document. When multiple people edit the same document simultaneously, Git highlights conflicts in real time, allowing the subsequent editor to compare and merge changes, thereby improving collaboration efficiency. Additionally, the Git plugin in VS Code simplifies the overall process, enabling us to complete version management directly within the editor, which greatly enhances team collaboration efficiency and document consistency.
 
-- 在編寫技術文件時，我們選擇使用 VS Code 搭配 Git，這種方式不僅提供靈活的編輯環境，還具備強大的版本控制功能。VS Code 支援多種語言和插件，讓我們可以同時進行編碼和文件撰寫，而 Git 則讓我們能追蹤每次變更並輕鬆回溯。透過 Git 的分支功能，每位成員能在自己的分支中工作，避免直接影響主文件的穩定性。當多人同時修改同一文件時，Git 會即時標示衝突，使較晚上傳的編輯者能夠進行比較和合併，從而更高效地協同作業。此外，VS Code 的 Git 插件簡化了整體流程，讓我們能直接在編輯器中完成版本管理，這大大提升了團隊合作的效率和文件的一致性。
+- 在編寫工程文件時，我們選擇使用 VS Code 搭配 Git，這樣的方式不僅提供靈活的編輯環境，還具備強大的版本控制功能。VS Code 支援多種程式語言和插件，讓我們可以同時進行編碼和文件撰寫，而 Git 則使我們能夠追蹤每次變更並輕鬆回溯。透過 Git 的分支功能，每位成員可以在自己的分支上進行工作，避免直接影響主文件的穩定性。當多人同時修改同一文件時，Git 會即時標示衝突，讓後來上傳的編輯者能夠進行比較和合併，從而提高協作效率。此外，VS Code 的 Git 插件簡化了整體流程，使我們能夠直接在編輯器中完成版本管理，這大大提升了團隊合作的效率和文件的一致性。
 
-[github 主頁](../../README.md)
+ <div align="center">
+  
+  [Engineering Documentation - WRO2024_FE-Fire-On-All-Cylinders](../../README.md) 
+  
+ </div>
 
 <div align="center">
 <table>
@@ -920,15 +902,15 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 
 ### Raspberry pi 4
 
-- Due to persistent issues with the LiDAR, we’re considering the possibility that the command used to call the LiDAR might be incorrect. However, as we’re unsure how to modify the command and with the competition date approaching, we’ve decided to explore alternative methods. Currently, we are considering using ultrasonic sensors for detection instead.
+- Since we were unable to resolve the LiDAR issue, we began to suspect that there might be an error in the command used to call the LiDAR. However, as we were not familiar with modifying the calling program and with the competition deadline approaching, we decided to look for alternative solutions. Currently, we are considering switching to ultrasonic sensors for detection.
 
-- 由於一直無法解決光達問題，我們在想是不是呼叫光達的指令是錯的，但是由於我們不了解呼叫程式如何修改，並且也接近比賽時間了，因此我們決定再尋找其他方法，目前是想要用超音波去做偵測。
+- 由於一直無法解決光達的問題，我們開始懷疑是否是呼叫光達的指令存在錯誤。然而，由於我們不熟悉如何修改呼叫程式，且比賽時間也迫在眉睫，我們決定尋找其他解決方法。目前，我們考慮改用超音波進行偵測。
 
 #### Jetson nano
 
-- During the hardware design process, we encountered issues where the Jetson Nano would fail to boot, or the Raspberry Pi Pico could not receive signals from the Jetson Nano, often due to incorrect power or data cable connections. To address this, we decided to use double-row female headers, double-row male headers, and Dupont wires as the connection method between the two devices.
+- During the hardware design process, we encountered several instances where the Jetson Nano failed to power on or the Raspberry Pi Pico was unable to receive signals from the Jetson Nano due to incorrect power connections or data line misplacements. Therefore, we decided to use dual-row female headers, dual-row male headers, and Dupont wires as the connection method between the two.
 
-- 在硬體設計過程中，遇到過幾次因電源接錯或資料線插錯而導致 Jetson Nano 無法開機，或是 Raspberry Pi Pico 無法接收到來自 Jetson Nano 的訊號，因此我們決定使用雙排排針母座、雙排排針公座以及杜邦線，作為兩者間的連接方式。
+- 在硬體設計過程中，我們曾遇到幾次因電源接錯或資料線插錯，導致 Jetson Nano 無法開機，或是 Raspberry Pi Pico 無法接收到來自 Jetson Nano 的訊號。為了解決這些問題，我們決定使用雙排排針母座、雙排排針公座以及杜邦線，作為 Jetson Nano 和 Raspberry Pi Pico 之間的連接方式，從而避免線路接錯的問題再次發生。
 <div align="center">
 <table>
 <tr  align="center">
@@ -947,16 +929,19 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 
 ### Raspberry pi 4
 
-- This week, we began using ultrasonic sensors to detect walls. During testing, we observed that the vehicle often collides with obstacles while tracking, especially frequently hitting blocks. To address this, we decided to temporarily set aside the parking function development and focus on improving block avoidance. Once the vehicle reliably avoids obstacles, we will resume work on the parking program.
+- This week, we began using ultrasonic sensors to detect walls. During testing, we found that the vehicle often collided with obstacles while tracking, especially with blocks. Therefore, we decided to temporarily put the parking function development on hold and focus on perfecting the block avoidance function. Once the vehicle can reliably avoid obstacles, we will resume the development of the parking program.
 
-- 這周，我們開始使用超音波來偵測牆壁。在測試過程中發現，機器在循跡時經常會撞到障礙物，尤其容易撞到積木。因此，我們決定暫時擱置停車功能的撰寫，先集中精力完善積木的閃避功能，確保車輛穩定避障後，再繼續進行停車程式的開發。
+- 這周，我們開始使用超音波來偵測牆壁。在測試過程中發現，機器在循跡時經常會撞到障礙物，尤其容易撞到積木。因此，我們決定暫時擱置停車功能的撰寫，先集中精力完善積木的閃避功能，確保車輛能穩定避障後，再繼續進行停車程式的開發。
 
 
 ### Jetson Nano
 
-- Before dodging the blocks, we need to complete the basic task of circling the track three times. During this circling process, we noticed the possibility of the machine rubbing against the walls while turning. To address this, we utilize the 360-degree detection capability of LiDAR to keep the vehicle centered on the track. By subtracting the distances on the left and right sides, we obtain an error value, which is then corrected using the servo motor to ensure the vehicle continues to travel along the center of the track.
+- Before avoiding blocks, we need to first complete three laps around the field. During this process, we found that the vehicle could potentially graze the wall when turning. Therefore, we decided to convert the captured camera images to grayscale and then apply binarization to identify the wall's position. Next, we used a PD control algorithm to keep the vehicle centered in the lane, ensuring it could steadily drive down the middle of the road.
 
-- 在閃避積木之前，我們需要先完成基本的環繞場地三圈。在繞圈的過程中，我們發現機器有可能在轉彎時擦撞到牆壁，因此需要利用鏡頭的反白偵測區來使機器維持在道路中央。透過反白數值的大小，我們可以得到車輛與牆壁的距離，再利用伺服馬達控制車輛遠離牆壁，使機器能夠持續行駛在道路中央。
+- For detailed documentation on image recognition processing, please refer to 3-3-1 Image Recognition Processing.
+
+- 在閃避積木之前，我們需要先完成基本的環繞場地三圈。在繞圈的過程中，我們發現機器在轉彎時有可能擦撞到牆壁，因此我們決定將鏡頭所擷取的影像轉換為灰度圖像，然後進行二值化處理，從中找出邊牆的位置。接著，我們使用 PD 控制算法，將車輛保持在車道的中間，確保車輛能夠穩定地行駛在道路中央。
+- 有關影像辨識處理的詳細記錄，請參見<a href="../../src/Image_Recognition_Processing/README.md#adjust-floor-to-boundary-black-and-white-thresholdjetson_nano_binarizedpy" target="_blank"> 3-3-1 影像辨識處理</a>。
 
 <div align="center">
 <table>
@@ -979,10 +964,12 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 
 ### Raspberry pi 4
 
-- Due to the approaching competition date, we decided to temporarily pause research on the Jetson Nano. In this week's tests, we found that the vehicle was detecting blocks that were too far ahead, causing it to start avoidance maneuvers too early and ultimately collide with the side walls. To address this, we added a black mask to the upper part of the screen to prevent the vehicle from detecting blocks that were too far ahead. After implementing this mask, the vehicle no longer detected distant blocks, successfully reducing interference.
+- As the competition date approached, we decided to temporarily set aside the research on the Jetson Nano and focus on finalizing adjustments for the Raspberry Pi 4.
+During this week’s testing, we found that the vehicle often detected traffic signal blocks that were too far ahead, causing it to start the avoidance maneuver prematurely and ultimately crash into the wall. To solve this issue, we added a black mask to the top of the image frame so that the vehicle would not detect traffic signal block colors that were too distant. After applying the mask, the vehicle no longer detected overly distant block colors, successfully reducing the chances of interference.
 
-- 由於比賽日期接近，我們決定暫時擱置 Jetson Nano 的研究，先專注將 Raspberry pi 4 調整完成。
-- 在這周的測試中，我們發現車輛容易偵測到太前面的積木，造成提前閃避動作，最終撞上邊牆。為了解決這個問題，我們在畫面上方增加了黑色遮罩，讓車輛無法偵測到過於前方的積木顏色。加上遮罩後，車輛不再偵測過遠的積木顏色，成功減少了干擾的機率。
+- 由於比賽日期接近，我們決定暫時擱置 Jetson Nano 的研究，先專注於完成 Raspberry Pi 4 的調整。
+
+- 在這周的測試中，我們發現車輛容易偵測到過於前方的交通號誌積木，導致提前進行閃避動作，最終撞上邊牆。為了解決這個問題，我們在畫面上方增加了黑色遮罩，這樣車輛就無法偵測到過遠的交通號誌積木顏色。加上遮罩後，車輛不再偵測過遠的積木顏色，成功減少了干擾的機率。
 
 <div align="center">
 <table>
@@ -1002,19 +989,19 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 
 ### Raspberry pi 4
 
-- After completing the block avoidance program, we started conducting success rate tests on the vehicle. Initially, we tested at 50% speed, and the vehicle was mostly able to respond correctly. However, when we increased the speed to 70%, we found that the color sensor occasionally misjudged the line color due to the higher speed. To resolve this, we adjusted the program to use LiDAR to measure the left and right directions for determining the turning direction, which reduced the chances of turning the wrong way due to color misjudgment.
+- After completing the block avoidance program, we began testing the machine's success rate. Initially, we chose a speed of 50%, at which the machine was mostly able to respond smoothly. However, when we increased the speed to 70%, we found that the color sensor sometimes misinterpreted the line colors on the ground due to the higher speed. To solve this issue, we adjusted the program to use LiDAR for measuring left and right directions to identify turning directions, effectively reducing the chances of incorrect turns due to color misjudgment.
 
-- 完成積木閃避程式後，我們開始進行機器的成功率測試。一開始選擇了50%的速度，機器大多能夠順利反應。但當我們將速度提高到70%時，發現顏色感測器有時會因為速度過快而誤判地上的線條顏色。為了解決這個問題，我們調整了程式，改用光達測量左右方向來辨識轉彎方向，這樣可以減少因顏色誤判而轉錯方向的情況。
+- 完成積木閃避程式後，我們開始進行機器的成功率測試。一開始，我們選擇了50%的速度，機器大多能夠順利反應。但當我們將速度提高到70%時，發現顏色感測器有時會因為速度過快而誤判地上的線條顏色。為了解決這個問題，我們調整了程式，改用光達測量左右方向來辨識轉彎方向，這樣可以有效減少因顏色誤判而轉錯方向的情況。
 
 #### Detects Turning Direction
 
 ```
-if get_left_dis > 100:
-    reverse = False
-else:
-    reverse = True
-if get_mid_dis > 55:
-    servo.angle(-40)
+  if get_left_dis > 100:
+      reverse = False
+  else:
+      reverse = True
+  if get_mid_dis > 55:
+      servo.angle(-40)
 ```
 
 ## 2023/07/15 ~ 2023/07/21
@@ -1025,13 +1012,17 @@ if get_mid_dis > 55:
 
 ### Raspberry pi 4
 
-- The robot is now capable of successfully avoiding obstacles and completing the third lap around the track. The next task is to detect blocks and perform a turnaround maneuver. The turnaround will only be executed if the last block of the second lap is red. Therefore, it is necessary to detect the lap count. We will utilize the color sensor to count the number of times the line is crossed and determine whether the set count has been reached.
-- If the specified count has not yet been achieved, the system will continue to record the color of the nearest traffic sign until the count of line crossings is greater than or equal to the set value. At this point, color recording will cease.
-- Once the color of the nearest traffic sign has been recorded, the program will determine whether the color is red. If the color is red, the system will set the angle of the servo motor to initiate a right turn and continue turning until the vehicle is oriented in the specified direction. If the detected color is not red, the vehicle will continue moving forward. However, if the color of the traffic sign is red, a turnaround maneuver will be executed.
+- We are now able to complete block avoidance and the third lap around the track. The next goal is to detect the blocks and perform a U-turn. The U-turn action only needs to be executed if the last block in the second lap is red, so we first need to detect the number of laps. We will use the color sensor to record the number of times the vehicle crosses the lines and determine whether the count has exceeded the set number.
 
-- 已經可以完成閃避積木及繞場第三圈，接下來就是偵測積木並迴轉，迴轉是在第二圈的最後一個積木是紅色的才要進行的動作，因此要先偵測圈數，要利用顏色感測器來偵測經過的線條次數，並判斷是否超過了設定的次數。
-- 如果未達到指定次數，系統將會持續紀錄距離最近的交通標誌顏色，直到經過的線條次數大於或等於設定次數，此時將不再紀錄顏色。
-- 紀錄完最近的交通標誌顏色後，程式將判斷最近的交通標誌顏色是否為紅色。若標誌顏色為紅色，系統將設定伺服馬達角度為右轉角度，持續轉動直到車輛轉向指定的方向。若最近的交通標誌顏色不是紅色，則車輛會繼續向前行駛。
+- If the count has not reached the specified number, the system will continue recording the color of the nearest traffic signal until the line-crossing count is greater than or equal to the set number, at which point it will stop recording the color.
+
+- Once the color of the nearest traffic signal is successfully recorded, the program will check whether it is red. If the color of the signal is red, the system will set the servo motor to the right-turn angle and keep turning until the vehicle completes the designated turn. If the color of the nearest traffic signal is not red, the vehicle will continue to move forward.
+
+- 已經能夠完成閃避積木和繞場第三圈，接下來的目標是偵測積木並進行迴轉。迴轉的動作只有在第二圈的最後一個積木是紅色時才需要進行，因此我們首先需要偵測圈數。我們將利用顏色感測器來紀錄經過的線條次數，並判斷是否已經超過設定的次數。
+
+- 如果未達到指定次數，系統將會持續紀錄距離最近的交通標誌顏色，直到經過的線條次數大於或等於設定次數，此時將不再繼續紀錄顏色。
+
+- 當成功紀錄最近的交通標誌顏色後，程式將判斷該顏色是否為紅色。如果標誌顏色為紅色，系統會設定伺服馬達的角度為右轉角度，並持續轉動直到車輛完成指定的轉向。如果最近的交通標誌顏色不是紅色，車輛將繼續向前行駛。
 
 <div align="center">
 <table>
@@ -1050,41 +1041,28 @@ if get_mid_dis > 55:
 **Member:** HU,SIAN-YI、LAI,MENG-CHENG、HUANG,KE-FU  
 **Content:**
 
-- As the field mission has been roughly completed, we are now starting to write the technical report. Since we are not familiar with the correct technical report format, we referred to the official website's technical report documentation, and found that the report should include the following sections:
+- Since the field tasks have been largely completed, we have started working on the technical report. Due to our lack of familiarity with the correct standards for technical reports, we referred to the official website's documentation and found that it needs to include the following sections:
 
-  1. module: This folder should contain documentation related to the vehicle models, such as files for laser cutting machines and 3D printers.
+  - module: This folder should contain files related to the vehicle model, such as files for laser cutters and 3D printers. 
+  - other: This folder is for data that does not fall into other categories, such as communication protocols and engineering logs. 
+  - schemes: This folder is for hardware descriptions, explaining the functions of electronic components and how they are connected. 
+  - src: This folder should contain all code files. 
+  - t-photos: This folder should contain team photos, including one formal photo and one funny photo. 
+  - v-photos: This folder should contain photos of the machine, including six different views.
+  - video: This folder should contain a video of the machine in operation, which must be over 30 seconds long.
 
-  2. other: This folder is used to store data that does not belong to other categories, such as communication protocols and engineering logs.
+- While writing the technical documentation, we switched to using a desktop computer to view the GitHub webpage and used a laptop to edit in VS Code, as it required toggling between VS Code and the GitHub webpage.
 
-  3. schemes: This folder is dedicated to hardware introductions, explaining the functions of electronic components and how they are connected.
+- 由於場地任務已經大致完成，我們開始著手撰寫技術報告。由於我們不清楚正確的技術報告標準，因此參考了官網的技術報告文件，發現需要包含以下部分：
 
-  4. src: All programs should be placed in this folder.
-
-  5. t-photos: This folder should contain team photos, including a group photo and humorous pictures.
-
-  6. v-photos: Machine photos from six different perspectives should be placed in this folder.
-
-  7. video: Videos demonstrating the machine's operation should be placed in this folder, with each video lasting more than 30 seconds.
-
-- When writing the technical report, we are switching between VS Code and the GitHub website. We use a desktop computer to view the GitHub web page and a laptop to edit the report in VS Code.
-
-- 由於場地任務已經大致完成，因此要開始撰寫技術報告，由於我們還不清楚正確的技術報告標準，因此參考官網的技術報告文件，發現需要以下部分
-
-  1. module 此資料夾內需放入車輛模型的文件，如雷射切割機、3D列印機的檔案
-  
-  2. other 此資料夾用於放置不屬於其他分類的資料，如通訊協定、工程日誌等
-  
-  3. schemes 此資料夾用於硬體介紹，說明電子元件的作用與如何連接
-  
-  4. src 此資料夾需要放入所有程式
-  
-  5. t-photos 此資料夾需要放入團隊的合照，包括一張合照和搞笑照片
-  
-  6. v-photos 此資料夾需要放入機器的照片，包括六個不同方位的視圖
-  
-  7. video 此資料夾應該放入機器運作影片，要超過30秒
-
-- 再撰寫技術文件時，由於需要再VS Code和Github網站之間切換，因此我們改用一台桌機檢視Github網頁，一台筆電用VS Code編輯
+  - module：此資料夾內需放入車輛模型的文件，例如雷射切割機、3D 列印機的檔案。
+  - other：此資料夾用於放置不屬於其他分類的資料，如通訊協定、工程日誌等。
+  - schemes：此資料夾用於硬體介紹，說明電子元件的作用與如何連接。
+  - src：此資料夾需要放入所有程式碼文件。
+  - t-photos：此資料夾需要放入團隊的合照，包括一張正式合照和一張搞笑照片。
+  - v-photos：此資料夾需要放入機器的照片，包括六個不同方位的視圖。
+  - video：此資料夾應該放入機器運作的影片，長度需超過30秒。
+- 在撰寫技術文件時，由於需要在 VS Code 和 GitHub 網頁之間切換，我們改用了桌機來檢視 GitHub 網頁，並用筆電在 VS Code 上進行編輯。
 
 <div align="center">
 <table>
@@ -1106,11 +1084,13 @@ if get_mid_dis > 55:
 
 ### Raspberry pi 4
 
-- We made significant progress in our project. We successfully organized and listed the components in the parts inventory, and we uploaded it to the technical documentation. Additionally, we completed the drawing of the vehicle's introduction diagram. Throughout this process, we embarked on a learning journey, gradually familiarizing ourselves with GitHub syntax. Although we are not yet fully proficient in using GitHub, we dedicated time to researching relevant information online and steadily improving our skills. These achievements have brought valuable advancements to our report and project as a whole.
-- This week, after completing the task race, we resumed working on the parking zone issue.
+- We have completed organizing and listing the parts inventory and uploaded it to the engineering documentation on GitHub. Additionally, we have finished the drawing work for the vehicle introduction diagram. Throughout this process, we gradually learned and became familiar with the use of GitHub syntax. Although our operation of GitHub is not yet very proficient, we have improved our skill level by consulting related information online. These advancements have provided valuable enhancements to our report.
 
-- 我們完成了將零件清單整理並列點，並上傳至技術文件中。此外，我們也完成了車體的介紹圖的繪製工作。在這個過程中，我們逐步學習了GitHub語法的使用並逐漸熟悉它。儘管對GitHub的使用不是很熟練，但我們努力在網上查詢相關資訊，並逐步提高了技能水平。這些進展為我們的報告帶來了寶貴的進步。
-- 在這禮拜由於我們將任務賽處理完了，因此我們繼續處理停車區的問題。
+- This week, as the task competition has been completed, we have started to continue addressing issues related to the parking area.
+
+- 我們已經完成了將零件清單整理並列點，並將其上傳至 GitHub 的工程文件中。此外，我們也完成了車體介紹圖的繪製工作。在這個過程中，我們逐步學習並熟悉了 GitHub 語法的使用。儘管對 GitHub 的操作還不是非常熟練，但我們通過查詢網上相關資訊，逐步提高了技能水平。這些進展對我們的報告有了寶貴的提升。
+
+- 本週，由於任務賽的處理已經完成，我們開始繼續處理停車區的相關問題。
 
 ### Team Members' Practice Status(隊員練習狀況)
 
@@ -1131,29 +1111,35 @@ if get_mid_dis > 55:
 
 ### Raspberry pi 4
 
-- This week, we completed the handling of the parking zone.
-- As the deadline for submitting the technical report is next week, we have begun revising the content of the technical documentation. We are also adjusting the website according to the official grading criteria and continuously adding to the technical report.
-- Complete recording videos for each task and upload them to YouTube.
+- This week, we completed the handling of the parking function. Although the vehicle can park smoothly, accurately projecting and parking in the lot remains a challenge.
 
-- 在這個禮拜我們將停車處理完成
-- 由於下星期就要交出技術文件，因此我們開始修改技術報告的內容，並依官方評分標準調整網頁，持續補充技術報告。
-- 完成各任務錄影，並上傳YOUTUBE
+- As the technical documentation is due next week, we began revising the content of the report and adjusting the webpage according to the official scoring criteria, while continuing to supplement the technical report and work logs.
 
+- We recorded videos of various task solutions and uploaded them to YouTube for easy linking and referencing in the technical report.
+
+- 在這個禮拜，我們完成了停車功能的處理，雖然車輛能夠順利進行停車，但要正確地投影並停入停車場仍然是個挑戰。
+
+- 由於下星期就要提交技術文件，我們開始修改技術報告的內容，並根據官方評分標準調整網頁，同時持續補充技術報告和工作日誌的內容。
+
+- 我們錄製了各種解題任務的影片，並將其上傳至 YouTube，便於製作連結並在技術報告中引用。
+<div align="center">
 <table>
 <tr align="center">
-<th>Directory Home Page</th>
+<th>The directory of engineering documentation on GitHub</th>
 </tr>
 <tr align="center">
-<td><img src="./img/8/Directory_Home_Page.png" alt="Directory Home Page"  width="300"/> </td>
+<td><img src="./img/8/Directory_Home_Page.png" alt="The directory of engineering documentation on GitHub"  width="400"/> </td>
 </tr>
 </table>
 
-  **Open Challenge 資格賽影片**
+</div>
+
+  **Open Challenge videos**
 
 - [Open Challenge Full Width 60% Speed](https://www.youtube.com/watch?v=kdZ8KoKKiUw)
  
 
-**Team Members' Practice Status(隊員練習狀況)**
+**Team Members' Practice Status**
 
 <div align="center">
 <table>
@@ -1175,22 +1161,22 @@ if get_mid_dis > 55:
 
 ### Raspberry pi 4
 
-- This week, as our machine has been adjusted to run the mission race smoothly on the field, we have started shooting an introductory video for the mission race. In the video, we will showcase the actions our vehicle performs during the mission race, and we will provide explanations through subtitles synchronized with the video.
+- This week, as our machine has successfully been adjusted to operate basic task competitions on the field smoothly, we began filming the task competition videos.
 
-- 這星期由於我們的機器已經將數值調整到可以正常在場地上運行基本的任務賽，因此我們開始拍攝任務賽的影片。
+- 這星期，由於我們的機器已經成功將數值調整到能夠正常運行場地上的基本任務賽，我們開始拍攝任務賽的影片。
 
 <div align="center">
 <table>
 <tr align="center">
-<th>Modify the program and test the vehicle 修改程式及測試車輛</th>
+<th>Modify the program and test the vehicle</th>
 <tr align="center">
 <td><img src="./img/8/work_photo_1_0813.jpg" width="100%" ></td>
 </table>
 </div>
 
-**任務賽影片**
+**Open Challenge videos**
 
-- [Open Challenge](https://www.youtube.com/watch?v=n0Pp--26QGQ)</td>
+- [Open Challenge videos](https://www.youtube.com/watch?v=n0Pp--26QGQ)
 
 ## 2024/08/19 ~ 2024/08/25
 
@@ -1200,25 +1186,24 @@ if get_mid_dis > 55:
 
 ### Raspberry pi 4
 
-As the competition is scheduled for this week, we have intensified our practice efforts, trying out various scenarios and adjusting our program to adapt to a wide range of situations. Experimenting with different scenarios has the advantage of helping us anticipate challenges that our machine might face and making necessary adjustments in advance. Here's our practice approach:
+- Since the competition is scheduled to take place this week, we have already started intensive practice, trying different tasks and adjusting the program to adapt to most scenarios. The benefit of trying different tasks is that it helps us identify potential challenges the machine may face and make necessary adjustments in advance. Here is our practice method:
+- We labeled the pathways as A, B, C, and D, with each pathway divided into three zones, each containing two inner and outer block placement points. Red blocks indicating turning conditions are placed sequentially, while other blocks are adjusted randomly.
 
-- We have assigned lane labels A, B, C, and D. Each lane is divided into three sections, with placement points for blocks both on the inner and outer sides in each section. Red blocks indicating turning conditions will be placed sequentially, while the positions of other blocks will be randomized.
+We believe that this approach will help prepare our machine for various situations, ensuring that we are well-prepared for the competition.
 
-We believe that this approach will assist our machine in preparing for a variety of scenarios, ensuring that we are well-prepared for the competition.
+- 由於比賽即將在本週舉行，我們已經開始加強練習，嘗試不同的題目並調整程式，以適應大多數的情況。嘗試不同的題目有一個好處，就是能幫助我們找出機器可能遇到的挑戰，並提前進行必要的調整。以下是我們的練習方式：
 
-由於比賽即將在本週舉行，我們已經開始加強練習，嘗試不同的題目並調整程式，以適應大多數的情況。嘗試不同的題目有一個好處，就是可以幫助我們找出機器可能遇到的挑戰，並提前進行必要的調整。以下是我們的練習方式：
+- 我們將走道編號為 A、B、C、D，每個走道分為三個區域，每個區域都有內外兩個放置方塊的點。指示轉彎條件的紅色方塊會按順序放置，其他方塊則會隨機調整。
 
-- 我們將走道編號為A、B、C、D。每個走道分為三個區域，每個區域都有內外兩個放置方塊的點。指示轉彎條件的紅色方塊會按順序放置，其他方塊則會隨機調整。
-我們相信，這種做法將幫助我們的機器準備應對各種不同的情況，確保我們在比賽中做好充分的準備。
+  我們相信，這種做法將幫助我們的機器準備應對各種不同的情況，確保我們在比賽中做好充分的準備。
 
+- The competition day was August 25th. In the morning qualifiers, our vehicle successfully completed all laps in the first round and achieved full marks; however, in the second round, we had to request repairs due to abnormal radar readings. After the repairs were completed, there was only one minute left before the end of the competition, which allowed us to complete only two laps. Nevertheless, we advanced smoothly to the obstacle race in the afternoon.
 
-On August 25, we participated in the competition. In the first round of the qualifying session, our vehicle successfully completed all laps with a perfect score. In the second round, however, we encountered LiDAR reading issues, requiring us to request a repair. After fixing it, only one minute remained, so we could only complete two laps. Nonetheless, we advanced to the obstacle course in the afternoon.
+- In the first obstacle race, the vehicle collided with a wall due to excessive evasion maneuvers, resulting in the race being halted. After adjustments, the second obstacle race was completed with successful obstacle avoidance. However, the vehicle stopped without entering the finish zone, preventing us from achieving an ideal score. Fortunately, due to an opponent's mistakes, we still managed to advance.
 
-In the first obstacle course attempt, the vehicle collided with the wall due to excessive avoidance maneuvers, stopping the race. After adjustments, the second run was successful in obstacle avoidance, but the vehicle failed to enter the finish zone, which impacted our score. Fortunately, an opponent’s error allowed us to advance.
+- 比賽日是8月25日。在上午的資格賽中，我們的車輛在第一場順利完成所有圈數並獲得滿分；但在第二場，由於雷達讀數異常，我們不得不申請維修。修復完成後，距離比賽結束僅剩一分鐘，這使得我們只能完成兩圈。不過，我們仍然順利晉級到下午的障礙賽。
 
-比賽日是8月25日。在上午的資格賽中，我們的車輛在第一場順利完成所有圈數並獲得滿分；但在第二場，由於雷達讀數異常，我們不得不申請維修。修復完成後，距離比賽結束僅剩一分鐘，使得我們只能跑完兩圈。不過，仍順利晉級到下午的障礙賽。
-
-在第一場障礙賽中，車輛因閃避幅度過大撞牆，導致比賽中止。經過調整後，第二場障礙賽順利完成避障，然而，由於未進入結束區而停止，未能取得理想分數。幸運的是，由於對手出現失誤，我們仍然成功晉級。
+- 在第一場障礙賽中，車輛因閃避幅度過大撞牆，導致比賽中止。經過調整後，第二場障礙賽順利完成避障，然而，由於未能進入結束區而停止，未能取得理想分數。幸運的是，由於對手出現失誤，我們仍然成功晉級。
 
 <div align="center">
 <table>
@@ -1240,15 +1225,17 @@ In the first obstacle course attempt, the vehicle collided with the wall due to 
 **Member:** HU,SIAN-YI、LAI,MENG-CHENG、HUANG,KE-FU  
 **Content:**
 
-Since we have confirmed our participation in the international competition, we are attempting to modify the machine. We have started testing the Raspberry Pi 5 and Jetson Nano, aiming to choose one of these controllers for replacement.
+- Since our team successfully advanced and has the opportunity to participate in the international competition, we began making improvements to the self-driving car to achieve better results. We started testing the Raspberry Pi 5 and Jetson Nano separately, planning to choose one as the new controller.
 
-- The Raspberry Pi 5 has a processor speed that is 2 to 3 times faster than the Raspberry Pi 4, with GPU performance that is twice as powerful as the previous generation. Its memory and I/O bandwidth are also doubled, and it consumes less power for the same tasks.
-- The Jetson Nano, compared to our original controller, the Raspberry Pi 4, offers significantly better performance and has a more powerful GPU (graphics processing unit) than the Raspberry Pi 4, which enhances camera recognition capabilities.
+  - The Raspberry Pi 5's processor speed is 2 to 3 times that of the Raspberry Pi 4, with GPU performance being twice as strong, and the memory and I/O bandwidth also doubling that of the previous generation. It also has lower power consumption for the same tasks.
+  - Compared to our original controller, the Raspberry Pi 4, the Jetson Nano has significantly higher performance and a more powerful GPU (Graphics Processing Unit), showing superior performance in camera recognition.
 
-由於我們已經確定要參加國際賽，所以我們嘗試將機器進行改造，我們分別開始測試 Raspberry pi 5 和 Jetson nano ，想要從這兩種中選一種控制器更換。
+- 由於我們隊伍順利晉級並有機會參加國際賽，為了爭取佳績，我們開始對自駕車進行改進。我們分別開始測試 Raspberry Pi 5 和 Jetson Nano，計劃從這兩者中選擇一種作為新的控制器。
 
-- Raspberry pi 5 處理器速度是 Raspberry pi 4 的2~3倍，GPU效能為上一代的兩倍，記憶體與I/O頻寬也是上一代的兩倍，且在同樣的任務上有較少的功耗。
-- Jetson nano 相較於我們的原控制器 Raspberry pi 4 的性能高上許多，而且擁有比 Raspberry pi 4 處理功能更強大的GPU（圖形處理器），鏡頭辨識較強。
+  - Raspberry Pi 5 的處理器速度是 Raspberry Pi 4 的 2 到 3 倍，GPU 效能也為上一代的兩倍，記憶體和 I/O 頻寬也是上一代的兩倍，且在相同任務下具有較低的功耗。
+  - 相較於我們的原控制器 Raspberry Pi 4，Jetson Nano 的性能高出許多，並且擁有比 Raspberry Pi 4 更強大的 GPU（圖形處理單元），在鏡頭辨識方面表現較為優越。
+
+
 
 <div align="center">
 <table>
@@ -1266,15 +1253,17 @@ Since we have confirmed our participation in the international competition, we a
 
 #### Raspberry pi 5
 
-We set up a machine with a controller of Raspberry pi 5 and started to install and test the functions of Raspberry pi 5.
+- Currently, we are unsure which has better recognition performance, Raspberry Pi 5 or Jetson Nano. To verify this, we assembled a machine identical to the one with Raspberry Pi 4 and replaced the controller with Raspberry Pi 5, then started testing the functionality of the Raspberry Pi 5.
 
-- When we tried to insert the SD card from our Raspberry Pi 4 into the Raspberry Pi 5, we found that the boot operation could not be performed. Therefore, we formatted the SD card that was originally a backup for the Raspberry Pi 4 to use it for the Raspberry Pi 5 image file. After burning the Raspberry Pi 5 image file, the boot was successful.
-- We began setting up the environment. We chose to start the installation using VNC, which allows us to control the Raspberry Pi 5 from the computer for subsequent actions. Then we installed two pieces of software: OpenCV and ROS. OpenCV is the software used to operate the camera, while ROS is the software needed to run the radar.
+- When we attempted to insert the SD card used on the Raspberry Pi 4 into the Raspberry Pi 5, we found that it could not boot successfully. Therefore, we formatted the backup SD card from the Raspberry Pi 4 and burned the Raspberry Pi 5 image onto it, which finally allowed it to boot successfully.
 
-我們組了一臺跟 Raspberry Pi 4 一樣的機器，將控制器更改為 Raspberry pi 5 的機器，著手安裝測試 Raspberry pi 5 的功能。
+- Next, we began the environment setup process. We first chose to install VNC so that we could operate the Raspberry Pi 5 from a computer for subsequent operations. Then, we installed the software OpenCV and ROS. OpenCV is used for processing camera images, while ROS is needed for handling radar data.
 
-- 在我們嘗試將我們在 Raspberry pi 4 上的SD卡插入 Raspberry pi 5 上時，發現無法進行開機動作，因此我們將原本備用 Raspberry pi 4 的SD卡格式化，要拿來灌入 Raspberry pi 5 的映像檔，燒入 Raspberry pi 5 的映像檔後才成功開機。
-- 我們開始進行環境架設工作，我們選擇從 VNC 開始安裝，這樣可以讓我們從電腦操縱 Raspberry pi 5 進行後續動作，接著我們安裝 OpenCV 和 ROS 這兩個軟體， OpenCV 是要執行鏡頭用的軟體，而 ROS 是執行雷達需要用到軟體。
+- 目前我們不確定 Raspberry Pi 5 和 Jetson Nano 哪一個的辨識效能較好，為了驗證這一點，我們組裝了一臺與 Raspberry Pi 4 相同的機器，將控制器更換為 Raspberry Pi 5，並開始測試 Raspberry Pi 5 的功能。
+
+- 在嘗試將我們在 Raspberry Pi 4 上的 SD 卡插入 Raspberry Pi 5 時，我們發現無法順利開機。於是，我們將原本備用的 Raspberry Pi 4 SD 卡格式化，並將 Raspberry Pi 5 的映像檔燒錄進去，才成功開機。
+
+- 接下來，我們開始進行環境設置工作。首先選擇安裝 VNC，這樣我們就能從電腦操作 Raspberry Pi 5 進行後續的操作。然後，我們安裝了 OpenCV 和 ROS 這兩個軟體，OpenCV 用來處理鏡頭影像，而 ROS 則是處理雷達所需的軟體。
 
 <div align="center">
 <table>
@@ -1296,12 +1285,15 @@ We set up a machine with a controller of Raspberry pi 5 and started to install a
 
 We have assembled an additional machine specifically for use with the Jetson Nano and have begun delving into its functionalities and applications. This machine will serve as our experimental platform to explore the computational capabilities and hardware integration of the Jetson Nano, laying the groundwork for future development.
 
-Building on our previous research with the Jetson Nano, we split the camera display into two modes during testing: a binarized mode and a normal display mode. In the binarized mode, we added two inverted white blocks to detect the position of side walls, while the normal display mode focuses on detecting ground lines to assist with determining the vehicle’s direction when turning. This setup allows for more flexible handling of wall avoidance and turning decisions, enhancing both overall stability and accuracy.
+- We continued restoring the self-driving car that previously used the Jetson Nano as the main controller and added the capability to recognize blue and orange lines on the field to serve as the basis for determining clockwise or counterclockwise turns.
 
-我們額外組裝了一台機器給 Jetson nano 使用，開始研究 Jetson nano 。
-- 由於我們在之前就有研究過 Jetson nano ，所以我們現在在測試時先將鏡頭分為二值化及正常化面兩種，並在二值化的畫面新增兩塊偵測邊牆的反白區塊偵測邊牆，而正常化面則用來偵測地上的線，方便我們做轉彎判斷。
+- Therefore, we must use OpenCV to convert the captured images from RGB to HSV to correctly identify colors. The method for converting to HSV is detailed in section <a href="../../src/Image_Recognition_Processing/README.md">3-3-1 Image Recognition Processing</a>.
 
-##### 鏡頭視角
+- 我們持續恢復之前使用 Jetson Nano 作為主控制器的自駕車，並增加了場地上藍色和橘色線條的辨識判斷，以便用來作為車輛順逆時針轉彎的依據。- 
+
+- 因此，我們必須將擷取的影像，使用 OpenCV 進行 RGB 到 HSV 的轉換，以便正確判斷顏色。轉換成 HSV 的方式詳細紀錄在<a href="../../src/Image_Recognition_Processing/README.md">3-3-1 Image Recognition Processing</a>中。
+
+##### The detection status of the side walls and the blue and orange lines on the field after image processing.
 <div align="center">
 <table>
 <tr align="center">
@@ -1326,9 +1318,9 @@ We began addressing the issues that occurred during the national competition, us
 
 - During both mission races, the parking maneuver could not be executed as planned. Therefore, we decided not to perform parking in the mission races. Now, we are exploring alternative methods for parking.
 
-我們開始修改我們在全國賽中發生的問題，當作未來的備用品。
-- 我們在任務賽第一場有發生迴轉失敗的問題，我們我們嘗試調整迴轉的速度與角度，讓我們可以順利迴轉。
-- 我們在兩場任務賽中停車動作都無法照常進行，因此我們在任務賽中選擇不進行停車，現在我們要嘗試使用其他方法進行停車。
+- At the same time, we made corrections to the self-driving car with the Raspberry Pi 4 as the main controller, aiming to use it as a backup for future competitions.
+  - In the first round of the task competition, we encountered a failure in making a U-turn. To address this issue, we adjusted the speed and angle of the U-turn so that the vehicle could complete it smoothly.
+  - In both rounds of the task competition, the vehicle's parking actions did not proceed as expected. Therefore, we decided not to perform parking maneuvers during the task competition and plan to try other methods to achieve parking.
 
 ## 2024/09/02 ~ 2024/09/08
 
@@ -1337,15 +1329,14 @@ We began addressing the issues that occurred during the national competition, us
 
 #### Raspberry pi 5
 
+We continued trying to transfer the functions installed on the Raspberry Pi 4 to the Raspberry Pi 5 but found that some functions could not be installed or run. For example, ROS, which is needed for running the radar, and GPIO for reading pins could not be installed and used. Only the VNC system and OpenCV for camera use were successfully installed. After researching online, we discovered that these issues might be due to version incompatibility or unsuitability, preventing us from running the main program and likely unable to be resolved in the short term. Due to these issues, we decided to temporarily pause our research on Raspberry Pi 5 and prioritize optimizing the Raspberry Pi 4 to ensure stable system operation.
 
-We continued trying to install the functions that were previously set up on the Raspberry Pi 4 onto the Raspberry Pi 5. However, we encountered issues where certain functionalities couldn't be installed, such as ROS for the radar and GPIO for pin reading. Only the VNC system and OpenCV for the camera were successfully installed. After researching online, we discovered that compatibility and version issues were the main reasons preventing successful installation. As a result, we couldn't run our main program. Given this, we decided to pause the research on the Raspberry Pi 5 and focus on optimizing the Raspberry Pi 4 for now.
-
-我們繼續嘗試將 Raspberry pi 4 上有安裝的功能安裝到 Raspberry pi 5 上，卻發現有些功能並沒有辦法安裝，像是執行雷達需要的ROS、讀取腳位要用的GPIO，都無法安裝使用，只有 VNC 系統和鏡頭的 OpenCV 安裝成功，我們在網路上查詢有發現是版本不相容、不適用等問題，導致無法安裝，以致我們無法執行我們的主程式，因此我們決定暫緩 Raspberry pi 5 的研究，先將 Raspberry pi 4 調整到最佳狀態。
+我們繼續嘗試將 Raspberry Pi 4 上已安裝的功能轉移到 Raspberry Pi 5 上，然而發現有些功能無法安裝和運行。例如，執行雷達所需的 ROS 和讀取腳位的 GPIO 都無法安裝使用，只有 VNC 系統和鏡頭用的 OpenCV 成功安裝。我們在網上查詢後發現，這些問題可能是由於版本不相容或不適用所導致，結果使我們無法執行主程式，且短時間內應該也無法解決。基於這些問題，我們決定暫時擱置 Raspberry Pi 5 的研究，並優先將 Raspberry Pi 4 調整至最佳狀態，以確保系統運行穩定。
 
 <div align="center">
 <table>
 <tr align="center">
-<th>Find information</th>
+<th>Methods for finding solutions online.</th>
 </tr>
 
 <tr align="center">
@@ -1355,10 +1346,13 @@ We continued trying to install the functions that were previously set up on the 
 
 #### Jetson nano
 
-We performed basic line tracking using a camera and a gyroscope. The camera was used for binarization to determine the area of the line on the ground for judgment, while the gyroscope was used to read the angle and direction. Since we used binarization, we needed to use black and white checkered paper to calibrate the camera. After taking about 20 photos of the paper from different angles through the program, the camera was ready for use, allowing us to perform the preliminary qualifying run using the camera and gyroscope.
+- We use a camera module for recognition and a gyroscope for navigation during vehicle operation. We found that the camera module uses a 160-degree wide-angle lens, which, while expanding the field of view, also causes distortion during image capture. Therefore, we need to perform distortion correction for the wide-angle lens on the Nvidia Jetson Nano. A common correction method is using the correction function in the OpenCV library, with the detailed correction method outlined in section <a href="../../schemes/Camera/README.md#wide-angle-lens-distortion-correction"> 2-4-3 Camera Selection</a>.
 
-我們有透過鏡頭與陀螺儀進行基礎的循跡，透過鏡頭進行二值化判斷地面上線的面積，進而進行判斷，並搭配陀螺儀讀去角度方向，而我們因為使用二值化所以需要使用黑色與白色格子的紙張校正鏡頭，大約透過程式使用鏡頭對紙張進行不同角度的拍攝20張左右的照片後，鏡頭就可以進行使用，透過鏡頭和陀螺儀進行初步資格賽的運行。
+- After the camera module was corrected, we combined it with the gyroscope and successfully completed the qualification test.
 
+- 我們透過鏡頭模組辨識與陀螺儀導航進行車輛行駛，發現鏡頭模組使用的是160度的廣角鏡，雖然可以擴大視野範圍，但也造成影像擷取時的變形。因此，我們需要在 Nvidia Jetson Nano 上對廣角鏡頭進行畸變校正。常用的校正方法是利用 OpenCV 函式庫中的校正函數，具體的校正方法記錄在<a href="../../schemes/Camera/README.md#wide-angle-lens-distortion-correction"> 2-4-3 Camera Selection</a>中。
+
+- 鏡頭模組經過校正後，我們配合陀螺儀，順利完成了資格賽的測試。
 <div align="center">
 <table>
 <tr align="center">
@@ -1379,9 +1373,9 @@ We performed basic line tracking using a camera and a gyroscope. The camera was 
 
 #### Raspberry pi 4
 
-We are not sure what went wrong with our Raspberry Pi 4 that caused it to burn out. We started by checking the power supply line from the Lipo battery, using a multimeter to measure breakover. Then, we checked the buck converter and used the multimeter to measure the output voltage and current, ensuring the voltage was 5 volts and the current was 3 amps. After testing the buck converter and confirming it had no issues, we turned to check the circuit on the circuit board to see if there was any reversed polarity. A few days ago, we had replaced the connection line between the circuit board and Raspberry Pi, so we weren't sure if the connection line was faulty and caused a short circuit. However, after the final inspection, we found no issues. In the end, we decided to solder a new circuit board, as we believed the likelihood of the problem was with the circuit board, leading us to make this decision.
+- Our Raspberry Pi 4 unexpectedly burned out for unknown reasons. To find the cause, we started by checking the power supply from the Lipo battery, using a multimeter to measure conductivity. Next, we inspected the step-down converter and used the multimeter to measure the output voltage and current of the converter, confirming that the voltage was 5V and the current was 3A. After ensuring the converter was functioning normally, we checked the circuit board wiring to see if there was a reversed polarity issue. Since we had replaced the connection cables between the circuit board and the Raspberry Pi a few days earlier, we could not be sure if the cables had caused a short circuit. After a final inspection, no abnormalities were found. Ultimately, believing that a circuit board malfunction was the most likely cause, we decided to solder a new circuit board to avoid impacting competition timing.
 
-我們 Raspberry pi 4 不確定出了什麼問題導致 Raspberry pi 4 燒毀了，我們從 Lipo 電池供電線開始檢查，使用三用電表測量有沒有導通，接著我們再檢查降壓板，使用三用電表測量降壓板輸出端的電壓和電流，電壓是否為5伏特和電流是否為3安培，在測試過降壓板確定沒問題後，我們轉而測試電路板的線路，看電路板有沒有地方正負接反，因為我們在幾天前有更換電路板與樹梅派的連接線，所以我們不確定是不是連接線有問題而短路，然而經過最後的檢查也是沒有發現問題，最後我們打算重新焊接一塊新的電路板，因為我們認為電路板出問題的機率較大，才做出此項決定。
+- 在不清楚原因的情況下，我們的 Raspberry Pi 4 發生了燒毀。為了找出原因，我們首先從 Lipo 電池供電開始檢查，使用三用電表測量是否有導通。接著，我們檢查了降壓板，並使用三用電表測量降壓板輸出端的電壓和電流，確認電壓為 5V，電流為 3A。確保降壓板運行正常後，我們轉而檢查電路板的線路，查看是否存在正負接反的情況。由於幾天前我們更換了電路板和樹莓派的連接線，我們無法確定是否是連接線引起的短路。經過最終檢查後，我們並未發現任何異常。最終，因為我們認為電路板故障的可能性較大，我們決定重新焊接一塊新的電路板，以免影響比賽時間。
 
 <div align="center">
 <table>
@@ -1398,9 +1392,9 @@ We are not sure what went wrong with our Raspberry Pi 4 that caused it to burn o
 
 #### Jetson nano
 
-We encountered some issues with our machine; the program was acting strangely. While troubleshooting the circuit board, we discovered that some of the pins on the Pico board were abnormal, which prevented us from running our program properly. As a result, we plan to redesign the circuit diagram. We will move some of the calculations from the Pico board to the Jetson Nano, as we found that handling too many calculations on the Pico board caused problems. Therefore, we will extend a connection from the BNO055 on the circuit board to the Jetson Nano, allowing the Jetson Nano to handle the calculations.
+- Our self-driving car encountered some issues, and errors occurred when running the program. Upon inspecting the circuit board, we discovered that some pins on the Raspberry Pi Pico board were malfunctioning, which prevented the program from running properly. To resolve this issue, we decided to redesign the circuit diagram. Considering that the computational performance of the Jetson Nano main controller is superior to that of the Raspberry Pi Pico microcontroller, we connected the gyroscope (BNO055) sensor circuitry to the Jetson Nano controller and assigned the numerical processing tasks to the Jetson Nano. This adjustment is expected to allow for faster control of the servo motors and the front steering mechanism.
 
-我們機器出了點問題，執行程式起來都怪怪的，而我們在查找電路板的電路板的時候，發現 pico 板有些腳位異常，導致我們無法正常執行我們的程式，而且我們打算重新規劃電路圖，我們要將部分數值的計算從pico板移到 jetson nano 上計算，因為我們發現pico板運算太多數值會有問題，所以我們將電路板上的 BNO055 而外延伸出一條線路通往 jetson nano ，把計算數值的部分給 jetson nano 處理。
+- 我們的自駕車遇到了一些問題，執行程式時出現異常。在檢查電路板時，我們發現 Raspberry Pi Pico 板的一些腳位異常，這導致我們無法正常執行程式。為了解決這個問題，我們決定重新規劃電路圖。考慮到 Jetson Nano 主控制器的運算效能優於 Raspberry Pi Pico 微控制器，我們將電路板上的陀螺儀 (BNO055) 感測器線路連接至 Jetson Nano 控制器，並將數值運算部分交由 Jetson Nano 處理，期望能夠更快速地控制伺服馬達和前轉向機構。
 
 <div align="center">
 <table>
@@ -1421,9 +1415,9 @@ We encountered some issues with our machine; the program was acting strangely. W
 
 #### Raspberry pi 4
 
-- 新的電路板我們在這幾天將它焊接完成了，我們順便將電路板的線路重新規劃讓線路不會太雜亂，讓電路板看起來更整潔。
+- 我們在這幾天已經完成了用於 Raspberry Pi 4 控制器的新電路板焊接，同時也重新規劃了電路板的線路，避免線路過於雜亂，並使整體電路板看起來更加整潔。
 
-- We completed soldering the new circuit board in the past few days and reorganized the circuit layout to reduce clutter, making the board look cleaner.
+- Over the past few days, we have completed soldering the new circuit board for the Raspberry Pi 4 controller and have also redesigned the circuit board layout to avoid excessive clutter and make the overall circuit board look more organized.
 
 <div align="center">
 <table>
@@ -1438,9 +1432,9 @@ We encountered some issues with our machine; the program was acting strangely. W
 
 #### Jetson nano
 
-Because when the robot performs lens recognition, the color of the line will cause misdetection, so we first use onshape to design the model, and use light curing to print an F-shaped windshield that can be embedded in the front of the machine, and the line in front of the machine Cover it up to avoid misdetection during lens recognition.
+- Since the self-driving car encounters misdetections during visual recognition due to the color of the vehicle's own signal wires, we decided to first use Onshape to design a cover plate model. We then used photopolymer 3D printing technology to create a cover plate that can fit precisely onto the F-shaped structure at the front of the vehicle. This cover plate effectively blocks the signal wires in front of the vehicle, thereby preventing misdetections during the camera recognition process.
 
-因為機器人在進行鏡頭辨識時，會因為線的顏色導致誤測，所以我們先使用 onshape 設計模型，並使用光固化印製出一個可以鑲嵌在機器前方 F 型的擋風玻璃，把機器前方的線遮擋起來，避免造成鏡頭辨識時誤測。
+- 由於自駕車在進行視覺辨識時，會因為車輛本身訊號線的顏色導致誤測，我們決定先使用 Onshape 設計一個蓋板模型，並利用光固化列印技術製作出一個可以精確鑲嵌在車輛前方 F 型結構的蓋板。這樣，蓋板能有效遮擋車輛前方的訊號線，從而避免在鏡頭辨識過程中造成誤測。
 
 <div align="center">
 <table>
@@ -1463,24 +1457,25 @@ Because when the robot performs lens recognition, the color of the line will cau
 
 #### Raspberry pi 4
 
-This week, we discovered that ultrasonic sensors couldn't accurately position the vehicle for parking as intended, so we decided to return to using LiDAR for detection. After revising and optimizing the program logic, we successfully resolved the previous issue with erratic LiDAR readings. Now, we'll proceed with writing the parking functionality.
+- This week, we found that using ultrasonic sensors did not allow the vehicle to stop accurately at the designated position, so we decided to revert to using radar for detection. After revising and optimizing the logic, we successfully resolved the previous issue of lidar data irregularities. Next, we will continue developing and refining the parking functionality.
 
-本周我們發現，使用超音波無法讓車輛準確停在預定位置，因此決定回歸使用雷達進行判斷。經過邏輯的重新修改與優化後，我們成功解決了先前光達數值錯亂的問題。接下來，我們將繼續進行停車功能的撰寫。
+- 本周，我們發現使用超音波無法讓車輛準確停在預定位置，因此決定回歸使用雷達來進行判斷。在重新修改和優化邏輯後，我們成功解決了先前光達數值錯亂的問題。接下來，我們將繼續進行停車功能的開發和完善
 
 #### Jetson nano
 
-We perform daily backups of the Jetson Nano's SD card because we have previously experienced issues with SD card corruption, which prevented the Jetson Nano from booting. Although the cause of the corruption is still uncertain, we were fortunate to have made backups beforehand, so we didn't need to start from scratch and only had to recover the lost data. This backup routine effectively mitigates the risk of data loss and ensures the continuity of our development work.
+- We back up the Jetson Nano's SD card daily because there was an incident where the SD card was damaged, preventing the Jetson Nano from booting. Although the cause of the damage is still unknown, fortunately, we had previously backed up the data, so we didn't need to start from scratch and only had to restore the lost data. This backup habit effectively mitigates the risk of data loss and ensures the continuity of our development work.
 
-我們每天會對 Jetson Nano 的 SD 卡進行備份，因為曾經發生過 SD 卡損毀導致 Jetson Nano 無法開機的問題，雖然目前不確定損毀的原因，但幸好我們之前有進行備份，因此不需要從頭開始，只需將遺失的資料補齊即可。這樣的備份習慣有效避免了資料遺失的風險，保證了開發工作的連貫性。
-
+- 我們每天會對 Jetson Nano 的 SD 卡進行備份，因為曾經發生過 SD 卡損毀導致 Jetson Nano 無法開機的問題。雖然目前不確定損毀的原因，但幸好我們之前有進行備份，因此不需要從頭開始，只需將遺失的資料補齊即可。這樣的備份習慣有效避免了資料遺失的風險，保證了開發工作的連貫性。
 <div align="center">
 <table>
 <tr align="center">
 <th>Backup using balenaEtcher software</th>
+<th>Activity photo</th>
 </tr>
 
 <tr align="center">
-<td><img src="./img/9/SD.jpg" width="300" alt="wall"></td>
+<td><img src="./img/9/balenaEtcher.png" width="400" alt="SD"></td>
+<td><img src="./img/9/SD.jpg" width="400" alt="SD"></td>
 </table>
 </div>
 
@@ -1488,25 +1483,25 @@ We perform daily backups of the Jetson Nano's SD card because we have previously
 
 #### Raspberry pi 4
 
-This week, we successfully directed the vehicle to the front of the parking zone. However, when turning into the zone, the vehicle experienced a noticeable delay in the LiDAR-based detection of the side wall, causing it to miss the intended parking spot and making parking much more difficult. We're currently working to find a solution to optimize the response speed for this process.
+- This week, we successfully got the vehicle to drive to the area in front of the parking zone. However, when turning into the parking area, relying on the lidar sensor to detect the side wall resulted in a noticeable delay in the response to the controller, causing the vehicle to miss the intended parking spot and significantly increasing the difficulty of parking. We are currently working on finding a solution to optimize the response speed in this part, aiming to improve the vehicle's parking accuracy.
 
-本周我們成功讓車輛駛至停車區前，但在轉彎進入停車區時，因依賴光達偵測邊牆後的跳出動作出現明顯延遲，導致無法停在預期位置，使停車難度大幅增加。目前我們正努力尋找解決方案來優化這部分的反應速度。
+- 本周我們成功讓車輛駛至停車區前，但在轉彎進入停車區時，由於依賴光達感測器偵測邊牆後，反應到控制器有明顯延遲，導致車輛無法停在預期位置，這使得停車的難度大幅增加。目前，我們正努力尋找解決方案來優化這部分的反應速度，進一步提升車輛的停車準確度。
 
 #### Jetson nano
 
-We discovered that the windshield in front was causing the wires to be compressed, so we had to reroute them from the side. To address this, we used Onshape to modify the design by adding a rectangular hole in the middle divider. This adjustment makes it easier to manage the wiring and prevents the wires from being pulled.
+- Since we found that the cover plate used to shield the front wires was causing the wires to be compressed, requiring additional side connections, we made modifications to the cover plate. We added a rectangular hole in the middle partition, making it easier to organize the wiring and preventing the wires from being strained, thereby enhancing the overall design's stability and convenience.
 
-由於我們發現前面遮線的擋風玻璃會讓線受到擠壓導致還要另外將線路從旁邊連接，因此我們使用 onshape 將此檔案進行修改，在中間的隔板上開一條長方形的洞，方便我們進行線路整理，也避免線路受到拉扯，
+- 由於我們發現前面遮線的蓋板會讓線路受到擠壓，導致需要額外將線路從旁邊連接，因此我們對蓋板進行了修正。在中間的隔板上開了一條長方形的洞，這樣不僅方便我們進行線路整理，也能避免線路受到拉扯，提升整體設計的穩定性與便捷性。
 
 <div align="center">
 <table>
 <tr align="center">
-<th>No Dig</th>
-<th>Dig</th>
+<th>Cover plate without holes.</th>
+<th>Cover plate for digging.</th>
 </tr>
 <tr align="center">
-<td><img src="./img/10/No_dig.png" width="300" alt="No Dig"></td>
-<td><img src="./img/10/Dig.png" width="300" alt="Dig"></td>
+<td><img src="./img/10/No_dig.png" width="300" alt="Cover plate without holes"></td>
+<td><img src="./img/10/Dig.png" width="300" alt="Cover plate for digging."></td>
 </table>
 </div>
 
@@ -1517,48 +1512,27 @@ We discovered that the windshield in front was causing the wires to be compresse
 **Member:** HU,SIAN-YI、LAI,MENG-CHENG、HUANG,KE-FU  
 **Content:**
 
-#### Raspberry pi 4
+- 這週經過團隊討論後，由於使用 Raspberry Pi 4 控制器的自駕車經常出現顏色誤判、光達感測器測距不穩定及視覺辨識反應慢等問題，無法順利解決此次競賽任務的要求，我們決定放棄使用 Raspberry Pi 4，轉而選擇以 Jetson Nano 控制的自駕車作為主要競賽車型。
 
-這個禮拜在我們討論後，決定結束對 Raspberry Pi 4 的研究，將主要目標放於 Jetson nano 上，因為 Raspberry Pi 4 的光達極其不穩定，每次測出來的位置都不一樣，導致我們無法控制機器人走到目標位置，所以才會結束對 Raspberry Pi 4 的研究。
+- After team discussions this week, we decided to abandon using the Raspberry Pi 4 as the controller due to frequent issues with color misjudgment, unstable distance measurement by the lidar sensor, and slow response in visual recognition, which hindered our ability to meet the requirements of this competition's tasks. Instead, we chose to use the Jetson Nano-controlled self-driving car as our main competition vehicle.
 
-This week, after our discussions, we decided to end our research on the Raspberry Pi 4 and focus on the Jetson Nano. The LIDAR on the Raspberry Pi 4 was extremely unstable, with position measurements varying each time, making it impossible to control the robot to reach the target location. As a result, we decided to discontinue research on the Raspberry Pi 4.
+- This week, we completed filming the demonstration videos for GitHub and tested various combinations in the videos to see if the machine could adapt to different placements. In the qualification round, we tested four different lane width combinations; in the task competition, we tested three different placement positions for the last traffic signal block in the second lap and four different positions for the parking lot along different straight paths. The links to these videos have been recorded in sections 5-1 Open Challenge and 5-2 Obstacle Challenge.
 
-#### Jetson nano
-
-We have completed filming demonstration videos for GitHub over the past few days. In the videos, we tested various combinations to determine if the machine can adapt to different placements. We tested four configurations in the qualification round and five in the mission round, and all these videos are available in the "video" section.
-
-我們這幾天將 Github 的示範影片拍攝完成，我們在影片中測試多種組合，藉此知道機器是否能適應各種擺法，我們在資格賽中測試了四種擺法，在任務賽中有五種擺法，這些影片皆放於 video 中。
-
-- [Testing Video of Self-Driving Car in Open Challenge](../../video/Open_Challenge/video.md)
-- [Testing Video of Self-Driving Car in Obstacle Challenge](../../video/Obstacle_Challenge/video.md)
-
-  **Open Challenge 資格賽影片**
-
-- [Open Challenge Full Narrow 70% Speed](https://youtu.be/OmFEYUQlTvc)
-- [Open Challenge Full Narrow 50% Speed](https://youtu.be/cyHyQRcBAyE)
-- [Open Challenge Half Wide Half Narrow 70% Speed](https://youtu.be/SKT1LZI2bo0)
-- [Open Challenge Half Wide Half Narrow 50% Speed](https://youtu.be/UB3IciF5oYk)
-- [Open Challenge Full Width 70% Speed](https://youtu.be/tObPuwR8IB0)
-- [Open Challenge Full Width 50% Speed](https://youtu.be/m-hIjlLuAAk)  
-
- **Open Challenge 任務賽影片**
-
-- [Obstacle Challenge](https://youtu.be/pB6wAqTKomQ)
+- 在這週，我們完成了 GitHub 示範影片的拍攝，並在影片中測試了多種組合，以檢視機器是否能適應各種擺放方式。在資格賽中，我們測試了四種不同車道寬窄組合；在任務賽中，我們測試了第二圈最後一個交通號誌積木的三種不同放置位置，以及停車場放置在四種不同直線路徑的位置。這些影片的連結已經記錄在<a href="../../video/Open_Challenge/video.md"> 5-1 Open Challenge </a>和 <a href="../../video/Obstacle_Challenge/video.md">5-2 Obstacle Challenge</a> 中。
 
 ## 2024/10/14 ~ 2024/10/20
 
 **Member:** HU,SIAN-YI、LAI,MENG-CHENG、HUANG,KE-FU  
 **Content:**
 
-#### Jetson nano
+- To address the space shortage issue with the USB version of the WiFi adapter, we added two 7mm holes in the wooden top layer of the vehicle, moving the mounting hole for the wired WiFi adapter from the middle layer to the top layer. This not only prevents the machine from becoming too bulky but also effectively utilizes the internal space of the vehicle. Additionally, since we added an HC-SR04 ultrasonic module at the rear of the middle layer for auxiliary detection during parking maneuvers, moving the WiFi adapter to the top layer frees up enough space for the HC-SR04 module's installation, further enhancing the vehicle's functional layout.
 
-- 為了解決 USB 版本的 WiFi 連接器空間不足的問題，我們在車輛頂層的木板上新增了兩個 7mm 的孔洞，將有線 WiFi 連接器的固定孔從車輛中層移到頂層。這樣一來，不僅能避免機器過於臃腫，還能有效利用車體內部空間。此外，由於我們在車輛中層尾部新增了一顆 HC-SR04 超音波模組，專門用於停車動作的輔助偵測，因此將 WiFi 連接器移至頂層能夠空出足夠的空間給 HC-SR04 安裝，進一步提升車輛的功能布局。
 
-- To address the space limitations caused by the USB WiFi adapter, we added two 7mm holes to the top layer of the vehicle's wooden frame, moving the mounting point for the wired WiFi adapter from the middle layer to the top. This adjustment not only prevents the vehicle from becoming too bulky but also optimizes the internal space. Additionally, we installed an HC-SR04 ultrasonic sensor at the rear of the vehicle's middle layer to assist with parking detection. By relocating the WiFi adapter to the top, we freed up enough space for the HC-SR04, enhancing the overall functionality layout of the vehicle.
+- 為了解決 USB 版本的 WiFi 連接器空間不足的問題，我們在車輛頂層的木板上新增了兩個 7mm 的孔洞，將有線 WiFi 連接器的固定孔從車輛中層移至頂層。這樣一來，不僅能避免機器過於臃腫，還能有效利用車體內部空間。此外，由於我們在車輛中層尾部新增了一顆 HC-SR04 超音波模組，專門用於停車動作的輔助偵測，因此將 WiFi 連接器移至頂層能夠空出足夠的空間給 HC-SR04 超音波模組進行安裝，進一步提升車輛的功能布局。
 
-##### Vehicle Top Deck
+<div align="center"> 
 
-<div align="center">
+ #### Vehicle Top Deck
 <table>
 <tr align="center">
 <th>Before modification</th>
@@ -1568,11 +1542,9 @@ We have completed filming demonstration videos for GitHub over the past few days
 <td><img src="./img/10/Before_modification.png" width="300" alt="Before modification"></td>
 <td><img src="./img/10/After_modification.png" width="300" alt="After modification"></td>
 </table>
-</div>
 
 ##### Vehicle Mid-Deck
 
-<div align="center">
 <table>
 <tr align="center">
 <th>Before modification</th>
@@ -1591,11 +1563,11 @@ We have completed filming demonstration videos for GitHub over the past few days
 **Member:** HU,SIAN-YI、LAI,MENG-CHENG、HUANG,KE-FU  
 **Content:**
 
-#### Jetson nano
 
-- 在這個禮拜，我們開始撰寫車輛介紹的劇本。在撰寫之前，我們先將劇本的架構分為三個部分：第一部分是車輛本體結構的介紹，接下來是程式架構的介紹，最後則是展示車輛運行影片並進行說明。劇本完成後，我們計畫在大約兩個禮拜內完成此介紹影片的拍攝。
+- This week, we started drafting the script for the vehicle introduction. Before writing, we divided the script structure into three parts: the first part is an introduction to the vehicle's main structure, followed by an introduction to the program structure, and finally, a demonstration and explanation of the vehicle's operation video. After completing the script, we plan to finish filming this introduction video within approximately two weeks while continuing to test the vehicle's performance.
+- 在這個禮拜，我們開始撰寫車輛介紹的劇本。在撰寫之前，我們將劇本的架構分為三個部分：第一部分是車輛本體結構的介紹，接下來是程式架構的介紹，最後則是展示車輛運行影片並進行說明。劇本完成後，我們計劃在大約兩個禮拜內完成此介紹影片的拍攝，同時繼續檢測車輛的運作狀況。
 
-- This week, we began writing the script for the vehicle introduction. Before drafting, we divided the script into three parts: the first part covers the introduction of the vehicle's physical structure, followed by the introduction of the programming structure, and finally, the vehicle operation video demonstration and explanation. Once the script is complete, we plan to film the introduction video in about two weeks.
+
 
 <div align="center">
 <table>
@@ -1615,11 +1587,15 @@ We have completed filming demonstration videos for GitHub over the past few days
 **Member:** HU,SIAN-YI、LAI,MENG-CHENG、HUANG,KE-FU  
 **Content:**
 
-#### Jetson nano
+- We discovered that during the competition, the self-driving car needs to be started by shutting down and rebooting. However, each time the Jetson Nano is turned off and restarted, a password is still required to log in, which would disrupt the competition process. Therefore, we decided to disable the login requirement to ensure smooth competition.
 
-- 這個禮拜我們將Jetson Nano的開機需要輸入密碼才能登入的功能關閉，進入Jetson Nano的系統設定後，點擊User Accounts，接著點擊Unlock，再將Automatic Login切換至ON，即可達成開機不需要登入的目的。
+- The method to disable the login function on the Jetson Nano controller is as follows: go to System Settings on the Jetson Nano controller, click "User Accounts," then click "Unlock," and switch "Automatic Login" to "ON." This way, logging in will no longer be required during startup, achieving the desired effect.
 
-- This week, we disabled the password requirement for logging into the Jetson Nano at startup. To achieve this, we accessed the system settings on the Jetson Nano, navigated to User Accounts, clicked Unlock, and then switched Automatic Login to ON. This allows the system to boot directly without requiring login credentials.
+- 我們發現，在比賽時，自駕車需要以關機再開機的方式啟動車輛進行競賽，但每次將 Jetson Nano 關機並重新開機後，仍需要輸入密碼才能登入，這樣會影響比賽的進行。因此，我們決定關閉登入功能，以確保競賽能夠順利進行。
+
+- 關閉 Jetson Nano 控制器登入功能的方法是：進入 Jetson Nano 控制器的系統設定後，點擊 "User Accounts"，接著點擊 "Unlock"，然後將 "Automatic Login" 切換至 "ON"。這樣，開機時就不需要再進行登入，達到我們預期的效果。
+
+
 
 <div align="center">
 <table>
@@ -1640,11 +1616,10 @@ We have completed filming demonstration videos for GitHub over the past few days
 **Member:** HU,SIAN-YI、LAI,MENG-CHENG、HUANG,KE-FU  
 **Content:**
 
-#### Jetson nano
+- During the testing process, we found that the camera's position was too high. When the vehicle approached the center wall, the camera would capture images of the ground inside the center, which interfered with accurate obstacle recognition. To solve this issue, we replaced the original plastic screws with flat-headed iron screws. The flat screw heads of the iron screws provided more room for downward adjustment, allowing the circuit board to be lowered and the camera's height to be adjusted. This adjustment not only improved the camera's viewing angle but also enhanced overall stability, enabling the machine to detect obstacles more accurately and avoid capturing irrelevant ground images, thus reducing the possibility of misjudgments.
 
-- 在測試過程中，我們發現鏡頭的位置過高，當車輛靠近中心牆壁時，鏡頭會捕捉到地面影像，這會干擾障礙物的正確識別。為了解決這個問題，我們將原本的塑膠螺絲更換為平頭的鐵製螺絲。由於鐵製螺絲的平坦螺絲頭提供了更多向下調整的空間，讓電路板的位置得以降低，從而調整鏡頭的高度。這樣的調整不僅改善了鏡頭的視角，也增強了整體穩定性，使機器能夠更精確地偵測前方的障礙物，避免捕捉到無關的地面影像。
+- 在測試過程中，我們發現鏡頭的位置過高，當車輛靠近中心牆壁時，鏡頭會捕捉到中心內側地面影像，這會干擾障礙物的正確識別。為了解決這個問題，我們將原本的塑膠螺絲更換為平頭的鐵製螺絲。由於鐵製螺絲的平坦螺絲頭提供了更多向下調整的空間，使得電路板的位置得以降低，從而調整了鏡頭的高度。這樣的調整不僅改善了鏡頭的視角，也增強了整體穩定性，使機器能夠更精確地偵測前方的障礙物，避免捕捉到無關的地面影像，從而減少誤判的可能性。
 
-- During testing, we noticed that the camera was positioned too high, and when the vehicle approached the central wall, it captured the floor image, which interfered with the correct identification of obstacles. To address this, we replaced the original plastic screws with flat-headed iron screws. The flat head of the iron screws provided more space for downward adjustment, allowing the circuit board to be lowered and the camera height to be optimized. This adjustment not only improved the camera’s viewing angle but also enhanced overall stability, enabling the machine to detect obstacles more accurately without capturing irrelevant floor images.
 
 <div align="center">
 <table>
@@ -1655,6 +1630,26 @@ We have completed filming demonstration videos for GitHub over the past few days
 <tr align="center">
 <td><img src="./img/11/plastic_screws.jpg" width="300" alt="plastic screws"></td>
 <td><img src="./img/11/iron_screws.jpg" width="300" alt="iron screws"></td>
+</table>
+</div>
+
+<div align="center">
+<table>
+<tr align="center">
+<th></th>
+<th>Before modification</th>
+<th>After modification</th>
+</tr>
+<tr align="center">
+<th>Isometric view</th>
+<td><img src="./img/11/before_change_Isometric_view.jpg" width="300" alt="Isometric view"></td>
+<td><img src="./img/11/after_change_Isometric_view.jpg" width="300" alt="Isometric view"></td>
+</tr>
+<tr align="center">
+<th>Side view</th>
+<td><img src="./img/11/before_change_side_view.jpg" width="300" alt="Side view"></td>
+<td><img src="./img/11/after_change_side_view.jpg" width="300" alt="Side view"></td>
+</tr>
 </table>
 </div>
 
