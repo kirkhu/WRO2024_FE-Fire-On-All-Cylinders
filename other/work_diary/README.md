@@ -42,10 +42,10 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
   **Completion Time Planning Table for Each Stage of the Competition Activities (Gantt Chart)**
 
 <div align="center" >
-  <img src="../img/gantt.png" width = "600"  alt="甘特圖" align=center />
+  <img src="../img/gantt.png" width = "600"  alt="gantt" align=center />
 </div>
 
-### Writing the program and adjusting the machine(撰寫程式和調整機器)
+### Writing the program and adjusting the machine
 
 <div align="center" >
 <table >
