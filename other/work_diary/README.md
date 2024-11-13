@@ -71,7 +71,7 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 
 - We began writing the code for the qualifying round, and with the assistance of our seniors, our progress accelerated significantly, allowing us to successfully complete the coding for the qualifying round.
 - We started writing the obstacle avoidance program for the task competition and practiced techniques for adjusting the camera. Since the accuracy of the camera may shift after a few days, which can easily lead to misdetections, we placed particular emphasis on practicing adjustments in this area.
-#### Practice status
+#### Practice situation
 
 <div align="center" >
 <table >
