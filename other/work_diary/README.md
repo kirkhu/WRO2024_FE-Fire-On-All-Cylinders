@@ -44,10 +44,10 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
   **Completion Time Planning Table for Each Stage of the Competition Activities (Gantt Chart)**
 
 <div align="center" >
-  <img src="../img/gantt.png" width = "600"  alt="甘特圖" align=center />
+  <img src="../img/gantt.png" width = "600"  alt="gantt" align=center />
 </div>
 
-### Writing the program and adjusting the machine(撰寫程式和調整機器)
+### Writing the program and adjusting the machine
 
 <div align="center" >
 <table >
@@ -146,7 +146,7 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 
 - **Supplementary Information**
 
-  **Aspects of deep learning acceleration.深度學習加速方面**
+  **Aspects of deep learning acceleration**
    - Jetson Nano: Supports NVIDIA CUDA and cuDNN, which can accelerate deep learning workloads. For tasks like image classification and object detection, the GPU in Jetson Nano significantly enhances processing speed.
    - Raspberry Pi 4: Lacks a dedicated GPU and deep learning acceleration capabilities; image recognition tasks rely entirely on CPU processing, which is far less efficient than the GPU acceleration of Jetson Nano.
 
@@ -1193,8 +1193,6 @@ We began addressing the issues that occurred during the national competition, us
 
 We continued trying to transfer the functions installed on the Raspberry Pi 4 to the Raspberry Pi 5 but found that some functions could not be installed or run. For example, ROS, which is needed for running the radar, and GPIO for reading pins could not be installed and used. Only the VNC system and OpenCV for camera use were successfully installed. After researching online, we discovered that these issues might be due to version incompatibility or unsuitability, preventing us from running the main program and likely unable to be resolved in the short term. Due to these issues, we decided to temporarily pause our research on Raspberry Pi 5 and prioritize optimizing the Raspberry Pi 4 to ensure stable system operation.
 
-我們繼續嘗試將 Raspberry Pi 4 上已安裝的功能轉移到 Raspberry Pi 5 上，然而發現有些功能無法安裝和運行。例如，執行雷達所需的 ROS 和讀取腳位的 GPIO 都無法安裝使用，只有 VNC 系統和鏡頭用的 OpenCV 成功安裝。我們在網上查詢後發現，這些問題可能是由於版本不相容或不適用所導致，結果使我們無法執行主程式，且短時間內應該也無法解決。基於這些問題，我們決定暫時擱置 Raspberry Pi 5 的研究，並優先將 Raspberry Pi 4 調整至最佳狀態，以確保系統運行穩定。
-
 <div align="center">
 <table>
 <tr align="center">
@@ -1287,8 +1285,6 @@ We continued trying to transfer the functions installed on the Raspberry Pi 4 to
 #### Jetson nano
 
 - Since the self-driving car encounters misdetections during visual recognition due to the color of the vehicle's own signal wires, we decided to first use Onshape to design a cover plate model. We then used photopolymer 3D printing technology to create a cover plate that can fit precisely onto the F-shaped structure at the front of the vehicle. This cover plate effectively blocks the signal wires in front of the vehicle, thereby preventing misdetections during the camera recognition process.
-
-- 由於自駕車在進行視覺辨識時，會因為車輛本身訊號線的顏色導致誤測，我們決定先使用 Onshape 設計一個蓋板模型，並利用光固化列印技術製作出一個可以精確鑲嵌在車輛前方 F 型結構的蓋板。這樣，蓋板能有效遮擋車輛前方的訊號線，從而避免在鏡頭辨識過程中造成誤測。
 
 <div align="center">
 <table>
