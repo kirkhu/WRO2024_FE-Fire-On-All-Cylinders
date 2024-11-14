@@ -2,13 +2,13 @@ from machine import Pin, PWM, I2C, UART, time_pulse_us
 import struct
 import time
 
-# 設定超音波模組9的腳位
-TRIG_PIN1 = 8  # 對應第一個超音波模組的 Trig 腳位
-ECHO_PIN1 = 9  # 對應第一個超音波模組的 Echo 腳位
-TRIG_PIN2 = 12  # 對應第二個超音波模組的 Trig 腳位
-ECHO_PIN2 = 13  # 對應第二個超音波模組的 Echo 腳位
+# Set the pin position of ultrasound module 9
+TRIG_PIN1 = 8  # Corresponds to the Trig pin of the first ultrasound module
+ECHO_PIN1 = 9  # Corresponds to the Echo pin of the first ultrasound module
+TRIG_PIN2 = 12  # Corresponds to the Trig pin of the second ultrasound module
+ECHO_PIN2 = 13  # Corresponds to the Echo pin of the second ultrasound module
 
-# 超音波初始化腳位
+# Ultrasonic initialization pin
 trig1 = Pin(TRIG_PIN1, Pin.OUT)
 echo1 = Pin(ECHO_PIN1, Pin.IN)
 trig2 = Pin(TRIG_PIN2, Pin.OUT)
@@ -22,30 +22,30 @@ motor_pwm = PWM(Pin(22), freq=1000)
 encoder_pin_A = Pin(0, Pin.IN)
 encoder_pin_B = Pin(1, Pin.IN)
 button = Pin(18, Pin.IN, Pin.PULL_UP)
-data_value = [0] * 3  # 初始化数据列表
+data_value = [0] * 3  # Initialize data list
 value = [0] * 3
-encoder_count = 0  # 初始化编码器计数
-last_state_A = encoder_pin_A.value()  # 初始化编码器状态
+encoder_count = 0  # Initialize encoder count
+last_state_A = encoder_pin_A.value()  # Initialize encoder status
 jetson_nano_return_last = 0
-# 配置UART
+# Configure UART
 uart = UART(0, baudrate=115200, tx=Pin(16), rx=Pin(17))
 
 def jetson_nano_return(number):
     global data_value
-    HEADER = b"A"  # 包头定义
+    HEADER = b"A"  # Baotou definition
     HEADER_SIZE = len(HEADER)
-    DATA_SIZE = 12 # 5个整数，每个4字节，共20字节
-    TOTAL_SIZE = HEADER_SIZE + DATA_SIZE  # 包头 + 数据的总长度
+    DATA_SIZE = 12 # 5 integers, 4 bytes each, 20 bytes in total
+    TOTAL_SIZE = HEADER_SIZE + DATA_SIZE  # Header + total length of data
 
     if uart.any():
         data = uart.read(TOTAL_SIZE)
         
-        # 检查是否接收到完整的数据包
+        # Check if complete packet is received
         if len(data) == TOTAL_SIZE:
-            # 查找包头
+            # Find Baotou
             header_index = data.find(HEADER)
             if header_index != -1:
-                # 如果找到了包头，移除包头并提取数据
+                # If a header is found, remove the header and extract the data
                 start_index = header_index + HEADER_SIZE
                 data = data[start_index:] + data[:start_index]
                 data_value = struct.unpack('3i', data[:DATA_SIZE])
@@ -73,12 +73,12 @@ def encoder_interrupt(pin):
 
 def run_encoder(motor_angle, speed):
     global encoder_count
-    encoder_count = 0  # 在运行前将编码器计数归零
+    encoder_count = 0  # Reset the encoder count to zero before running
     while abs(encoder_count) < motor_angle:
-        # 根据 data_mode 选择 PD 控制信号
+        # Select PD control signal according to data_mode
         combined_control_signal = value[0]
         
-        # 使用控制信号调整舵机
+        # Use control signals to adjust the servo
         set_servo_angle(combined_control_signal)
         control_motor(speed)
         
@@ -99,20 +99,20 @@ def approach_until(trig, echo, threshold, operator):
 
 def run_encoder_Auto(motor_angle, speed, string):
     global encoder_count
-    encoder_count = 0  # 在运行前将编码器计数归零
+    encoder_count = 0  #Reset the encoder count to zero before running
     while abs(encoder_count) < motor_angle:
-        # 根据 data_mode 选择 PD 控制信号
+        # Select PD control signal according to data_mode
         combined_control_signal = string
         
-        # 使用控制信号调整舵机
+        # Use control signals to adjust the servo
         set_servo_angle(combined_control_signal)
         control_motor(speed)
         
         time.sleep(0.01)
     control_motor(0)
-# GPIO中断设置
+# GPIO interrupt settings
 encoder_pin_A.irq(trigger=Pin.IRQ_RISING | Pin.IRQ_FALLING, handler=encoder_interrupt)
-# 定义马达控制函数
+# Define the motor control function
 def control_motor(speed):
     if speed > 0:
         motor_in1.high()
@@ -123,27 +123,27 @@ def control_motor(speed):
     else:
         motor_in1.high()
         motor_in2.high()
-    motor_pwm.duty_u16(int(abs(speed) * 65535 / 100))  # 设置PWM占空比
-# 设置舵机角度
+    motor_pwm.duty_u16(int(abs(speed) * 65535 / 100))  # Setting the PWM duty cycle
+# Set the servo angle
 def set_servo_angle(angle):
-    min_duty = 1000  # 对应1ms的占空比
-    max_duty = 2000  # 对应2ms的占空比
+    min_duty = 1000  #Corresponding to a duty cycle of 1ms
+    max_duty = 2000  # Corresponding to a duty cycle of 2ms
     duty = int(min_duty + (angle-15 + 180) * (max_duty - min_duty) / 360)
     duty_u16 = int(duty * 65535 / 20000)
     servo_pin.duty_u16(duty_u16)
 
 def measure_distance(trig, echo):
-    # 發送觸發脈衝
+    # Send trigger pulse
     trig.value(0)
     time.sleep_us(2)
     trig.value(1)
     time.sleep_us(10)
     trig.value(0)
 
-    # 讀取 Echo 脈衝寬度
+    # Read Echo pulse width
     duration = time_pulse_us(echo, 1)
 
-    # 計算距離（聲速約為 343 米/秒）
+    # Calculate distance (speed of sound is approximately 343 m/s)
     distance = (duration / 2) * 0.0343
 
     return distance
@@ -213,7 +213,7 @@ except KeyboardInterrupt:
     motor_in1.off()
     motor_in2.off()
     set_servo_angle(0)
-    print("程序中断")
+    print("Program interruption")
 
 
 

@@ -1,46 +1,46 @@
 import numpy as np
 import cv2
 
-# 尝试打开摄像头
+# Try to open the camera
 imcap = cv2.VideoCapture('nvarguscamerasrc ! video/x-raw(memory:NVMM), width=720, height=480, format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink', cv2.CAP_GSTREAMER)
 
 if not imcap.isOpened():
     print("Error: Could not open video device.")
     exit()
 
-# 创建窗口以显示滑动条
+# Create a window to display the trackbar
 cv2.namedWindow('Threshold Adjustment')
 
-# 滑动条的回调函数（不执行任何操作）
+# Callback function for the trackbar (does nothing)
 def nothing(x):
     pass
 
-# 创建滑动条
+# Create the trackbar
 cv2.createTrackbar('Threshold', 'Threshold Adjustment', 127, 255, nothing)
 
 while True:
     ret, imageFrame = imcap.read()
 
-    # 检查是否成功读取帧
+    # Check if the frame is successfully captured
     if not ret:
         print("Error: Failed to capture image")
         break
 
-    # 转换为灰度图像
+    # Convert the image to grayscale
     grayFrame = cv2.cvtColor(imageFrame, cv2.COLOR_BGR2GRAY)
 
-    # 获取滑动条位置的阈值
+    # Get the threshold value from the trackbar position
     threshold_value = cv2.getTrackbarPos('Threshold', 'Threshold Adjustment')
 
-    # 应用二值化
+    # Apply binary thresholding
     _, binaryFrame = cv2.threshold(grayFrame, threshold_value, 255, cv2.THRESH_BINARY)
 
-    # 显示原始图像和二值化图像
+    # Display the original image and the binary thresholded image
     cv2.imshow("Original Image", imageFrame)
     cv2.imshow("Threshold Adjustment", binaryFrame)
 
-    # 按 'q' 键退出
+    # Press 'q' to quit
     if cv2.waitKey(10) & 0xFF == ord('q'):
         break
 imcap.release()  
-cv2.destroyAllWindows()  
+cv2.destroyAllWindows()

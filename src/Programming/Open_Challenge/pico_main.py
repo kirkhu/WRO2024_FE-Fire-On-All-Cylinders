@@ -10,30 +10,29 @@ motor_pwm = PWM(Pin(22), freq=1000)
 encoder_pin_A = Pin(0, Pin.IN)
 encoder_pin_B = Pin(1, Pin.IN)
 button = Pin(18, Pin.IN, Pin.PULL_UP)
-data_value = [0] * 3  # 初始化数据列表
+data_value = [0] * 3  # Initialize the data list
 value = [0] * 3
-encoder_count = 0  # 初始化编码器计数
-last_state_A = encoder_pin_A.value()  # 初始化编码器状态
+encoder_count = 0  # Initialize encoder count
+last_state_A = encoder_pin_A.value()  # Initialize encoder status
 jetson_nano_return_last = 0
-# 配置UART
+# Configuring UART
 uart = UART(0, baudrate=115200, tx=Pin(16), rx=Pin(17))
 
 def jetson_nano_return(number):
     global data_value
-    HEADER = b"A"  # 包头定义
+    HEADER = b"A"  # Header Definition
     HEADER_SIZE = len(HEADER)
-    DATA_SIZE = 12 # 5个整数，每个4字节，共20字节
-    TOTAL_SIZE = HEADER_SIZE + DATA_SIZE  # 包头 + 数据的总长度
-
+    DATA_SIZE = 12 # 5 integers, 4 bytes each, 20 bytes in total
+    TOTAL_SIZE = HEADER_SIZE + DATA_SIZE  # Total length of header + data
     if uart.any():
         data = uart.read(TOTAL_SIZE)
         
-        # 检查是否接收到完整的数据包
+        # Check if a complete packet is received
         if len(data) == TOTAL_SIZE:
-            # 查找包头
+            # Find the header
             header_index = data.find(HEADER)
             if header_index != -1:
-                # 如果找到了包头，移除包头并提取数据
+                # If a header is found, remove the header and extract the data
                 start_index = header_index + HEADER_SIZE
                 data = data[start_index:] + data[:start_index]
                 data_value = struct.unpack('3i', data[:DATA_SIZE])
@@ -43,12 +42,13 @@ def jetson_nano_return(number):
         else:
             print("Error: Incomplete data received.")
     return data_value[number]
+
 def jetson_all():
     global value
     value[0] = jetson_nano_return(0)
     value[1] = jetson_nano_return(1)
     value[2] = jetson_nano_return(2)
-    print(value[0],value[1],value[2])
+    print(value[0], value[1], value[2])
 
 def encoder_interrupt(pin):
     global encoder_count, last_state_A
@@ -60,22 +60,23 @@ def encoder_interrupt(pin):
 
 def run_encoder(motor_angle, speed):
     global encoder_count
-    encoder_count = 0  # 在运行前将编码器计数归零
+    encoder_count = 0  # Reset the encoder count to zero before running
     while abs(encoder_count) < motor_angle:
-        # 根据 data_mode 选择 PD 控制信号
+        # Select PD control signal according to data_mode
         combined_control_signal = jetson_nano_return(0)
         
-        # 使用控制信号调整舵机
+        # Use the control signal to adjust the servo
         set_servo_angle(combined_control_signal)
-        control_motor(speed)
-        
-        print(f"编码器计数: {encoder_count}, combined_control_signal: {combined_control_signal}")
+        control_motor(speed)        
+        print(f"Encoder count: {encoder_count}, combined_control_signal: {combined_control_signal}")
         jetson_all()
         time.sleep(0.01)
     control_motor(0)
-# GPIO中断设置
+
+# GPIO interrupt setup
 encoder_pin_A.irq(trigger=Pin.IRQ_RISING | Pin.IRQ_FALLING, handler=encoder_interrupt)
-# 定义马达控制函数
+
+# Define motor control function
 def control_motor(speed):
     if speed > 0:
         motor_in1.high()
@@ -86,14 +87,16 @@ def control_motor(speed):
     else:
         motor_in1.low()
         motor_in2.low()
-    motor_pwm.duty_u16(int(abs(speed) * 65535 / 100))  # 设置PWM占空比
-# 设置舵机角度
+    motor_pwm.duty_u16(int(abs(speed) * 65535 / 100))  # Set PWM duty cycle
+
+# Set servo angle
 def set_servo_angle(angle):
-    min_duty = 1000  # 对应1ms的占空比
-    max_duty = 2000  # 对应2ms的占空比
+    min_duty = 1000  # Corresponds to 1ms duty cycle
+    max_duty = 2000  # Corresponds to 2ms duty cycle
     duty = int(min_duty + (angle-15 + 180) * (max_duty - min_duty) / 360)
     duty_u16 = int(duty * 65535 / 20000)
     servo_pin.duty_u16(duty_u16)
+
 try:
     motor_in1.off()
     motor_in2.off()
@@ -101,7 +104,7 @@ try:
     button_out.low()
     while button.value() == 1:
         time.sleep(0.1)
-        print(jetson_nano_return(0),jetson_nano_return(1),jetson_nano_return(2))
+        print(jetson_nano_return(0), jetson_nano_return(1), jetson_nano_return(2))
     button_out.high()
     control_motor(60)
     for a in range(3):
@@ -111,17 +114,9 @@ try:
                 jetson_all()
                 control_motor(value[2])
                 set_servo_angle(value[0])
-            run_encoder(3500, 60)
-            
-        
+            run_encoder(3500, 60) 
 except KeyboardInterrupt:
     motor_in1.off()
     motor_in2.off()
     set_servo_angle(0)
-    print("程序中断")
-
-
-
-
-
-    
+    print("Program interrupted")  
