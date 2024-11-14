@@ -691,8 +691,8 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
     <th >SONY IMX477</th>
     </tr>
     <tr align="center">
-    <td><img src="../../schemes/Camera/img/SONY_IMX219.png" width="300" alt="SONY IMX219" /></td>
-    <td><img src="../../schemes/Camera/img/SONY_IMX477.png" width="300" alt="SONY IMX477" /></td>
+    <td><img src="../../schemes/Camera/img/SONY_IMX219.png" width="250" alt="SONY IMX219" /></td>
+    <td><img src="../../schemes/Camera/img/SONY_IMX477.png" width="250" alt="SONY IMX477" /></td>
     </tr>
     <tr align="center">
     <td>Sensor</td>
