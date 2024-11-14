@@ -1070,7 +1070,7 @@ We believe that this approach will help prepare our machine for various situatio
 
 - The competition day was August 25th. In the morning qualifiers, our vehicle successfully completed all laps in the first round and achieved full marks; however, in the second round, we had to request repairs due to abnormal radar readings. After the repairs were completed, there was only one minute left before the end of the competition, which allowed us to complete only two laps. Nevertheless, we advanced smoothly to the obstacle race in the afternoon.
 
-- In the first obstacle race, the vehicle collided with a wall due to excessive evasion maneuvers, resulting in the race being halted. After adjustments, the second obstacle race was completed with successful obstacle avoidance. However, the vehicle stopped without entering the finish zone, preventing us from achieving an ideal score. Fortunately, due to an opponent's mistakes, we still managed to advance.
+- In the first obstacle Challenge, the vehicle collided with a wall due to excessive evasion maneuvers, resulting in the race being halted. After adjustments, the second obstacle Challenge was completed with successful obstacle avoidance. However, the vehicle stopped without entering the finish zone, preventing us from achieving an ideal score. Fortunately, due to an opponent's mistakes, we still managed to advance.
 
 <div align="center">
 <table>
