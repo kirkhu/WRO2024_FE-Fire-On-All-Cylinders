@@ -401,22 +401,19 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 
 - When the vehicle was operating, we found that it often misidentified pink and orange as red. Initially, we tried to solve this issue by adjusting the HSV values, but even after making adjustments, we were still unable to effectively filter out these two colors. Therefore, we decided to change the color recording method and switched to using YCrCb color space. This change allowed us to more accurately identify and filter out pink and orange, improving the accuracy of color recognition.
 
-- [YCrcb](https://www.fuji.com.tw/posts/4934#google_vignette)
+- [References YCbCr and RGB Color Models](https://www.fuji.com.tw/posts/4934#google_vignette)
 
 <div align="center" width=100%>
 <table >
 <tr align="center">
-  <th>Introduction to YCrcb</th>
   <th>Adjusting YCrCb</th>
   </tr>
 <tr align="center">
-  <td><img src="./img/4/Introduction_to_YCrcb.jpg" width = "300"  alt="wood" align=center />  </td>
   <td><img src="./img/4/Adjusting_YCrCb.png" width = "300"  alt="wood" align=center />  </td>
   </td>
   </tr>
 </table>
 </div>
-
 
 #### Jetson nano
 
