@@ -682,31 +682,38 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 
     [IMX477-160 12.3MP Camera](https://shopee.tw/%E7%8F%BE%E8%B2%A8-SONY-IMX477-%E6%94%9D%E5%BD%B1%E9%8F%A1%E9%A0%AD%E6%A8%A1%E7%B5%84-1230%E8%90%AC%E5%83%8F%E7%B4%A0-160%C2%B0%E5%BB%A3%E8%A7%92-%E6%94%AF%E6%8F%B4%E6%A8%B9%E8%8E%93%E6%B4%BECM3-4%E3%80%81Jetson-Nano-i.10207300.8215149686?sp_atk=21737f61-91b3-4fa6-9e87-0f9a4884b88b&xptdk=21737f61-91b3-4fa6-9e87-0f9a4884b88b)
 
-### Camera Module
+- ### Comparison of Camera Modules
+    <div align="center">
+    <table>
+    <tr align="center" >
+    <th rowspan="2">Model</th> 
+    <th >SONY IMX219</th>
+    <th >SONY IMX477</th>
+    </tr>
+    <tr align="center">
+    <td><img src="./img/SONY_IMX219.png" width="300" alt="SONY IMX219" /></td>
+    <td><img src="./img/SONY_IMX477.png" width="300" alt="SONY IMX477" /></td>
+    </tr>
+    <tr align="center">
+    <td>Sensor</td>
+    <td>SONY IMX 219</td>
+    <td>SONY IMX 477</td>
+    </tr>
+    <tr align="center">
+    <td>FOV</td>
+    <td>160 MAX</td>
+    <td>160 MAX</td>
+    </tr>
+    <tr align="center">
+    <td>Resolution</td>
+    <td>3280 × 2464 pix</td>
+    <td>4056 × 3040 pix</td>
+    </tr>
+    </tr>
+    </table>
+    </div>
 
-<div align="center">
-<table>
-<tr  align="center">
-<th rowspan="2">Model</td>
-<th>IMX477-160 12.3MP Camera</th>
-</tr>
-<tr  align="center">
-<td ><img src="../../schemes/Camera/img/SONY_IMX477.png" width=200 alt="IMX477"/></td>
-</tr>
-<tr  align="center">
-<td>sensor</td>
-<td>Sony IMX477</td>
-</tr>
-<tr  align="center">
-<td>sensor resolution</td>
-<td >4056 x 3040 pix</td>
-</tr>
-<tr  align="center">  
-<td>FPS (Frames Per Second) </td>
-<td >60fps </td>
-</tr>
-</table>
-</div>
+    __From this, it is clear that in terms of resolution, the SONY IMX 477 is our best choice for the competition environment.__
 
 
 ## 2024/06/03 ~ 2024/06/09  
