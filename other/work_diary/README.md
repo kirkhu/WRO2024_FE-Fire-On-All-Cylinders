@@ -562,7 +562,7 @@ My partner, "HU, SIAN-YI," has participated in the Future Engineering Competitio
 
 #### Jetson nano
 
--Through experiments, we found that the LiDAR sensor was not easy to control, so we decided to try using an ultrasonic module (HC-SR04) as a replacement for the LiDAR sensor's functionality.
+- Through experiments, we found that the LiDAR sensor was not easy to control, so we decided to try using an ultrasonic module (HC-SR04) as a replacement for the LiDAR sensor's functionality.
 - Based on this, we decided to use the ultrasonic module (HC-SR04) to complete this year's new task (parking into a parking lot). We plan to install the ultrasonic module on both sides and the rear of the vehicle to detect the parking lot's side walls, avoiding collisions with the walls. Once the parking space is detected, the vehicle will reverse and park smoothly into the space.
 
 ##### HC-SR04 ultrasonic distance sensor
