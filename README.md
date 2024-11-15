@@ -8,9 +8,9 @@
 ## Rubric for Judging Engineering Documentation 
 - ###  ${{\color{red} Hardware Overview }} $ 
   #### 1. Mobility Management
-    * [1-1 Vehicle 2D/3D Models in CAD OK](models/Vehicle_2D_3D/README.md)
-    * [1-2 Vehicle Chassis Design OK](schemes/Vehicle_Chassis_Design/README.md)
-    * [1-3 Motor Selection OK](schemes/Motor/README.md)
+    * [1-1 Vehicle 2D/3D Models in CAD ](models/Vehicle_2D_3D/README.md)
+    * [1-2 Vehicle Chassis Design ](schemes/Vehicle_Chassis_Design/README.md)
+    * [1-3 Motor Selection ](schemes/Motor/README.md)
 
     
   #### 2. Power and Sense Management
@@ -21,8 +21,8 @@
       - [2-1-4 Assembly Instructions & Wiring Diagrams ](schemes/Assembly_Instructions/README.md)    
       
     - __Power Management__
-      - [2-2-1 Power Supply System ](schemes/Power_Supply_System/README.md) 
-      - [2-2-2 Battery choice for self-driving cars ](schemes/Battery/README.md)  
+      - [2-2-1 Battery choice for self-driving cars ](schemes/Battery/README.md)  
+      - [2-2-2 Power Supply System ](schemes/Power_Supply_System/README.md) 
    
     - __Controller Selection__
       - [2-3-1 Main Controller Comparison ](schemes/Main_Controller_Choosing/README.md)
@@ -46,18 +46,18 @@
       - [3-4-3 Distinctive Pseudo Code ](src/Distinctive_Pseudo_Code/README.md)
       - [3-4-4 Parking Instruction ](src/parking/README.md)
     - __Remote Connection__
-      - [3-6-1 NoMachine Introduction ](other/NoMachine/README.md)
+      - [3-5-1 NoMachine Introduction ](other/NoMachine/README.md)
 - ### ${{\color{red} Other}} $
   #### 4. Pictures – Team and Vehicle
-    - [4-1 Team Members Introduction OK](t-photos/README.md)
-    - [4-2 Vehicle Photos OK](v-photos/README.md)  
+    - [4-1 Team Members Introduction ](t-photos/README.md)
+    - [4-2 Vehicle Photos ](v-photos/README.md)  
   #### 5. Performance Videos
-    - [5-1 Open Challenge OK](video/Open_Challenge/video.md)
-    - [5-2 Obstacle Challenge OK](video/Obstacle_Challenge/video.md)
+    - [5-1 Open Challenge ](video/Open_Challenge/video.md)
+    - [5-2 Obstacle Challenge ](video/Obstacle_Challenge/video.md)
     - [5-3 Self-Driving Car Design Process Video](video/Design_Process_Video/video.md)
   #### 6. GitHub Utilization
-    - [6-1 GitHub Edit(VScode Edit/GIT) OK](src/GitHub_Edit/README.md)
-    - [6-2 GitHub Web Editing Languages OK](src/GitHub_Languages/README.md)  
+    - [6-1 GitHub Edit(VScode Edit/GIT) ](src/GitHub_Edit/README.md)
+    - [6-2 GitHub Web Editing Languages ](src/GitHub_Languages/README.md)  
   #### 7. Engineering Factor  
     - [7-1 Work Diary](other/work_diary/README.md)
 - ### ${{\color{red} CompetitionSchedule}} $  
