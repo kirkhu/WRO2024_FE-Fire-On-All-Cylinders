@@ -18,8 +18,8 @@
     - [Hardware Fool-Proof Design](./schemes/Fool-Proof-Design/README.md) 
     - [Assembly Instructions & Wiring Diagrams](./schemes/Assembly_Instructions/README.md)
     - __power Management__
-      - [Power Supply System](./schemes/Power_Supply_System/README.md) 
       - [Battery choice for self-driving cars](./schemes/Battery/README.md)
+      - [Power Supply System](./schemes/Power_Supply_System/README.md) 
 - ### System Initialization
     - [OpenCV Introduction](./src/OpenCV/README.md)
     - [Software Platform Construction](./src/System_Platform_Software/README.md)

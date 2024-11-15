@@ -7,71 +7,71 @@
   <table border="1">
     <thead>
       <tr>
-        <th>Item</th>
-        <th>3S Li-Polymer Battery</th>
-        <th>18650 Battery</th>
+      <th>Item</th>
+      <th>3S Li-Polymer Battery</th>
+      <th>18650 Battery</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th>photo</th>
-        <td><img src="./img/lipo_battery.png" width="400" alt="lipo_battery "></td>
-        <td><img src="./img/18650.png" width="400" alt="18650 "></td>
+      <th>photo</th>
+      <td><img src="./img/lipo_battery.png" width="250" alt="lipo_battery "></td>
+      <td><img src="./img/18650.png" width="250" alt="18650 "></td>
       </tr>
       <tr>
-        <th>Voltage Range</th>
-        <td>11.1V (nominal), up to 12.6V (fully charged)</td>
-        <td>11.1V (nominal), up to 12.6V (fully charged)</td>
+      <th>Voltage Range</th>
+      <td>11.1V (nominal), up to 12.6V (fully charged)</td>
+      <td>11.1V (nominal), up to 12.6V (fully charged)</td>
       </tr>
       <tr>
-        <th>Energy Density</th>
-        <td>Higher energy density compared to the same weight</td>
-        <td>Higher capacity per unit volume compared to LiPo</td>
+      <th>Energy Density</th>
+      <td>Higher energy density compared to the same weight</td>
+      <td>Higher capacity per unit volume compared to LiPo</td>
       </tr>
       <tr>
-        <th>Weight</th>
-        <td>Lighter, good for reducing load</td>
-        <td>Relatively heavier</td>
+      <th>Weight</th>
+      <td>Lighter, good for reducing load</td>
+      <td>Relatively heavier</td>
       </tr>
       <tr>
-        <th>Output Current</th>
-        <td>Supports high discharge rates (C-Rate), can provide high current instantaneously</td>
-        <td>Lower discharge rates, suitable for stable power output</td>
+      <th>Output Current</th>
+      <td>Supports high discharge rates (C-Rate), can provide high current instantaneously</td>
+      <td>Lower discharge rates, suitable for stable power output</td>
       </tr>
       <tr>
-        <th>Charging Time</th>
-        <td>Supports fast charging but requires a dedicated charger</td>
-        <td>Relatively slower charging time</td>
+      <th>Charging Time</th>
+      <td>Supports fast charging but requires a dedicated charger</td>
+      <td>Relatively slower charging time</td>
       </tr>
       <tr>
-        <th>Safety</th>
-        <td>More susceptible to physical damage or overcharging, risk of fire</td>
-        <td>Relatively safer, resistant to overcharge and overdischarge</td>
+      <th>Safety</th>
+      <td>More susceptible to physical damage or overcharging, risk of fire</td>
+      <td>Relatively safer, resistant to overcharge and overdischarge</td>
       </tr>
       <tr>
-        <th>Shape and Flexibility</th>
-        <td>Can be made in various shapes and sizes, high flexibility in fitting space</td>
-        <td>Fixed cylindrical shape, less adaptable to different spaces</td>
+      <th>Shape and Flexibility</th>
+      <td>Can be made in various shapes and sizes, high flexibility in fitting space</td>
+      <td>Fixed cylindrical shape, less adaptable to different spaces</td>
       </tr>
       <tr>
-        <th>Internal Resistance and Efficiency</th>
-        <td>Lower internal resistance, suitable for high current discharge, high efficiency</td>
-        <td>Relatively higher internal resistance, slightly lower efficiency</td>
+      <th>Internal Resistance and Efficiency</th>
+      <td>Lower internal resistance, suitable for high current discharge, high efficiency</td>
+      <td>Relatively higher internal resistance, slightly lower efficiency</td>
       </tr>
       <tr>
-        <th>Lifecycle</th>
-        <td>Shorter lifespan, fewer charge cycles (typically 300-500 cycles)</td>
-        <td>Longer lifespan, more charge cycles (typically 500-1000 cycles)</td>
+      <th>Lifecycle</th>
+      <td>Shorter lifespan, fewer charge cycles (typically 300-500 cycles)</td>
+      <td>Longer lifespan, more charge cycles (typically 500-1000 cycles)</td>
       </tr>
       <tr>
-        <th>Application Scenarios</th>
-        <td>Used in drones, RC vehicles, and applications requiring high output</td>
-        <td>Used in laptops, power banks, and applications needing stable power supply</td>
+      <th>Application Scenarios</th>
+      <td>Used in drones, RC vehicles, and applications requiring high output</td>
+      <td>Used in laptops, power banks, and applications needing stable power supply</td>
       </tr>
       <tr>
-        <th>Cost</th>
-        <td>Relatively more expensive, requires dedicated charging equipment</td>
-        <td>Relatively cheaper</td>
+      <th>Cost</th>
+      <td>Relatively more expensive, requires dedicated charging equipment</td>
+      <td>Relatively cheaper</td>
       </tr>
     </tbody>
   </table>
@@ -88,6 +88,50 @@
   </table>
   </div>
 
+ ### Step-Down power supply Module  Selection
+   
+   - The working voltage of controllers like the Nvidia Jetson Nano and Raspberry Pi Pico is 5V, while the 3S Li-Polymer battery we selected has a voltage of 12V. Therefore, a 12V to 5V step-down module is needed to reduce the voltage and protect the control board from high voltage damage.
+
+   - Initially, we chose the LM2596 DC-DC adjustable step-down module because it displays output voltage values, which makes monitoring easier and ensures stable voltage throughout the competition. However, the module’s maximum output current is only 3A, which is insufficient for all devices.
+
+   - As a result, we found the 5A Constant Voltage Constant Current Buck Power Supply Module online, with a maximum output current of 5A, which is sufficient to support the normal operation of the autonomous vehicle. Although this module does not have a voltage display function, a battery low-voltage alarm can be used to monitor the battery voltage, ensuring adequate power levels.
+  
+- #### Step-Down power supply Module Comparison
+  <div align="center">
+  <table with=100%>
+  <tr align="center">
+  <th rowspan="2">Photo</th>
+  <th> LM2596 DC-DC Adjustable Buck Module LM2596 DC-DC </th>
+  <th>5A Constant Voltage Constant Current Buck Power Supply Module ADIO-DC36V5A</th>
+  </tr>
+  <tr align="center">
+  <td><img src="../Power_Supply_System/img/LM25.png" width = "250"  alt="LM25" align=center />  </td>
+  <td><img src="../Power_Supply_System/img/ADIO-DC36V5A.png" width = "300"  alt="ADIO-DC36V5A" align=center /> 
+  </td>
+  </tr>
+  <tr >
+  <th>Specification</th>
+  <td>
+  <ol>
+    <li>Module Type: Non-isolated Buck (Step-down)</li>
+    <li>Input Voltage Range: 3.2V - 40V</li>
+    <li>Output Voltage Range: 1.25V - 35V, with a maximum output current of 3A</li>
+    <li>Maximum Output Current: 3A</li>
+    <li>Voltage Regulation: Input voltage range of 4V - 40V</li>
+    <li><a href="https://shop.playrobot.com/products/lm2596-dc-buck-converter-step-down-power-module" target="_blank">website</a> </li>
+    </ol>
+   </td>
+   <td>
+   <ol>
+    <li>Input Voltage Range: 4 - 38V</li>
+    <li>Output Voltage Range: 1.25 - 36V, continuously adjustable</li>
+    <li>Output Current Range: Adjustable, maximum of 5A</li>   
+    <li><a href="https://shop.cpu.com.tw/product/57434/info/" target="_blank">website</a></li>
+    </ol>
+    </td>
+    </tr>
+    </table>
+    </div>
  
 ### Charging/Discharging Equipment and Li-Polymer Battery Low Voltage Alarm.
   - To protect the 3S Li-Polymer (LiPo) battery from damage during use and storage and to extend its lifespan, we implemented the following strategies:
