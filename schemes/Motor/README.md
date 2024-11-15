@@ -116,8 +116,8 @@ Reference Link：
 </tr>
 <tr align="center">
 <td> <img src="./img/l293d.png" width = "300"  alt="l293d" align=center /></td>
-<td ><img src="./img/L298N.png" width = "300"  alt="l298n" align=center /></td>
-<td ><img src="./img/TB6612FNG.png" width = "300"  alt="TB6612FNG" align=center /></td>
+<td ><img src="./img/L298N.png" width = "150"  alt="l298n" align=center /></td>
+<td ><img src="./img/TB6612FNG.png" width = "150"  alt="TB6612FNG" align=center /></td>
 </tr>
 <tr align="center">
 <td>Occupied Area(mm)</td>
