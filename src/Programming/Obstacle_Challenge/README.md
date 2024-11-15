@@ -70,7 +70,7 @@ Based on the characteristics of each control board, we distributed the complex o
         
           return color_y_positions, pink_positions, diffs['Red'], diffs['Green'], diffs['Pink_Red'], diffs['Pink_Green']
         ```
-      - `calculate_x_diff`: Using the coordinates of traffic signs along with **raw_multiple_curves**, calculate the current coordinates and the ideal coordinates to enable `pd_control()` for PD tracking.
+     - `calculate_x_diff`: Using the coordinates of traffic signs along with **raw_multiple_curves**, calculate the current coordinates and the ideal coordinates to enable `pd_control()` for PD tracking.
         ```
             def calculate_x_diff(center_x, center_y, curve_points, last_diff, frame, color):
                 """Calculate the X difference between the center point and curve point."""
