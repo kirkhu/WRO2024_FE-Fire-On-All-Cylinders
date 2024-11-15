@@ -14,20 +14,20 @@
 
     
   #### 2. Power and Sense Management
-    - __Vehicle Design__
+    - __2-1 Vehicle Design__
       - [2-1-1 BOM Parts List ](schemes/Parts_List/README.md)
       - [2-1-2 Circuit Design ](models/Circuit_Design/README.md)
       - [2-1-3 Hardware Fool-Proof Design ](schemes/Fool-Proof-Design/README.md) 
       - [2-1-4 Assembly Instructions & Wiring Diagrams ](schemes/Assembly_Instructions/README.md)    
       
-    - __Power Management__
+    - __2-2 Power Management__
       - [2-2-1 Battery choice for self-driving cars ](schemes/Battery/README.md)  
       - [2-2-2 Power Supply System ](schemes/Power_Supply_System/README.md) 
    
-    - __Controller Selection__
+    - __2-3 Controller Selection__
       - [2-3-1 Main Controller Comparison ](schemes/Main_Controller_Choosing/README.md)
       - [2-3-2 Motor & Sensor Intermediate I/O Controller Comparison ](schemes/Motor_Sensor_Controller_Choosing/README.md)
-    - __Sense Management__
+    - __2-4 Sense Management__
       - [2-4-1 Ultrasonic rangefinder ](schemes/HC-SR04/README.md)
       - [2-4-2 Gyroscope orientation sensor ](schemes/BNO055/README.md)
       - [2-4-3 Camera Selection ](schemes/Camera/README.md)
@@ -36,16 +36,16 @@
   #### 3. Obstacle Management
     - [3-1 Software Platform Construction ](src/System_Platform_Software/README.md)
     - [3-2 OpenCV Introduction ](src/OpenCV/README.md)
-    - __Image Recognition Processing and Steering__
+    - __3-3 Image Recognition Processing and Steering__
       - [3-3-1 Image Recognition Processing ](src/Image_Recognition_Processing/README.md)  
       - [3-3-2 Steering Control ](src/Steering_Control/README.md) 
       - [3-3-3 Automatically record the HSV values of the field ](src/Automatically_record_HSV/README.md)
-    - __Programming__
+    - __3-4 Programming__
       - [3-4-1 Open Challenge Code Overview ](src/Programming/Open_Challenge/README.md)
       - [3-4-2 Obstacle Challenge Code Overview ](src/Programming/Obstacle_Challenge/README.md)
       - [3-4-3 Distinctive Pseudo Code ](src/Distinctive_Pseudo_Code/README.md)
       - [3-4-4 Parking Instruction ](src/parking/README.md)
-    - __Remote Connection__
+    - __3-5 Remote Connection__
       - [3-5-1 NoMachine Introduction ](other/NoMachine/README.md)
 - ### ${{\color{red} Other}} $
   #### 4. Pictures – Team and Vehicle
