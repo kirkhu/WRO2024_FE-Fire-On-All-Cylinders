@@ -223,7 +223,7 @@ We use Onshape to design the 3D model structure of the vehicle, and based on the
       <table>
       <tr>
       <th>Bearing Holder</th>
-      <th colspan="2">differential housing</th>
+      <th colspan="2"> Rear differential housing</th>
       <th>Motor Holder</th>
       </tr><tr>
       <td><img src="./Vehicle_Chassis_CAD_File/img/Bearing-Holder.png" width="300" alt="Bearing-Holder"></td> 
