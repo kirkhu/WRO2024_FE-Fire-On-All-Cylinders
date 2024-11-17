@@ -1490,7 +1490,7 @@ We continued trying to transfer the functions installed on the Raspberry Pi 4 to
 <th>Isometric view</th>
 </tr>
 <tr align="center">
-<td><img src="./img/11/Onshape_Design_View_New.png" width="300" alt="Onshape Design View"></td>
+<td><img src="./img/11/Onshape_Design_View_New.png" width="300" alt="Onshape Design View-Second revision<"></td>
 <td><img src="./img/11/Isometric_view_New.png" width="300" alt="Isometric view"></td>
 </table>
 </div>
