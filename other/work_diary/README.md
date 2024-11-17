@@ -1462,5 +1462,37 @@ We continued trying to transfer the functions installed on the Raspberry Pi 4 to
 **Content:**
 
 #### Jetson nano
-補前蓋板的差異比較及設計圖
+
+- As we modified the machine's exterior design, adjustments to the front wire-covering panel became necessary. We shortened the front section of the panel and reshaped it to better align with the updated machine structure. This modification not only ensured compatibility between the panel and the machine's new design but also optimized the camera's operational environment, reducing visual interference and enhancing the accuracy and stability of image detection.
+
+- 由於我們對機器外型進行了修改，因此需要對前方遮線的蓋板進行相應的改動。我們將蓋板前端進行縮短，重新調整其形狀，使其更加符合機器的結構變化。這項調整不僅確保了蓋板與機器的外型契合，也進一步優化了攝影機的工作環境，減少視覺干擾，提升了影像偵測的準確性和穩定性。
+
+<div align="center">
+<table>
+<tr align="center">
+<th>Onshape Design View</th>
+<th>Isometric view</th>
+</tr>
+<tr align="center">
+<td><img src="./img/11/Onshape_Design_View.png" width="300" alt="Onshape Design View"></td>
+<td><img src="./img/11/Isometric_view.jpg" width="300" alt="Isometric view"></td>
+</table>
+</div>
+
+- As the design progressed, we added dividers to both sides of the cover, effectively hiding the internal wiring and improving the overall appearance of the machine. Additionally, we introduced a shape resembling a wheel rim at the bottom of the cover. This not only conceals the excess wiring but also enhances the visual appeal, creating a more harmonious and aesthetically pleasing design.
+
+- 隨著設計的進一步完善，我們在蓋子兩側新增了隔板，這樣不僅能有效地將內部線路隱藏起來，還能提升機器的整體外觀。此外，我們在蓋子的下方新增了類似輪框的形狀，這不僅能遮擋多餘的線路，還能增強機器的視覺效果，讓整體設計更加和諧美觀。
+
+<div align="center">
+<table>
+<tr align="center">
+<th>Onshape Design View</th>
+<th>Isometric view</th>
+</tr>
+<tr align="center">
+<td><img src="./img/11/Onshape_Design_View_New.png" width="300" alt="Onshape Design View"></td>
+<td><img src="./img/11/Isometric_view_New.png" width="300" alt="Isometric view"></td>
+</table>
+</div>
+
 # <div align="center">![HOME](../../other/img/home.png)[Return Home](../../)</div>
