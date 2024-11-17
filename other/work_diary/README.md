@@ -1463,21 +1463,25 @@ We continued trying to transfer the functions installed on the Raspberry Pi 4 to
 
 #### Jetson nano
 
-- As we modified the machine's exterior design, adjustments to the front wire-covering panel became necessary. We shortened the front section of the panel and reshaped it to better align with the updated machine structure. This modification not only ensured compatibility between the panel and the machine's new design but also optimized the camera's operational environment, reducing visual interference and enhancing the accuracy and stability of image detection.
+- During the vehicle testing process, we discovered that the camera would capture images of the inner side of the side wall, leading to misjudgments. To resolve this issue, we attempted to lower the vehicle body so that the camera no longer aligned with the images of the inner wall. However, this adjustment rendered the original front cover panel unsuitable. Therefore, we redesigned the front cover panel to match the modified vehicle structure.
+
+- We shortened the front end of the cover panel and reshaped it to better fit the changes in the machine structure. This adjustment not only ensured the panel's alignment with the vehicle's exterior but also further optimized the camera's operating environment, reducing visual interference and enhancing the accuracy and stability of image detection. As shown in the figure below.
 
 <div align="center">
 <table>
 <tr align="center">
+<th>Competition venue map</th>
 <th>Onshape Design View</th>
 <th>Isometric view</th>
 </tr>
 <tr align="center">
+<td><img src="./img/11/game_Venue.png" width="300" alt="Onshape Design View"></td>
 <td><img src="./img/11/Onshape_Design_View.png" width="300" alt="Onshape Design View"></td>
 <td><img src="./img/11/Isometric_view.jpg" width="300" alt="Isometric view"></td>
 </table>
 </div>
 
-- As the design progressed, we added dividers to both sides of the cover, effectively hiding the internal wiring and improving the overall appearance of the machine. Additionally, we introduced a shape resembling a wheel rim at the bottom of the cover. This not only conceals the excess wiring but also enhances the visual appeal, creating a more harmonious and aesthetically pleasing design.
+- After installing the completed front cover plate onto the vehicle, we found that some signal wires were exposed, which could lead to recognition errors. To address this issue, we added partitions on both sides of the cover. This modification not only effectively hides the internal wiring but also enhances the overall appearance of the machine. Additionally, we added a wheel-like shape under the front cover plate, which not only conceals extra wiring but also improves the machine's visual appeal, making the overall design more harmonious and aesthetically pleasing.
 
 <div align="center">
 <table>
