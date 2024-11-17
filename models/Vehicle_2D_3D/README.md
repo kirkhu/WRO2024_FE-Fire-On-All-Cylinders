@@ -99,7 +99,7 @@ We use Onshape to design the 3D model structure of the vehicle, and based on the
     <div align="center"><img src="./img/2D.jpg" width="400" alt="car_board"></div>
 
  - ###  3D Vehicle Model - Onshape Model Sketch.
-     We used Onshape for the design and employed aStereolithography (SLA) 3D Printer to manufacture the 3D-printed parts for the vehicle chassis needed for this competition. The design and production process is as follows:
+     We used Onshape for the design and employed a Stereolithography (SLA) 3D Printer to manufacture the 3D-printed parts for the vehicle chassis needed for this competition. The design and production process is as follows:
     - #### The usage and introduction of Stereolithography (SLA) 3D printers 
       - Stereolithography (SLA) 3D printing technology uses liquid photosensitive resin as the material and forms objects layer by layer through laser curing.  SLA printers excel in producing high-precision parts with complex geometries, making them especially suitable for prototyping and model making where fine details are required.
       - To address the limitations in printing range and quality of last year's SLA 3D printer, we specifically adopted an 8K resolution SLA 3D printer (Phrozen Sonic Mini 8K) and an ultraviolet curing box to enhance print quality and precision.
