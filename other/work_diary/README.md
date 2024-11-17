@@ -1465,8 +1465,6 @@ We continued trying to transfer the functions installed on the Raspberry Pi 4 to
 
 - As we modified the machine's exterior design, adjustments to the front wire-covering panel became necessary. We shortened the front section of the panel and reshaped it to better align with the updated machine structure. This modification not only ensured compatibility between the panel and the machine's new design but also optimized the camera's operational environment, reducing visual interference and enhancing the accuracy and stability of image detection.
 
-- 由於我們對機器外型進行了修改，因此需要對前方遮線的蓋板進行相應的改動。我們將蓋板前端進行縮短，重新調整其形狀，使其更加符合機器的結構變化。這項調整不僅確保了蓋板與機器的外型契合，也進一步優化了攝影機的工作環境，減少視覺干擾，提升了影像偵測的準確性和穩定性。
-
 <div align="center">
 <table>
 <tr align="center">
