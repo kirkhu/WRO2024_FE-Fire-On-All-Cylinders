@@ -1486,7 +1486,7 @@ We continued trying to transfer the functions installed on the Raspberry Pi 4 to
 <div align="center">
 <table>
 <tr align="center">
-<th>Onshape Design View</th>
+<th>Onshape Design View-Second revision</th>
 <th>Isometric view</th>
 </tr>
 <tr align="center">
