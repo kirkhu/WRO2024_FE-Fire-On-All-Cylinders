@@ -104,7 +104,6 @@ We use Onshape to design the 3D model structure of the vehicle, and based on the
       - Stereolithography (SLA) 3D printing technology uses liquid photosensitive resin as the material and forms objects layer by layer through laser curing.  SLA printers excel in producing high-precision parts with complex geometries, making them especially suitable for prototyping and model making where fine details are required.
       - To address the limitations in printing range and quality of last year's SLA 3D printer, we specifically adopted an 8K resolution SLA 3D printer (Phrozen Sonic Mini 8K) and an ultraviolet curing box to enhance print quality and precision.
 
-
        - __The usage process of SLA 3D printers typically includes the following steps:__ 
          - __Design and Preparation:__ First, design the 3D model in CAD software and convert it into a printable STL file.
          - __Print Setup:__ Load the STL file into the slicing software of the SLA printer, and set printing parameters such as layer thickness and resin type.
