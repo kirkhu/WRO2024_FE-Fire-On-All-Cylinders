@@ -1481,8 +1481,6 @@ We continued trying to transfer the functions installed on the Raspberry Pi 4 to
 
 - As the design progressed, we added dividers to both sides of the cover, effectively hiding the internal wiring and improving the overall appearance of the machine. Additionally, we introduced a shape resembling a wheel rim at the bottom of the cover. This not only conceals the excess wiring but also enhances the visual appeal, creating a more harmonious and aesthetically pleasing design.
 
-- 隨著設計的進一步完善，我們在蓋子兩側新增了隔板，這樣不僅能有效地將內部線路隱藏起來，還能提升機器的整體外觀。此外，我們在蓋子的下方新增了類似輪框的形狀，這不僅能遮擋多餘的線路，還能增強機器的視覺效果，讓整體設計更加和諧美觀。
-
 <div align="center">
 <table>
 <tr align="center">
