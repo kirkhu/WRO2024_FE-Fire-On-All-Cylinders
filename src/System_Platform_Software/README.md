@@ -80,7 +80,7 @@
          dkms autoinstall
        ```
        - install the OpenCV application on the Nvidia Jetson Nano
-        The installation method has already been explained in the <a href="../../other/OpenCV/README.md" target="_blank">OpenCV Introduction</a> section.
+        The installation method has already been explained in the <a href="../OpenCV/README.md" target="_blank">OpenCV Introduction</a> section.
 
       __The operating system for Self-Driving Cars has been successfully installed.++__
               
