@@ -37,7 +37,7 @@
     <tr align="center">
       <th>Left</th>
       <th>Right</th>
-      <th>Right</th>
+      <th>Rear</th>
       </tr>
     <tr>
       <td><img src="../../other/work_diary/img/5/car_left.png" alt="HC-SR04" width="250" /></td>
