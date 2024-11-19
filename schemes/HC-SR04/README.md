@@ -32,7 +32,7 @@
     <div align="center" width=100%>
     <table >
     <tr align="center">
-    <th colspan="3">HC-SR04 Ultrasonic Distance Sensor Placement Diagram on Vehicle</th>
+    <th colspan="4">HC-SR04 Ultrasonic Distance Sensor Placement Diagram on Vehicle</th>
     </tr>
     <tr align="center">
       <th>Left</th>
