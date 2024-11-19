@@ -7,6 +7,17 @@ Based on the lessons learned from last year, we upgraded the main controller of 
 The vehicle chassis used in this competition is our in-house, self-developed design. The following will introduce the vehicle chassis design and production process.
 
 We use Onshape to design the 3D model structure of the vehicle, and based on the chassis's characteristics, we manufacture the necessary vehicle parts using equipment such as laser cutting machines and Stereolithography (SLA) 3D Printer.
+<div align=center>
+    <table>
+    <tr>
+    <th>2023 model using Raspberry Pi </th>
+    <th>2024 model using Jetson Nano</th>
+    </tr><tr>
+    <td><img src="./img/2023CARleft.png" width="250" alt="Vehicle_cad"></td> 
+    <td><img src="../../v-photos/img/top.png" width="250" alt="vehicle Underfloor"></td> 
+    </tr>
+    </table>
+ </div> 
 
 - ### Onshape Model Draft
   - #### 3D modeling software -- Onshape Introduction
