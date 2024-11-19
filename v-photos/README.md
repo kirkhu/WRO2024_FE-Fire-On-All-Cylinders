@@ -29,8 +29,8 @@
   </tr>
     </tr>
     <tr align="center">
-    <td><img src="./img/left.png" width = "60%" alt="Left view" ></td>
-    <td><img src="./img/right.png" width = "60%" alt="Right view" ></td>
+    <td><img src="./img/left.png" width = "70%" alt="Left view" ></td>
+    <td><img src="./img/right.png" width = "70%" alt="Right view" ></td>
   </tr>
 </table>
 </div> 
