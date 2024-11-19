@@ -9,7 +9,7 @@
     <th>Bottom View </th>
   </tr>
     <tr align="center">
-    <td><img src="./img/top.png"  width = "50%" alt="Top view" > </td>
+    <td><img src="./img/top.png"  width = "60%" alt="Top view" > </td>
     <td><img src="../schemes/Assembly_Instructions/img/down.png"  width = "55%"  alt="Bottom view " ></td>
 
   </tr>
