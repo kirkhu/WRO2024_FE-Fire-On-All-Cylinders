@@ -157,7 +157,7 @@
     __Uses in Competition：__  
     - Supply power to the vehicle for use.  
     <br></br>
-    __Purchase URL:<a href="https://www.amazon.in/Invento-Battery-Voltage-Indicator-Checker/dp/B072V44Q5Z" target="_blank">Li-Polymer 3S Battery</a>__
+    __Purchase URL:<a href="https://shopee.tw/product/17393576/2036942264?gclid=Cj0KCQjw6KunBhDxARIsAKFUGs9xoiZB_LrSF3X4XfnN1sxM-tjzbX4T2Sw9XD0c0Rfc_tkPkczAbBcaApCXEALw_wcB" target="_blank">Li-Polymer 3S Battery</a>__
     </td>
     <td>
     <img src="./img/lipo_battery.png" width = "250"  alt="Li-Polymer 3S Battery" align=center />  
