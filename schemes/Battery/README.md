@@ -118,7 +118,7 @@
     <li>Output Voltage Range: 1.25V - 35V, with a maximum output current of 3A</li>
     <li>Maximum Output Current: 3A</li>
     <li>Voltage Regulation: Input voltage range of 4V - 40V</li>
-    <li><a href="https://shop.playrobot.com/products/lm2596-dc-buck-converter-step-down-power-module" target="_blank">website</a> </li>
+    <li><a href="https://www.amazon.ae/UIOTEC-Converter-Digital-Step-up-Voltage/dp/B074LX3YYT" target="_blank">website</a> </li>
     </ol>
    </td>
    <td>
