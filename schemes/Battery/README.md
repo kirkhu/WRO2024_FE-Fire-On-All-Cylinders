@@ -172,7 +172,7 @@
       
       <div align="center">
        <table>
-       <th>Li-Polymer Battery Low Voltage Alarm </th>
+       <th colspan="2">Li-Polymer Battery Low Voltage Alarm </th>
        <tr>
        <td>Installing a low-voltage alarm on the battery can emit an audible warning when the voltage falls below a set value, alerting the user to monitor or replace the battery in time. This effectively prevents insufficient power issues during competitions and protects the battery from damage due to over-discharge.</td>
         <td><img src="./img/low_voltage_alarm.png" width = "400"  alt="low_voltage_alarm" align="center" /></td>
